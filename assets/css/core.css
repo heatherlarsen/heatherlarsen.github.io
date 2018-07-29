@@ -1,0 +1,773 @@
+@font-face {
+  font-family: 'Beautiful Bloom';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/BeautifulBloom-Regular.eot");
+  src: url("../fonts/BeautifulBloom-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BeautifulBloom-Regular.woff") format("woff"), url("../fonts/BeautifulBloom-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Beautiful Bloom Alt';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/BeautifulBloom-Alt.eot");
+  src: url("../fonts/BeautifulBloom-Alt.eot?#iefix") format("embedded-opentype"), url("../fonts/BeautifulBloom-Alt.woff") format("woff"), url("../fonts/BeautifulBloom-Alt.ttf") format("truetype");
+}
+/* line 51, _helpers.scss */
+.content-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 1380px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 128, _helpers.scss */
+.mt-5 {
+  margin-top: 5px !important;
+}
+
+/* line 128, _helpers.scss */
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+/* line 128, _helpers.scss */
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+/* line 128, _helpers.scss */
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+/* line 128, _helpers.scss */
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+/* line 128, _helpers.scss */
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+/* line 137, _helpers.scss */
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+
+/* line 137, _helpers.scss */
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+/* line 137, _helpers.scss */
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+/* line 137, _helpers.scss */
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+/* line 137, _helpers.scss */
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+/* line 137, _helpers.scss */
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
+/* line 146, _helpers.scss */
+.pt-5 {
+  padding-top: 5px !important;
+}
+
+/* line 146, _helpers.scss */
+.pt-10 {
+  padding-top: 10px !important;
+}
+
+/* line 146, _helpers.scss */
+.pt-15 {
+  padding-top: 15px !important;
+}
+
+/* line 146, _helpers.scss */
+.pt-20 {
+  padding-top: 20px !important;
+}
+
+/* line 146, _helpers.scss */
+.pt-50 {
+  padding-top: 50px !important;
+}
+
+/* line 146, _helpers.scss */
+.pt-100 {
+  padding-top: 100px !important;
+}
+
+/* line 155, _helpers.scss */
+.pb-5 {
+  padding-bottom: 5px !important;
+}
+
+/* line 155, _helpers.scss */
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+
+/* line 155, _helpers.scss */
+.pb-15 {
+  padding-bottom: 15px !important;
+}
+
+/* line 155, _helpers.scss */
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+
+/* line 155, _helpers.scss */
+.pb-50 {
+  padding-bottom: 50px !important;
+}
+
+/* line 155, _helpers.scss */
+.pb-100 {
+  padding-bottom: 100px !important;
+}
+
+/* line 6, core.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, core.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 15, core.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 19, core.scss */
+h1 {
+  margin: 30px 0;
+  font-size: 60px;
+  text-align: center;
+}
+
+/* line 25, core.scss */
+h2 {
+  font-family: 'Karla', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  text-align: center;
+  color: #696969;
+}
+/* line 34, core.scss */
+h2:after {
+  content: '';
+  display: block;
+  width: 53px;
+  border-bottom: 3px solid #e8db37;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* line 44, core.scss */
+h3 {
+  font-family: 'Karla', Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  margin-bottom: 7px;
+}
+
+/* line 53, core.scss */
+body {
+  background: #ffffff;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  line-height: 21px;
+}
+
+/* line 61, core.scss */
+a {
+  text-decoration: none;
+  color: #131313;
+  font-weight: bold;
+}
+/* line 66, core.scss */
+a:hover {
+  color: #696969;
+}
+
+/* line 71, core.scss */
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+/* line 76, core.scss */
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #e8db37;
+  height: 3px;
+  transition: width 0.3s ease-out;
+}
+/* line 88, core.scss */
+.underline:hover:after, .underline:focus:after, .underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+/* line 95, core.scss */
+ul {
+  list-style: none;
+}
+
+/* line 99, core.scss */
+.is-hidden {
+  display: none !important;
+}
+
+/* line 103, core.scss */
+.sm-text {
+  font-family: 'Karla', Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+/* line 111, core.scss */
+.logo {
+  text-align: center;
+  color: #131313;
+  font-family: "Beautiful Bloom", cursive;
+}
+/* line 116, core.scss */
+.logo h1 {
+  font-size: 123px;
+  font-weight: normal;
+  line-height: 147px;
+  text-align: left;
+  color: #131313;
+}
+
+/* line 125, core.scss */
+.headline {
+  text-align: center;
+}
+
+/* line 129, core.scss */
+.ampersand {
+  font-family: "Beautiful Bloom", cursive;
+  font-size: 20px;
+  vertical-align: sub;
+}
+
+/* line 135, core.scss */
+.top-wrap {
+  background: #ffffff;
+  color: #131313;
+  width: 100%;
+  height: calc(100vh - 30px);
+  position: relative;
+  z-index: 20;
+}
+/* line 143, core.scss */
+.top-wrap .large-header {
+  animation: fadein 3.5s;
+  -moz-animation: fadein 3.5s;
+  /* Firefox */
+  -webkit-animation: fadein 3.5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 3.5s;
+  /* Opera */
+}
+/* line 149, core.scss */
+.top-wrap .large-header .header-wrap {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: nowrap;
+}
+/* line 160, core.scss */
+.top-wrap .large-header .header-wrap .header {
+  position: relative;
+  width: 100%;
+  max-width: 1380px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 171, core.scss */
+.top-wrap .large-header .header-wrap .header .logo {
+  width: 450px;
+  margin: 0 auto;
+}
+
+/* line 180, core.scss */
+.small-header {
+  display: none;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  background: #ffffff;
+}
+/* line 190, core.scss */
+.small-header .header-wrap {
+  height: 80px;
+  line-height: 80px;
+}
+/* line 195, core.scss */
+.small-header .header-wrap .header .logo {
+  margin: 0;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: left;
+}
+/* line 202, core.scss */
+.small-header .header-wrap .header nav .nav-wrap .nav-item {
+  line-height: normal;
+}
+
+/* line 210, core.scss */
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  padding-top: 60px;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 220, core.scss */
+.scroll a {
+  width: 30px;
+  height: 30px;
+  color: #131313;
+  transition: opacity .3s;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+/* line 233, core.scss */
+.scroll a:hover {
+  opacity: .5;
+}
+/* line 237, core.scss */
+.scroll a::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: -1;
+  content: '';
+  width: 25px;
+  height: 25px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  opacity: 0;
+  box-sizing: border-box;
+  -webkit-animation: scroll-down 3s infinite;
+  animation: scroll-down 3s infinite;
+}
+/* line 254, core.scss */
+.scroll a .svg-icon {
+  width: 30px;
+  height: 30px;
+}
+/* line 259, core.scss */
+.scroll a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #696969;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+/* line 270, core.scss */
+.scroll a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #696969;
+  border-bottom: 1px solid #696969;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+/* line 285, core.scss */
+.scroll a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  opacity: 0;
+  box-sizing: border-box;
+  -webkit-animation: scroll-down 3s infinite;
+  animation: scroll-down 3s infinite;
+}
+
+/* line 306, core.scss */
+nav {
+  height: 80px;
+  line-height: 80px;
+}
+/* line 310, core.scss */
+nav .nav-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+/* line 317, core.scss */
+nav .nav-wrap .nav-item {
+  margin: 0 27px;
+  font-family: 'Karla', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+/* line 325, core.scss */
+nav .nav-wrap .nav-item a {
+  font-weight: normal;
+}
+
+/* line 333, core.scss */
+.scrollable-content {
+  z-index: 10;
+  position: relative;
+  background: #ffffff;
+  margin-bottom: 303px;
+}
+
+/* line 340, core.scss */
+.content-row {
+  padding-top: 70px;
+}
+
+/* line 344, core.scss */
+.content-wrap {
+  margin: 0 65px 65px 65px;
+}
+/* line 349, core.scss */
+.content-wrap p {
+  margin: 0 0 40px 0;
+}
+
+/* line 354, core.scss */
+.carousel-controls {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+/* line 360, core.scss */
+.carousel-controls .carousel-control {
+  margin: 0 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+/* line 366, core.scss */
+.carousel-controls .carousel-control.disabled .svg-icon path,
+.carousel-controls .carousel-control.disabled .svg-icon polygon,
+.carousel-controls .carousel-control.disabled .svg-icon rect {
+  fill: #d6d4c3;
+}
+/* line 372, core.scss */
+.carousel-controls .carousel-control.disabled .svg-icon circle {
+  stroke: #d6d4c3;
+  stroke-width: 1;
+}
+
+/* line 380, core.scss */
+.main-carousel {
+  display: flex;
+  position: relative;
+}
+/* line 384, core.scss */
+.main-carousel .project {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+/* line 389, core.scss */
+.main-carousel .project .project-img {
+  width: 350px;
+  height: 350px;
+}
+/* line 393, core.scss */
+.main-carousel .project .project-img img {
+  width: 100%;
+  height: 350px;
+}
+/* line 399, core.scss */
+.main-carousel .project .project-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 350px;
+  height: 350px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s, visibility .5s;
+}
+/* line 411, core.scss */
+.main-carousel .project .project-content h3 {
+  color: #fff;
+  font-size: 30px;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 38px;
+  font-size: 32px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  font-family: "Work Sans",Helvetica,Arial,sans-serif;
+}
+/* line 427, core.scss */
+.main-carousel .project .project-content h3 span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+/* line 437, core.scss */
+.main-carousel .project[data-project="Fremont Brewing"] .project-content {
+  background: rgba(39, 99, 168, 0.9);
+}
+/* line 444, core.scss */
+.main-carousel .project[data-project="Take The Stage"] .project-content {
+  background: rgba(52, 39, 144, 0.9);
+}
+/* line 451, core.scss */
+.main-carousel .project[data-project="US Trust"] .project-content {
+  background: rgba(94, 94, 93, 0.9);
+}
+/* line 457, core.scss */
+.main-carousel .project:hover .project-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 464, core.scss */
+.all-projects-btn {
+  width: 350px;
+  height: 350px;
+  display: block;
+  background: #E8DB37;
+  text-align: center;
+}
+/* line 471, core.scss */
+.all-projects-btn span {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 38px;
+  font-size: 32px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 489, core.scss */
+.services-content .services-wrap ul {
+  line-height: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 496, core.scss */
+.services-content .services-wrap ul li {
+  height: 37px;
+  width: 33%;
+  text-align: left;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* line 511, core.scss */
+.clients-content .clients-wrap ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+/* line 516, core.scss */
+.clients-content .clients-wrap ul li {
+  width: 20%;
+  vertical-align: middle;
+  margin: 30px 10px;
+}
+/* line 521, core.scss */
+.clients-content .clients-wrap ul li img {
+  max-width: 150px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* line 532, core.scss */
+footer {
+  text-align: center;
+  padding: 80px 0;
+  background: #e8db37;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+}
+/* line 541, core.scss */
+footer span {
+  font-family: "Beautiful Bloom",cursive;
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  display: block;
+  line-height: 72px;
+}
+/* line 550, core.scss */
+footer p {
+  font-size: 0.75em;
+}
+
+/* line 556, core.scss */
+.svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* line 561, core.scss */
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #131313;
+}
+
+/* line 567, core.scss */
+.svg-icon circle {
+  stroke: #131313;
+  stroke-width: 1;
+}
+
+/*# sourceMappingURL=core.css.map */

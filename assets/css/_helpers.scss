@@ -1,0 +1,164 @@
+%no-margin {
+  	margin: 0;
+}
+
+%no-padding {
+	padding: 0;
+}
+
+%button {
+	-webkit-appearance: none;
+  padding: 0 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0 20px;
+  font-size: 14px;
+  letter-spacing: 3.5px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  transition: all .4s;
+  cursor: pointer;
+  line-height: 37px;
+
+  &:hover {
+    outline-width: 0;
+    color: $color-dark;
+
+    &:before {
+      transform: scale(1.2, 2.8);
+    }
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    transform: scale(1,1);
+    transform-origin: bottom;
+    transition: all .7s;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+  width: 1380px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// Build margin-top classes
+@mixin make-mt {
+  @each $mt in $mt-list {
+    .mt-#{$mt} {
+      margin-top: $mt + px !important;
+    }
+  }
+}
+
+// Build margin-bottom classes
+@mixin make-mb {
+  @each $mb in $mb-list {
+    .mb-#{$mb} {
+      margin-bottom: $mb + px !important;
+    }
+  }
+}
+
+// Build padding-top classes
+@mixin make-pt {
+  @each $pt in $pt-list {
+    .pt-#{$pt} {
+      padding-top: $pt + px !important;
+    }
+  }
+}
+
+// Build padding-bottom classes
+@mixin make-pb {
+  @each $pb in $pb-list {
+    .pb-#{$pb} {
+      padding-bottom: $pb + px !important;
+    }
+  }
+}
+
+@include make-mt;
+@include make-mb;
+@include make-pt;
+@include make-pb;

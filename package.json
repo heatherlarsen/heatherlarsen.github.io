@@ -1,0 +1,29 @@
+{
+  "name": "testing-site",
+  "version": "1.0.0",
+  "description": "test portfolio designs",
+  "author": "heather larsen",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "node-normalize-scss": "^8.0.0"
+  },
+  "homepage": "https://github.com/heatherlarsen/testing-site#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heatherlarsen/testing-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heatherlarsen/testing-site/issues"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.4",
+    "flickity": "^2.1.2",
+    "lodash": "^4.17.10",
+    "normalize.css": "^8.0.0"
+  }
+}
