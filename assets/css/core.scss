@@ -1,6 +1,7 @@
 @import "fonts";
 @import "config";
 @import "helpers";
+@import "projects";
 
 // general
 * {
@@ -35,7 +36,7 @@ h2 {
 		content: '';
 		display: block;
 		width: 53px;
-	    border-bottom: 3px solid $color-yellow;
+	    border-bottom: 3px solid set-color($color-yellow);
 	    margin: 0 auto;
 	    padding-top: 20px;
 	}
@@ -66,6 +67,14 @@ a {
 	&:hover {
 		color: $links-hover-color;
 	}
+
+	&.active {
+		cursor: default;
+
+		&:hover {
+			color: $links-color;
+		}
+	}
 }
 
 .underline {
@@ -80,7 +89,7 @@ a {
   		right: 0;
   		width: 0;
   		bottom: -5px;
-  		background: $color-yellow;
+  		background: set-color($color-yellow);
   		height: 3px;
   		transition: width 0.3s ease-out;
   	}
@@ -89,6 +98,18 @@ a {
   		left: 0;
   		right: auto;
   		width: 100%;
+  	}
+
+  	&.active {
+
+  		width: 100%;
+  		padding: 5px;
+  		background: set-color($color-yellow);
+
+  		&:after {
+  			content: none;
+  			transition: none;
+  		}
   	}
 }
 
@@ -105,6 +126,13 @@ ul {
     font-size: 12px;
     letter-spacing: 3.5px;
     text-transform: uppercase;
+}
+
+.lg-text {
+	line-height: 26px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
 }
 
 // logo
@@ -178,7 +206,10 @@ ul {
 }
 
 .small-header {
-	display: none;
+	.homepage & {
+		display: none;
+	}
+
 	width: 100%;
 	height: 80px;
 	top: 0;
@@ -335,6 +366,7 @@ nav {
 	position: relative;
 	background: $color-white;
 	margin-bottom: 303px;
+	padding-top: 80px;
 }
 
 .content-row {
@@ -348,6 +380,26 @@ nav {
 
 	p {
 	    margin: 0 0 40px 0;
+	}
+}
+
+.breadcrumb-content {
+	.content-row {
+		padding-top: 0px;
+	}
+}
+
+.breadcrumbs {
+	text-align: left;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+
+	.breadcrumb {
+		span {
+			display: inline-block;
+			margin: 0 5px;
+		}
 	}
 }
 
@@ -395,69 +447,71 @@ nav {
 				height: 350px;
 			}
 		}
+	}
+}
 
-		.project-content {
-			position: absolute;
-		    top: 0;
-		    bottom: 0;
-		    left: 0;
-		    right: 0;
-			width: 350px;
-		    height: 350px;
-		    visibility: hidden;
-  			opacity: 0;
-  			transition: opacity .5s, visibility .5s;
+.project {
+	.project-content {
+		position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+		width: 100%;
+	    height: 100%;
+	    visibility: hidden;
+		opacity: 0;
+		transition: opacity .5s, visibility .5s;
 
-		    h3 {
-		    	color: #fff;
-			    font-size: 30px;
-			    display: block;
-			    width: 300px;
-			    margin: 0 auto;
-			    color: #fff;
-			    text-transform: uppercase;
-			    line-height: 38px;
-			    font-size: 32px;
-			    text-align: center;
-			    top: 50%;
-			    transform: translateY(-50%);
-			    position: relative;
-			    font-family: "Work Sans",Helvetica,Arial,sans-serif;
+	    h3 {
+	    	color: #fff;
+		    font-size: 30px;
+		    display: block;
+		    width: 300px;
+		    margin: 0 auto;
+		    color: #fff;
+		    text-transform: uppercase;
+		    line-height: 38px;
+		    font-size: 32px;
+		    text-align: center;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    position: relative;
+		    font-family: "Work Sans",Helvetica,Arial,sans-serif;
 
-			    span {
-			    	display: block;
-			    	font-size: 12px;
-			    	font-weight: normal;
-			    	letter-spacing: 1.5px;
-			    }
+		    span {
+		    	display: block;
+		    	font-size: 12px;
+		    	font-weight: normal;
+		    	letter-spacing: 1.5px;
 		    }
-		}
+	    }
+	}
 
-		&[data-project="Fremont Brewing"] {
-			.project-content {
-				background: rgba(39,99,168,.9);
-				//background: #2763A8;
-			}
+	&[data-project="Fremont Brewing"] {
+		.project-content {
+			background: rgba(39,99,168,.9);
+			//background: #2763A8;
 		}
+	}
 
-		&[data-project="Take The Stage"] {
-			.project-content {
-				background: rgba(52,39,144,.9);
-				//background: #342790;
-			}
+	&[data-project="Take The Stage"] {
+		.project-content {
+			background: rgba(52,39,144,.9);
+			//background: #342790;
 		}
+	}
 
-		&[data-project="US Trust"] {
-			.project-content {
-				background: rgba(94,94,93,.9);
-				//background: #5E5E5D;
-			}
+	&[data-project="US Trust"] {
+		.project-content {
+			background: rgba(94,94,93,.9);
+			//background: #5E5E5D;
 		}
+	}
 
-		&:hover .project-content {
-			visibility: visible;
-			opacity: 1;
-		}
+	&:hover .project-content {
+		visibility: visible;
+		opacity: 1;
 	}
 }
 
@@ -532,7 +586,7 @@ nav {
 footer {
 	text-align: center;
     padding: 80px 0;
-    background: $color-yellow;
+    background: set-color($color-yellow);
     position: fixed;
     z-index: 1;
     bottom: 0;
@@ -567,4 +621,89 @@ footer {
 .svg-icon circle {
   	stroke: $color-dark;
   	stroke-width: 1;
+}
+
+// projects page
+.projects-wrap {
+	display: flex;
+	flex-wrap: wrap;
+
+	.project {
+		width: calc(33% - 10px);
+    	margin: 5px;
+    	position: relative;
+
+    	img {
+    		width: 100%;
+    	}
+
+    	.project-content {
+    		height: calc(100% - 5px);
+    	}
+	}
+}
+
+// project page
+.project-content {
+	h3 {
+		text-align: center;
+		margin-bottom: 70px;
+	}
+
+	h4 {
+		text-transform: uppercase;
+		font-size: 11px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.project-background {
+		padding: 70px;
+		background: $color-light;
+		margin: 30px 0;
+
+		h3 {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.content-item {
+	margin: 0 0 20px 0;
+}
+
+.projects-controls {
+	display: flex;
+	justify-content: space-between;
+}
+
+.image-border {
+	border: 1px solid $color-light;
+}
+
+.image-caption {
+	font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.filters-wrap {
+	text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pill {
+	margin: 0 5px;
+    padding: 3px 15px;
+    background: $color-light;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 10px;
+
+    &.selected {
+    	background: set-color($color-yellow);
+    }
 }

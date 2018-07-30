@@ -12,8 +12,9 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'assets/min/scripts.min.js': [
-                        'node_modules/aos/dist/aos.js',
-                        'node_modules/flickity/dist/flickity.pkgd.min.js',
+                        //'node_modules/aos/dist/aos.js',
+                        //'node_modules/flickity/dist/flickity.pkgd.min.js',
+                        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
                         'assets/js/helpers.js',
                         'assets/js/analytics.js',
                         'assets/js/index.js',
@@ -47,8 +48,9 @@ module.exports = function(grunt) {
                     'assets/min/styles.min.css': [
                         'assets/css/normalize.css',
                         'assets/css/bootstrap-grid.css',
-                        'node_modules/aos/dist/aos.css',
-                        'node_modules/flickity/dist/flickity.min.css',
+                        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
+                        //'node_modules/aos/dist/aos.css',
+                        //'node_modules/flickity/dist/flickity.min.css',
                         'assets/css/core.css',
                         'assets/css/print.css'
                     ]

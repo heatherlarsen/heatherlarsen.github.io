@@ -18,13 +18,15 @@ $(function() {
 	});
 	*/
 
-	$(window).scroll(function(){                          
-        if ($(this).scrollTop() > 500) {
-            $('.small-header').fadeIn(500);
-        } else {
-            $('.small-header').fadeOut(500);
-        }
-    });
+	if ($('.homepage').length) {
+		$(window).scroll(function(){                          
+	        if ($(this).scrollTop() > 500) {
+	            $('.small-header').fadeIn(500);
+	        } else {
+	            $('.small-header').fadeOut(500);
+	        }
+	    });
+	}
 });
 
 // scroll larger header to small header -- FIX THIS

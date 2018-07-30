@@ -21,6 +21,7 @@
     "url": "https://github.com/heatherlarsen/testing-site/issues"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.3.5",
     "aos": "^3.0.0-beta.4",
     "flickity": "^2.1.2",
     "lodash": "^4.17.10",

@@ -1,0 +1,131 @@
+.fremont {
+	h2 {
+		&:after {
+			border-bottom: 3px solid set-color($color-fremont);
+		}
+	}
+
+	.underline {
+		&:after {
+			background: set-color($color-fremont);
+		}
+
+		&.active {
+			background: set-color($color-fremont);
+		}
+	}
+
+	.project-content {
+		h3 {
+			color: set-color($color-fremont);
+		}
+	}
+
+
+	.sitemap-wrap {
+		text-align: right;
+
+		.sitemap {
+			width: 90%;
+		}
+	}
+
+	footer {
+		background: set-color($color-fremont);
+		color: $color-white;
+
+		a {
+			color: $color-white;
+		}
+	}
+
+	.pill {
+		&.selected {
+			background: set-color($color-fremont);
+		}
+	}
+}
+
+.takethestage {
+	h2 {
+		&:after {
+			border-bottom: 3px solid set-color($color-takethestage);
+		}
+	}
+
+	.underline {
+		&:after {
+			background: set-color($color-takethestage);
+		}
+
+		&.active {
+			background: set-color($color-takethestage);
+		}
+	}
+
+	footer {
+		background: set-color($color-takethestage);
+	}
+
+	.pill {
+		&.selected {
+			background: set-color($color-takethestage);
+		}
+	}
+}
+
+.ustrust {
+	h2 {
+		&:after {
+			border-bottom: 3px solid set-color($color-ustrust);
+		}
+	}
+
+	.underline {
+		&:after {
+			background: set-color($color-ustrust);
+		}
+
+		&.active {
+			background: set-color($color-ustrust);
+		}
+	}
+
+	footer {
+		background: set-color($color-ustrust);
+	}
+
+	.pill {
+		&.selected {
+			background: set-color($color-ustrust);
+		}
+	}
+}
+
+.normanregional {
+	h2 {
+		&:after {
+			border-bottom: 3px solid set-color($color-normanregional);
+		}
+	}
+
+	.underline {
+		&:after {
+			background: set-color($color-normanregional);
+		}
+
+		&.active {
+			background: set-color($color-normanregional);
+		}
+	}
+
+	footer {
+		background: set-color($color-normanregional);
+	}
+
+	.pill {
+		&.selected {
+			background: set-color($color-normanregional);
+		}
+	}
+}

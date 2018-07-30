@@ -122,6 +122,10 @@
   }
 }
 
+@function set-color($color) {
+  @return $color;
+}
+
 // Build margin-top classes
 @mixin make-mt {
   @each $mt in $mt-list {
