@@ -1,47 +1,136 @@
 // index.js
 $(function() {
-	// scroll down -- FIX THIS
-  	/*
-  	$('.scroll').on('click', function(e) {
-    	e.preventDefault();
-    	$('html, body').animate({scrollTop: $($(this).find('a').attr('href')).offset().top}, 1500, 'linear');
-  	});
-  	*/
 
-  	//AOS.init({disable: 'mobile'});
+	var pageType = $("body").data("page");
 
-  	/*$('.main-carousel').flickity({
-	  // options
-	  freeScroll: true,
-	  cellAlign: 'left',
-	  contain: true
+	// run init functions by page
+	if (pageType === "home") {
+		initScroll();
+		initCarousel();
+	}
+
+	if (pageType === "projects") {
+		initFilters();
+	}
+
+});
+
+function initScroll() {
+
+	console.log('initScroll()');
+
+	initScrollClick();
+	initSmallHeader();
+
+	function initScrollClick() {
+
+		console.log('initScrollClick()');
+
+		// clickable scroll icon
+		$('.scroll').on('click', function(e) {
+			e.preventDefault();
+
+			var el = $(this).find('a').attr('href');
+			var offset = $(el).offset();
+
+			$('html, body').animate({scrollTop: offset.top -80}, 800, 'linear');
+		});
+	}
+
+	function initSmallHeader() {
+		
+		console.log('initSmallHeader()');
+
+		// show small header on scroll
+		if ($('.homepage').length) {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 500) {
+					$('.small-header').fadeIn(300);
+				} else {
+					$('.small-header').fadeOut(300);
+				}
+			});
+		}
+	}
+}
+
+
+function initCarousel() {
+
+	console.log('initCarousel()');
+
+	var carouselCount = countCarouselItems();
+
+	var slider = tns({
+		"container": ".main-carousel",
+	    "items": 4,
+	    "arrowKeys": true,
+	    "controlsContainer": ".carousel-controls",
+	    "loop": false,
+	    "fixedWidth": 350,
+	    "responsive": {
+		    "350": {
+		      "items": 2
+		    },
+		    "500": {
+		      "items": 4
+		    }
+		  },
+	    //"slideBy": "page",
+	    "autoplay": false
 	});
-	*/
 
-	if ($('.homepage').length) {
-		$(window).scroll(function(){                          
-	        if ($(this).scrollTop() > 500) {
-	            $('.small-header').fadeIn(500);
-	        } else {
-	            $('.small-header').fadeOut(500);
-	        }
-	    });
+	function countCarouselItems() {
+		return $('.main-carousel').find('a').length;
 	}
-});
+}
 
-// scroll larger header to small header -- FIX THIS
-/*
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 0) {
-		$('.top-wrap').addClass('shrink');
-		$('.scroll').addClass('is-hidden');
-		$('.sm-name').removeClass('is-hidden');
-		$('.lg-name').addClass('is-hidden');
-	} else {
-		$('.top-wrap').removeClass('shrink');
-		$('.scroll').removeClass('is-hidden');
-		$('.sm-name').addClass('is-hidden');
-		$('.lg-name').removeClass('is-hidden');
-	}
-});
-*/
+function initFilters() {
+
+	console.log('initFilters()');
+
+	$('.filter[data-filter="all"]').addClass('selected');
+
+	$('.filter').on('click', function() {
+		// unselect all filters
+		$('.filter').each(function() {
+			$(this).removeClass('selected');
+		});
+
+		// selected correct filter
+		$(this).addClass('selected');
+
+		// display results with matching data-type
+		var selectedFilter = $(this).data("filter");
+
+		if (selectedFilter === "all") {
+			$('.project').each(function() {
+				$(this).show();
+			});
+		} else {
+			$('.project').each(function() {
+				var type = $(this).data("type");
+
+				// check for multiple types
+				if (type.indexOf(',') > -1) {
+					type = type.split(',');
+
+					for (var i = 0; i < type.length; i++) {
+						if ($.trim(type[i]) === selectedFilter) {
+							$(this).show();
+						} else {
+							$(this).hide();
+						}
+					}
+				} else {
+					if (type === selectedFilter) {
+						$(this).show();
+					} else {
+						$(this).hide();
+					}
+				}
+			});
+		}
+
+	});
+}

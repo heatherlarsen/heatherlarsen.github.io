@@ -13,11 +13,11 @@ module.exports = function(grunt) {
                 files: {
                     'assets/min/scripts.min.js': [
                         //'node_modules/aos/dist/aos.js',
-                        //'node_modules/flickity/dist/flickity.pkgd.min.js',
+                        'node_modules/tiny-slider/dist/tiny-slider.js',
                         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
                         'assets/js/helpers.js',
                         'assets/js/analytics.js',
-                        'assets/js/index.js',
+                        'assets/js/index.js'
                     ]
                 }
             }
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
                         'assets/css/bootstrap-grid.css',
                         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
                         //'node_modules/aos/dist/aos.css',
-                        //'node_modules/flickity/dist/flickity.min.css',
+                        'node_modules/tiny-slider/tiny-slider.css',
                         'assets/css/core.css',
                         'assets/css/print.css'
                     ]

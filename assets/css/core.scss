@@ -184,6 +184,11 @@ ul {
     text-align: center;
 }
 
+.tagline {
+    width: 100%;
+    text-align: center;
+}
+
 .ampersand {
 	font-family: $header-font-face;
 	font-size: 20px;
@@ -408,7 +413,7 @@ nav {
 }
 
 .content-wrap {
-	@extend %flex-between;
+	@extend %flex-start;
 
 	//margin: 0 65px 65px 65px;
 
@@ -464,7 +469,7 @@ nav {
 	    font-size: 12px;
 	    cursor: pointer;
 
-	    &.disabled {
+	    &[aria-disabled="true"] {
 	    	.svg-icon path,
 			.svg-icon polygon,
 			.svg-icon rect {
@@ -475,6 +480,8 @@ nav {
 			  	stroke: $color-gray;
 			  	stroke-width: 1;
 			}
+
+			cursor: auto;
 	    }
 	}
 }
@@ -608,6 +615,7 @@ nav {
 
 		.services-outer-wrap {
 			display: flex;
+			justify-content: space-between;
 		    margin-top: 45px;
 
 		    .services-outer-item {
@@ -615,7 +623,6 @@ nav {
 			    letter-spacing: 1.5px;
 			    text-transform: uppercase;
 			    font-size: 12px;
-			    width: 25%;
 
 			    .services-inner-header {
 			    	display: block;
@@ -764,6 +771,7 @@ footer {
 		padding: 70px;
 		background: $color-light;
 		margin: 30px 0;
+		text-align: center;
 
 		h3 {
 			margin-bottom: 30px;
@@ -771,14 +779,64 @@ footer {
 	}
 }
 
+
+
 .content-item {
 	margin: 0 0 20px 0;
 }
 
+.other-projects-header {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 .projects-controls {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    align-items: flex-end;
+
+	.project-control {
+		cursor: pointer;
+    	width: 50%;
+
+		.thumb-wrap {
+			display: flex;
+    		font-weight: normal;
+
+    		svg {
+    			margin: 0 20px;
+    		}
+
+			.thumb-text {
+			    text-transform: lowercase;
+			    font-size: 12px;
+			}
+		}
+
+		&.disabled {
+			cursor: default;
+
+			svg path {
+				fill: $color-gray;
+			}
+		}
+	}
+
+	.previous {
+		.thumb-wrap {
+			justify-content: flex-start;
+		}
+	}
+
+	.next {
+		.thumb-wrap {
+			justify-content: flex-end;
+		}
+	}
 }
+
+
 
 .image-border {
 	border: 1px solid $color-light;
@@ -807,4 +865,29 @@ footer {
     &.selected {
     	background: set-color($color-yellow);
     }
+}
+
+// contact page
+.contact-content {
+	height: calc(100vh - 121px);
+}
+
+// headshot
+.headshot-wrap {
+	max-width: 250px;
+	margin: 0 auto;
+
+	.headshot {
+		width: 100%;
+		border-radius: 50%;
+	}
+}
+
+// carousel
+.tns-nav {
+	display: none;
+}
+
+.tns-outer {
+	margin-top: 80px;
 }

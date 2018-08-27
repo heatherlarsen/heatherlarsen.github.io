@@ -63,8 +63,28 @@
 		}
 	}
 
+	.project-content {
+		h3 {
+			color: set-color($color-takethestage);
+		}
+	}
+
+
+	.sitemap-wrap {
+		text-align: right;
+
+		.sitemap {
+			width: 90%;
+		}
+	}
+
 	footer {
 		background: set-color($color-takethestage);
+		color: $color-white;
+
+		a {
+			color: $color-white;
+		}
 	}
 
 	.pill {
@@ -72,6 +92,7 @@
 			background: set-color($color-takethestage);
 		}
 	}
+
 }
 
 .ustrust {
@@ -91,8 +112,28 @@
 		}
 	}
 
+	.project-content {
+		h3 {
+			color: set-color($color-ustrust);
+		}
+	}
+
+
+	.sitemap-wrap {
+		text-align: right;
+
+		.sitemap {
+			width: 90%;
+		}
+	}
+
 	footer {
 		background: set-color($color-ustrust);
+		color: $color-white;
+
+		a {
+			color: $color-white;
+		}
 	}
 
 	.pill {
@@ -119,8 +160,28 @@
 		}
 	}
 
+	.project-content {
+		h3 {
+			color: set-color($color-normanregional);
+		}
+	}
+
+
+	.sitemap-wrap {
+		text-align: right;
+
+		.sitemap {
+			width: 90%;
+		}
+	}
+
 	footer {
 		background: set-color($color-normanregional);
+		color: $color-white;
+
+		a {
+			color: $color-white;
+		}
 	}
 
 	.pill {

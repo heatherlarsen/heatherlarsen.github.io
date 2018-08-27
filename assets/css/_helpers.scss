@@ -54,6 +54,12 @@
   width: 1380px;
 }
 
+%flex-start {
+  display: flex;
+  justify-content: flex-start;
+  width: 1380px;
+}
+
 @keyframes fadein {
     from {
         opacity:0;
