@@ -678,7 +678,8 @@ footer {
     position: fixed;
     z-index: 1;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+    overflow: hidden;
 
     span {
     	font-family: "Beautiful Bloom",cursive;
@@ -940,6 +941,7 @@ footer {
     .content-wrap {
     	display: block;
     	width: 100vw;
+    	overflow: hidden;
     }
 
     .services-content {

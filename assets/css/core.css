@@ -1147,9 +1147,10 @@ footer {
   position: fixed;
   z-index: 1;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
-/* line 683, core.scss */
+/* line 684, core.scss */
 footer span {
   font-family: "Beautiful Bloom",cursive;
   font-size: 60px;
@@ -1158,12 +1159,12 @@ footer span {
   display: block;
   line-height: 72px;
 }
-/* line 692, core.scss */
+/* line 693, core.scss */
 footer p, footer .social-links {
   font-size: 0.75em;
 }
 
-/* line 697, core.scss */
+/* line 698, core.scss */
 .social-links {
   display: flex;
   width: 30%;
@@ -1172,21 +1173,21 @@ footer p, footer .social-links {
   margin-top: 20px;
 }
 
-/* line 706, core.scss */
+/* line 707, core.scss */
 .svg-icon {
   width: 20px;
   height: 20px;
 }
-/* line 710, core.scss */
+/* line 711, core.scss */
 .svg-icon path, .svg-icon polygon, .svg-icon rect {
   fill: #131313;
 }
-/* line 714, core.scss */
+/* line 715, core.scss */
 .svg-icon circle {
   stroke: #131313;
   stroke-width: 1;
 }
-/* line 719, core.scss */
+/* line 720, core.scss */
 .svg-icon.with-circle-bg {
   display: block;
   width: 60px;
@@ -1198,130 +1199,130 @@ footer p, footer .social-links {
   padding: 10px;
   text-align: center;
 }
-/* line 730, core.scss */
+/* line 731, core.scss */
 .svg-icon.with-circle-bg path {
   fill: #ffffff;
 }
 
-/* line 737, core.scss */
+/* line 738, core.scss */
 .projects-wrap {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 741, core.scss */
+/* line 742, core.scss */
 .projects-wrap .project {
   width: calc(33% - 10px);
   margin: 5px;
   position: relative;
 }
-/* line 746, core.scss */
+/* line 747, core.scss */
 .projects-wrap .project img {
   width: 100%;
 }
-/* line 750, core.scss */
+/* line 751, core.scss */
 .projects-wrap .project .project-content {
   height: calc(100% - 5px);
 }
 
-/* line 758, core.scss */
+/* line 759, core.scss */
 .project-content h3 {
   text-align: center;
   margin-bottom: 70px;
 }
-/* line 763, core.scss */
+/* line 764, core.scss */
 .project-content h4 {
   text-transform: uppercase;
   font-size: 11px;
 }
-/* line 768, core.scss */
+/* line 769, core.scss */
 .project-content img {
   width: 100%;
 }
-/* line 772, core.scss */
+/* line 773, core.scss */
 .project-content .project-background {
   padding: 70px;
   background: #f3f3f1;
   margin: 30px 0;
   text-align: center;
 }
-/* line 778, core.scss */
+/* line 779, core.scss */
 .project-content .project-background h3 {
   margin-bottom: 30px;
 }
 
-/* line 786, core.scss */
+/* line 787, core.scss */
 .content-item {
   margin: 0 0 20px 0;
 }
 
-/* line 790, core.scss */
+/* line 791, core.scss */
 .other-projects-header {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 796, core.scss */
+/* line 797, core.scss */
 .projects-controls {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-/* line 801, core.scss */
+/* line 802, core.scss */
 .projects-controls .project-control {
   cursor: pointer;
   width: 50%;
 }
-/* line 805, core.scss */
+/* line 806, core.scss */
 .projects-controls .project-control .thumb-wrap {
   display: flex;
   font-weight: normal;
 }
-/* line 809, core.scss */
+/* line 810, core.scss */
 .projects-controls .project-control .thumb-wrap svg {
   margin: 0 20px;
 }
-/* line 813, core.scss */
+/* line 814, core.scss */
 .projects-controls .project-control .thumb-wrap .thumb-text {
   text-transform: lowercase;
   font-size: 12px;
 }
-/* line 819, core.scss */
+/* line 820, core.scss */
 .projects-controls .project-control.disabled {
   cursor: default;
 }
-/* line 822, core.scss */
+/* line 823, core.scss */
 .projects-controls .project-control.disabled svg path {
   fill: #d6d4c3;
 }
-/* line 829, core.scss */
+/* line 830, core.scss */
 .projects-controls .previous .thumb-wrap {
   justify-content: flex-start;
 }
-/* line 835, core.scss */
+/* line 836, core.scss */
 .projects-controls .next .thumb-wrap {
   justify-content: flex-end;
 }
 
-/* line 843, core.scss */
+/* line 844, core.scss */
 .image-border {
   border: 1px solid #f3f3f1;
 }
 
-/* line 847, core.scss */
+/* line 848, core.scss */
 .image-caption {
   font-size: 10px;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 854, core.scss */
+/* line 855, core.scss */
 .filters-wrap {
   display: flex;
   justify-content: flex-end;
 }
 
-/* line 859, core.scss */
+/* line 860, core.scss */
 .pill {
   margin: 0 5px;
   padding: 3px 15px;
@@ -1330,137 +1331,138 @@ footer p, footer .social-links {
   text-transform: uppercase;
   font-size: 10px;
 }
-/* line 867, core.scss */
+/* line 868, core.scss */
 .pill.selected {
   background: #e8db37;
 }
 
-/* line 873, core.scss */
+/* line 874, core.scss */
 .contact-content {
   height: calc(100vh - 121px);
 }
 
-/* line 878, core.scss */
+/* line 879, core.scss */
 .headshot-wrap {
   max-width: 250px;
   margin: 0 auto;
 }
-/* line 882, core.scss */
+/* line 883, core.scss */
 .headshot-wrap .headshot {
   width: 100%;
   border-radius: 50%;
 }
 
-/* line 889, core.scss */
+/* line 890, core.scss */
 .tns-nav {
   display: none;
 }
 
-/* line 893, core.scss */
+/* line 894, core.scss */
 .tns-outer {
   margin-top: 80px;
 }
 
 @media (min-width: 640px) {
-  /* line 899, core.scss */
+  /* line 900, core.scss */
   .is-mobile {
     display: none;
   }
 }
 @media (max-width: 639px) {
-  /* line 906, core.scss */
+  /* line 907, core.scss */
   .is-desktop {
     display: none;
   }
 
-  /* line 910, core.scss */
+  /* line 911, core.scss */
   .pt-xs-30 {
     padding-top: 30px !important;
   }
 
-  /* line 915, core.scss */
+  /* line 916, core.scss */
   .homepage .small-header {
     display: block;
   }
 
-  /* line 922, core.scss */
+  /* line 923, core.scss */
   nav .nav-wrap .nav-item {
     margin: 0 13px;
   }
 
-  /* line 928, core.scss */
+  /* line 929, core.scss */
   .tagline-content {
     padding: 130px 0 60px 0;
   }
-  /* line 931, core.scss */
+  /* line 932, core.scss */
   .tagline-content .tagline-text {
     width: 80%;
   }
 
-  /* line 936, core.scss */
+  /* line 937, core.scss */
   .content-row {
     padding-top: 60px;
   }
 
-  /* line 940, core.scss */
+  /* line 941, core.scss */
   .content-wrap {
     display: block;
     width: 100vw;
+    overflow: hidden;
   }
 
-  /* line 948, core.scss */
+  /* line 950, core.scss */
   .services-content .services-wrap .services-outer-wrap .services-outer-item {
     width: 100vw;
     margin-bottom: 50px;
   }
 
-  /* line 958, core.scss */
+  /* line 960, core.scss */
   .clients-content .clients-wrap ul li {
     width: 50%;
   }
 
-  /* line 964, core.scss */
+  /* line 966, core.scss */
   .project-content {
     padding-top: 70px;
   }
-  /* line 967, core.scss */
+  /* line 969, core.scss */
   .project-content .project-background {
     padding: 20px;
   }
 
-  /* line 972, core.scss */
+  /* line 974, core.scss */
   .projects-content {
     padding-top: 70px;
   }
 
-  /* line 977, core.scss */
+  /* line 979, core.scss */
   .projects-wrap .project {
     width: 100vw;
   }
 
-  /* line 982, core.scss */
+  /* line 984, core.scss */
   .filters-wrap {
     justify-content: center;
     margin-top: 30px;
   }
 
-  /* line 987, core.scss */
+  /* line 989, core.scss */
   .contact-content {
     height: 100%;
     padding-top: 70px;
   }
 
-  /* line 992, core.scss */
+  /* line 994, core.scss */
   .headshot-wrap {
     margin-top: 30px;
   }
 
-  /* line 997, core.scss */
+  /* line 999, core.scss */
   .fremont .sitemap-wrap {
     text-align: center;
   }
 
-  /* line 1002, core.scss */
+  /* line 1004, core.scss */
   .social-links {
     width: 100%;
   }
