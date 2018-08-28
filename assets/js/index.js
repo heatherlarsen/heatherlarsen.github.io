@@ -4,8 +4,11 @@ $(function() {
 	var pageType = $("body").data("page");
 
 	// run init functions by page
-	if (pageType === "home") {
+	var windowWidth = $(window).width();
+	if (pageType === "home" && windowWidth > 375) {
 		initScroll();
+		initCarousel();
+	} else if (pageType === "home") {
 		initCarousel();
 	}
 

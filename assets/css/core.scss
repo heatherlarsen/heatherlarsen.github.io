@@ -29,6 +29,7 @@ h2 {
     font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 3.5px;
+	line-height: 32px;
 	color: $color-dark;
 
 	&.left {
@@ -617,6 +618,7 @@ nav {
 			display: flex;
 			justify-content: space-between;
 		    margin-top: 45px;
+		    flex-wrap: wrap;
 
 		    .services-outer-item {
 		    	text-align: left;
@@ -890,4 +892,114 @@ footer {
 
 .tns-outer {
 	margin-top: 80px;
+}
+
+// tablet
+@media (min-width: $screen-sm-min) {
+	.is-mobile {
+        display: none;
+    }
+}
+
+// mobile
+@media (max-width: $screen-xs-max) {
+	.is-desktop {
+        display: none;
+    }
+
+    .pt-xs-30 {
+    	padding-top: 30px !important;
+    }
+
+    .homepage {
+    	.small-header {
+    		display: block;
+    	}
+    }
+
+    nav {
+    	.nav-wrap {
+    		.nav-item {
+    			margin: 0 13px;
+    		}
+    	}
+    }
+
+    .tagline-content {
+    	padding: 130px 0 60px 0;
+
+    	.tagline-text {
+    		width: 80%;
+    	}
+    }
+
+    .content-row {
+    	padding-top: 60px;
+    }
+
+    .content-wrap {
+    	display: block;
+    	width: 100vw;
+    }
+
+    .services-content {
+    	.services-wrap {
+    		.services-outer-wrap {
+    			.services-outer-item {
+    				width: 100vw;
+    				margin-bottom: 50px;
+    			}
+    		}
+    	}
+    }
+
+    .clients-content {
+    	.clients-wrap {
+    		ul li {
+    			width: 50%;
+    		}
+    	}
+    }
+
+    .project-content {
+    	padding-top: 70px;
+
+    	.project-background {
+    		padding: 20px;
+    	}
+    }
+
+    .projects-content {
+    	padding-top: 70px;
+    }
+
+    .projects-wrap {
+    	.project {
+    		width: 100vw;
+    	}
+    }
+
+    .filters-wrap {
+    	justify-content: center;
+    	margin-top: 30px;
+    }
+
+    .contact-content {
+    	height: 100%;
+    	padding-top: 70px;
+    }
+
+    .headshot-wrap {
+    	margin-top: 30px;
+    }
+
+    .fremont {
+    	.sitemap-wrap {
+    		text-align: center;
+    	}
+    }
+
+    .social-links {
+    	width: 100%;
+    }
 }
