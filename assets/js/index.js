@@ -1,3 +1,5 @@
+var debug = false;
+
 // index.js
 $(function() {
 
@@ -19,15 +21,13 @@ $(function() {
 });
 
 function initScroll() {
-
-	console.log('initScroll()');
+	if (debug) console.log('initScroll()');
 
 	initScrollClick();
 	initSmallHeader();
 
 	function initScrollClick() {
-
-		console.log('initScrollClick()');
+		if (debug) console.log('initScrollClick()');
 
 		// clickable scroll icon
 		$('.scroll').on('click', function(e) {
@@ -41,8 +41,7 @@ function initScroll() {
 	}
 
 	function initSmallHeader() {
-		
-		console.log('initSmallHeader()');
+		if (debug) console.log('initSmallHeader()');
 
 		// show small header on scroll
 		if ($('.homepage').length) {
@@ -59,8 +58,7 @@ function initScroll() {
 
 
 function initCarousel() {
-
-	console.log('initCarousel()');
+	if (debug) console.log('initCarousel()');
 
 	var carouselCount = countCarouselItems();
 
@@ -89,8 +87,7 @@ function initCarousel() {
 }
 
 function initFilters() {
-
-	console.log('initFilters()');
+	if (debug) console.log('initFilters()');
 
 	$('.filter[data-filter="all"]').addClass('selected');
 
@@ -107,23 +104,23 @@ function initFilters() {
 		var selectedFilter = $(this).data("filter");
 
 		if (selectedFilter === "all") {
-			$('.project').each(function() {
+			$('.filterable-project').each(function() {
 				$(this).show();
 			});
 		} else {
-			$('.project').each(function() {
+			$('.filterable-project').each(function() {
 				var type = $(this).data("type");
 
 				// check for multiple types
 				if (type.indexOf(',') > -1) {
 					type = type.split(',');
+					type = $.map(type, $.trim);	// trim all values in type array
 
-					for (var i = 0; i < type.length; i++) {
-						if ($.trim(type[i]) === selectedFilter) {
-							$(this).show();
-						} else {
-							$(this).hide();
-						}
+					// check if selectedFilter is inArray
+					if ($.inArray(selectedFilter, type) >= 0) {
+						$(this).show();
+					} else {
+						$(this).hide();
 					}
 				} else {
 					if (type === selectedFilter) {

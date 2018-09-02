@@ -546,6 +546,12 @@ nav {
 	    }
 	}
 
+	.project-caption {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+
 	&[data-project="Fremont Brewing"] {
 		.project-content {
 			background: rgba(39,99,168,.9);
@@ -876,7 +882,7 @@ footer {
 
 // contact page
 .contact-content {
-	height: calc(100vh - 121px);
+	min-height: calc(100vh - 121px);
 }
 
 // headshot
