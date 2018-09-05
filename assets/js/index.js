@@ -18,6 +18,12 @@ $(function() {
 		initFilters();
 	}
 
+	/*
+	if (pageType === "project") {
+		initProjectNav();
+	}
+	*/
+
 });
 
 function initScroll() {
@@ -84,6 +90,18 @@ function initCarousel() {
 	function countCarouselItems() {
 		return $('.main-carousel').find('a').length;
 	}
+}
+
+function initProjectNav() {
+	if (debug) console.log('initProjectNav()');
+
+	$('.project-nav').on('click', function() {
+		$('.project-nav').each(function() {
+			$(this).removeClass('active');
+		});
+
+		$(this).addClass('active');
+	});
 }
 
 function initFilters() {

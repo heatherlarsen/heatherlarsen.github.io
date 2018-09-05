@@ -17,7 +17,7 @@
 	    <link href="assets/min/styles.min.css" rel="stylesheet">
 	</head>
 
-	<body class="fremont">
+	<body class="fremont" data-page="project">
 	    <!-- analytics code -->
 
 		<!-- small header -->
@@ -74,29 +74,32 @@
 	    		</div>
 	    	</section>
 
-	    	<ul class="project-control is-hidden">
-				<li class="">
-					<span>Overview</span>
-				</li>
-				<li class="">
-					<span>Discovery</span>
-				</li>
-				<li class="">
-					<span>Research</span>
-				</li>
-				<li class="">
-					<span>Ideation</span>
-				</li>
-				<li class="">
-					<span>Wireframes</span>
-				</li>
-				<li class="">
-					<span>Solution</span>
-				</li>
-				<li class="">
-					<span>Reflections</span>
-				</li>
-			</ul>
+			<div class="project-nav-wrap is-hidden">
+				<a href="#overview" class="project-nav active">
+					<div class="project-nav-indicator"></div>
+					<div class="project-nav-text"><span>Overview</span></div>
+				</a>
+				<a href="#discovery" class="project-nav">
+					<div class="project-nav-indicator"></div>
+					<div class="project-nav-text"><span>Discovery</span></div>
+				</a>
+				<a href="#moodboard" class="project-nav">
+					<div class="project-nav-indicator"></div>
+					<div class="project-nav-text"><span>Mood Board</span></div>
+				</a>
+				<a href="#wireframes" class="project-nav">
+					<div class="project-nav-indicator"></div>
+					<div class="project-nav-text"><span>Wireframes</span></div>
+				</a>
+				<a href="#visualdesign" class="project-nav">
+					<div class="project-nav-indicator"></div>
+					<div class="project-nav-text"><span>Visual Design</span></div>
+				</a>
+				<a href="#reflections" class="project-nav">
+					<div class="project-nav-indicator"></div>
+					<div class="project-nav-text"><span>Reflections</span></div>
+				</a>
+			</div>		    
 
 		    <section class="project-content process-content pb-70">
 		    	<div class="container">
@@ -110,19 +113,22 @@
 		    		<div class="row pt-30">
 		    			<div class="col-lg-1"></div>
 		    			<div class="col-lg-10">
-		    				<section class="overview-wrap">
-    							<h3>Overview</h3>
+		    				<section class="overview-wrap" id="overview">
+    							<h3 class="mb-70">Overview</h3>
 
     							<div class="row">
     								<div class="col-lg-1"></div>
     								<div class="col-lg-4">
     									<section class="content-item">
 	    									<h4>Type</h4>
-	    									<p>Concept Redesign</p>
+	    									<p>Concept Project - Website Redesign</p>
 	    								</section>
 	    								<section class="content-item">
-	    									<h4>School</h4>
-	    									<p>School of Visual Concepts</p>
+	    									<h4>Program</h4>
+	    									<p>
+	    										School of Visual Concepts<br>
+	    										Visual Design for UX
+	    									</p>
 	    								</section>
 	    								<section class="content-item">
 	    									<h4>Role</h4>
@@ -133,7 +139,7 @@
     									<section class="content-item">
 	    									<h4>Background</h4>
 	    									<p>
-	    										The following project was completed as part of the Visual Design for UX course. The prompt was to redesign one of 3 local company websites: Fremont Brewing, Salt & Straw, or Top Pot.
+	    										The following project was completed in 5 weeks as part of the Visual Design for UX course. The prompt was to redesign one of 3 local company websites: Fremont Brewing, Salt & Straw, or Top Pot.
 	    										<br><br>
 	    										We were asked to take into account the company's personality and consider ways to improve upon their site's information architecture.
 	    									</p>
@@ -153,7 +159,7 @@
     								<div class="col-lg-2"></div>
     							</div>
 			    			</section>
-			    			<section class="discovery-wrap mt-100 mb-100">
+			    			<section class="discovery-wrap mt-100 mb-100" id="discovery">
 	    						<h3>Discovery</h3>
 
 	    						<div class="row mb-30">
@@ -199,7 +205,7 @@
 		    						</div>
 		    					</div>
 			    			</section>
-			    			<section class="moodboard-wrap mt-100 mb-100">
+			    			<section class="moodboard-wrap mt-100 mb-100" id="moodboard">
 	    						<h3>Mood Board</h3>
 
 	    						<div class="row">
@@ -229,7 +235,7 @@
 	    							</div>
 	    						</div>
 			    			</section>
-			    			<section class="wireframes-wrap mt-100 mb-100">
+			    			<section class="wireframes-wrap mt-100 mb-100" id="wireframes">
 	    						<h3>Wireframes - Initial Iteration</h3>
 
 	    						<div class="row">
@@ -300,7 +306,7 @@
 	    						</div>
 	    					</section>
 
-	    					<section class="visual-design-wrap mt-100 mb-100">
+	    					<section class="visual-design-wrap mt-100 mb-100" id="visualdesign">
 	    						<h3>Visual Design</h3>
 
 	    						<div class="row">
@@ -333,47 +339,29 @@
 	    						</div>
 	    					</section>
 
-			    			<section class="conclusion-wrap mt-100 mb-100">
-	    						<h3>In Conclusion</h3>
+			    			<section class="conclusion-wrap mt-100 mb-100" id="reflections">
+	    						<h3>Reflections</h3>
 	    						
 	    						<div class="row">
 	    							<div class="col-lg-2"></div>
 	    							<div class="col-lg-8">
+	    								<h4>In Conclusion</h4>
 	    								Fremont Brewing is such an iconic part of Seattle's beer history and I wanted their website to stand out as much as they do as a brewery. I wanted to provide them with something fun and something quirky, but also something sophisticated. While they play the fun, quirky, welcoming card really well (and it's something we Seattleites know and love about them), this tends to play down the level of craft they put into each beer they make. They are well regarded in the beer community and toning down some of their original shades and using a nice traditional serif for their main text brings in a level of sophistication back into the site.
 	    								<br><br>
 										Rethinking the flow of the site is something that will make the biggest impact. Their current navigation system is overwhelming and with a little restructuring we can ease some of the anxiety a user might face when trying to figure out what they should click on to find the information they're really after.
-									</div>
-									<div class="col-lg-2"></div>
-	    						</div>
-			    			</section>
 
-			    			<section class="conclusion-wrap mt-100 mb-100">
-	    						<h3>Struggles</h3>
-	    						
-	    						<div class="row">
-	    							<div class="col-lg-2"></div>
-	    							<div class="col-lg-8">
-	    								I struggled a lot with this color palette. My personal style leans quite neutral or mostly neutral with a pop of color, so working with an overly colorful palette was a challenge. I had a hard time visualizing the end result and ended up needing to make some adjustments between the wireframe phase and visual design phase because my original ideas and designs worked better for a more neutral palette with occasional pops of color.
+										<h4 class="mt-30">Struggles</h4>
+										I struggled a lot with this color palette. My personal style leans quite neutral or mostly neutral with a pop of color, so working with an overly colorful palette was a challenge. I had a hard time visualizing the end result and ended up needing to make some adjustments between the wireframe phase and visual design phase because my original ideas and designs worked better for a more neutral palette with occasional pops of color.
 	    								<br><br>
 										I also struggled to distance myself from my technical background. My first attempt at a mood board ended up being more of a style tile because I approached it from a technical viewpoint. I dove head first into choosing fonts and icon sets because that's what I'm familiar with. After feedback from the class I really had to take a step back and try to see this portion of the project from a more abstract viewpoint. I found out that I really liked it and was more pleased with my second attempt than my first. 
+
+										<h4 class="mt-30">What I'd Do Differently</h4>
+										With a longer timeline and more resources, I would have preferred to do some usability testing on their current site and really dive deep into the nitty gritty of their user's actions. I made quite a few assumptions about why users go to their site based on popular approaches in the industry and that doesn't quite sit well with me. 
+						    			<br><br>
+										There is a lot of information that is, clearly, important to their stakeholders, but likely not as important to the masses, and as such, we wouldn't want to put focus on those areas. Figuring out the main needs of their users would make all the difference in understanding the best flow for their site. 	
 									</div>
 									<div class="col-lg-2"></div>
 	    						</div>
-			    			</section>
-
-
-			    			<section class="conclusion-wrap mt-100 mb-100">
-			    				<h3>What I'd Do Differently</h3>
-
-			    				<div class="row">
-			    					<div class="col-lg-2"></div>
-			    					<div class="col-lg-8">
-			    						With a longer timeline and more resources, I would have preferred to do some usability testing on their current site and really dive deep into the nitty gritty of their user's actions. I made quite a few assumptions about why users go to their site based on popular approaches in the industry and that doesn't quite sit well with me. 
-						    			<br><br>
-										There is a lot of information that is, clearly, important to their stakeholders, but likely not as important to the masses, and as such, we wouldn't want to put focus on those areas. Figuring out the main needs of their users would make all the difference in understanding the best flow for their site. 	
-			    					</div>
-			    					<div class="col-lg-2"></div>
-			    				</div>
 			    			</section>
 		    			</div>
 		    			<div class="col-lg-1"></div>
@@ -396,7 +384,6 @@
 											c0.306,0.307,0.801,0.307,1.107,0c0.306-0.305,0.306-0.801,0-1.105l-4.184-4.185h14.656c0.436,0,0.788-0.353,0.788-0.788
 											S18.707,9.212,18.271,9.212z"></path>
 										</svg>
-										<!--<p class="thumb-text">Fremont Brewing</p>-->
 									</div>
 								</div>
 								<div class="project-control next">
