@@ -1758,145 +1758,145 @@ footer p, footer .social-links {
     display: none;
   }
 
-  /* line 1181, core.scss */
+  /*
   .tns-outer {
-    margin-top: 0px;
+  	margin-top: 0px;
   }
-
-  /* line 1186, core.scss */
+  */
+  /* line 1188, core.scss */
   .services-outer-wrap .services-outer-item {
     width: 50%;
     margin-bottom: 50px;
   }
 
-  /* line 1193, core.scss */
+  /* line 1195, core.scss */
   .clients-wrap .client-item {
     width: calc(50% - 20px);
     text-align: center;
   }
 }
 @media (max-width: 639px) {
-  /* line 1202, core.scss */
+  /* line 1204, core.scss */
   .is-desktop {
     display: none;
   }
 
-  /* line 1206, core.scss */
+  /* line 1208, core.scss */
   .pt-xs-20 {
     padding-top: 20px !important;
   }
 
-  /* line 1210, core.scss */
+  /* line 1212, core.scss */
   .pt-xs-30 {
     padding-top: 30px !important;
   }
 
-  /* line 1215, core.scss */
+  /* line 1217, core.scss */
   .homepage .small-header {
     display: block !important;
   }
 
-  /* line 1222, core.scss */
+  /* line 1224, core.scss */
   nav .nav-wrap .nav-item {
     margin: 0 13px;
   }
 
-  /* line 1228, core.scss */
+  /* line 1230, core.scss */
   .tagline-content {
     padding: 130px 0 60px 0;
   }
-  /* line 1231, core.scss */
+  /* line 1233, core.scss */
   .tagline-content .tagline-text {
     width: 80%;
   }
 
-  /* line 1236, core.scss */
+  /* line 1238, core.scss */
   .content-row {
     padding-top: 60px;
   }
 
-  /* line 1240, core.scss */
+  /* line 1242, core.scss */
   .content-wrap {
     display: block;
     width: 100vw;
     overflow: hidden;
   }
 
-  /* line 1246, core.scss */
+  /* line 1248, core.scss */
   .tns-outer {
     margin-top: 40px;
   }
 
-  /* line 1250, core.scss */
+  /* line 1252, core.scss */
   .main-carousel {
     margin: 0px;
   }
 
-  /* line 1255, core.scss */
+  /* line 1257, core.scss */
   .services-outer-wrap .services-outer-item {
     width: 100vw;
     margin-bottom: 50px;
   }
 
-  /* line 1262, core.scss */
+  /* line 1264, core.scss */
   .clients-wrap .client-item {
     width: 100%;
     text-align: center;
   }
 
-  /* line 1268, core.scss */
+  /* line 1270, core.scss */
   .project-content {
     padding-top: 70px;
   }
-  /* line 1271, core.scss */
+  /* line 1273, core.scss */
   .project-content .project-background {
     padding: 20px;
   }
 
-  /* line 1276, core.scss */
+  /* line 1278, core.scss */
   .projects-content {
     padding-top: 70px;
   }
 
-  /* line 1281, core.scss */
+  /* line 1283, core.scss */
   .projects-wrap .project {
     width: 100vw;
   }
 
-  /* line 1286, core.scss */
+  /* line 1288, core.scss */
   .extra-wrap {
     width: 100vw;
   }
 
-  /* line 1290, core.scss */
+  /* line 1292, core.scss */
   .filters-wrap {
     justify-content: center;
     margin-top: 30px;
   }
 
-  /* line 1295, core.scss */
+  /* line 1297, core.scss */
   .process-content {
     padding-top: 70px;
     min-height: calc(100vh - 93px);
   }
 
-  /* line 1300, core.scss */
+  /* line 1302, core.scss */
   .contact-content {
     height: 100%;
     padding-top: 70px;
   }
 
-  /* line 1305, core.scss */
+  /* line 1307, core.scss */
   .headshot-wrap {
     margin-top: 30px;
   }
 
-  /* line 1310, core.scss */
+  /* line 1312, core.scss */
   .fremont .sitemap-wrap {
     text-align: center;
   }
 
-  /* line 1315, core.scss */
+  /* line 1317, core.scss */
   .social-links {
     width: 100%;
   }
