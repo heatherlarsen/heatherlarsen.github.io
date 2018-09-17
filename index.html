@@ -16,16 +16,24 @@
 	    <!-- Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125861897-1"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+			var gaID;
+			if (window.location.host.indexOf('heatherlarsenux.com') > -1) {
+				// Production ID
+				gaID = "UA-125861897-1";
+			} else {
+				// Staging ID
+				gaID = "UA-125861897-2";
+			}
 
-		  gtag('config', 'UA-125861897-1');
-		</script>
 
-		<script>
+		  	window.dataLayer = window.dataLayer || [];
+		  	function gtag(){dataLayer.push(arguments);}
+		  	gtag('js', new Date());
+
+		  	gtag('config', gaID);
+
 			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', 'UA-125861897-1', 'auto');
+			ga('create', gaID, 'auto');
 			ga('send', 'pageview');
 		</script>
 		<script async src='https://www.google-analytics.com/analytics.js'></script>
