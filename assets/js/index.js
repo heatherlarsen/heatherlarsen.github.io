@@ -18,6 +18,8 @@ $(function() {
 		initFilters();
 	}
 
+	initAnalytics();
+
 	/*
 	if (pageType === "project") {
 		initProjectNav();

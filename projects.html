@@ -10,6 +10,24 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    	<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125861897-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-125861897-1');
+		</script>
+
+		<script>
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-125861897-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+		<!-- End Google Analytics -->
+
 	    <!-- CSS -->
 	    <link href="https://fonts.googleapis.com/css?family=Karla|Work+Sans:300,700" rel="stylesheet">
 	    <link href="assets/min/styles.min.css" rel="stylesheet">
@@ -26,7 +44,7 @@
 					<div class="col-lg-5 col-5">
 						<header class="header-wrap">
 							<div class="header">
-								<a href="index.html" class="logo">Heather Larsen</a>
+								<a href="index.html" class="logo js-ga" data-ga="Navigation, Homepage">Heather Larsen</a>
 							</div>
 						</header>
 					</div>
@@ -34,10 +52,10 @@
 						<nav class="nav-buttons">
 							<ul class="nav-wrap">
 								<li class="nav-item">
-									<a class="underline active" href="projects.html">Projects</a>
+									<a class="underline active js-ga" href="projects.html" data-ga="Navigation, Projects">Projects</a>
 								</li>
 								<li class="nav-item">
-									<a class="underline" href="sayhi.html">Say Hi</a>
+									<a class="underline js-ga" href="sayhi.html" data-ga="Navigation, Contact">Say Hi</a>
 								</li>
 							</ul>
 						</nav>
@@ -57,7 +75,7 @@
 	    				<div class="col-10">
 	    					<ul class="breadcrumbs">
 	    						<li class="breadcrumb">
-	    							<a href="index.html">Home</a><span>\\</span>
+	    							<a href="index.html" class="js-ga" data-ga="Breadcrumb, Homepage">Home</a><span>\\</span>
 	    						</li>
 	    						<li class="breadcrumb active">
 	    							<span>Projects</span>
@@ -79,9 +97,9 @@
 		    			<div class="col-lg-5 col-12">
 		    				<!-- filters -->
 		    				<ul class="filters-wrap">
-		    					<li class="pill filter" data-filter="design">Design</li>
-		    					<li class="pill filter" data-filter="development">Development</li>
-		    					<li class="pill filter selected" data-filter="all">All</li>
+		    					<li class="pill filter js-ga" data-filter="design" data-ga="Filters, Design">Design</li>
+		    					<li class="pill filter js-ga" data-filter="development" data-ga="Filters, Development">Development</li>
+		    					<li class="pill filter selected js-ga" data-filter="all" data-ga="Filters, All">All</li>
 		    				</ul>
 		    				<!-- /filters -->
 		    			</div>
@@ -91,7 +109,7 @@
 		    			<section class="content-wrap">
 		    				<div class="col-lg-1"></div>
 		    				<div class="col-lg-10 projects-wrap">
-	    						<a href="fremont.html" class="project filterable-project" data-project="Fremont Brewing" data-type="design">
+	    						<a href="fremont.html" class="project filterable-project js-ga" data-project="Fremont Brewing" data-type="design" data-ga="Projects, Fremont">
 	    							<div class="project-img"><img src="assets/images/projects/site-tease-fremont-large.png"></div>
 	    							<div class="project-content">
 	    								<h3>
@@ -101,7 +119,7 @@
 	    								</h3>
 	    							</div>
 	    						</a>
-	    						<a href="takethestage.html" class="project filterable-project" data-project="Take The Stage" data-type="design">
+	    						<a href="takethestage.html" class="project filterable-project js-ga" data-project="Take The Stage" data-type="design" data-ga="Projects, Take The Stage">
 	    							<div class="project-img"><img src="assets/images/projects/site-tease-tts-large.png"></div>
 	    							<div class="project-content">
 	    								<h3>
@@ -111,7 +129,7 @@
 	    								</h3>
 	    							</div>
 	    						</a>
-	    						<a href="normanregional.html" class="project filterable-project" data-project="Norman Regional" data-type="design">
+	    						<a href="normanregional.html" class="project filterable-project js-ga" data-project="Norman Regional" data-type="design" data-ga="Projects, Norman Regional">
 	    							<div class="project-img"><img src="assets/images/projects/site-tease-norman-regional-large.png"></div>
 	    							<div class="project-content">
 	    								<h3>
@@ -121,7 +139,7 @@
 	    								</h3>
 	    							</div>
 	    						</a>
-	    						<a href="ustrust.html" class="project filterable-project" data-project="US Trust" data-type="design, development">
+	    						<a href="ustrust.html" class="project filterable-project js-ga" data-project="US Trust" data-type="design, development" data-ga="Projects, US Trust">
 	    							<div class="project-img"><img src="assets/images/projects/site-tease-ust-large.png"></div>
 	    							<div class="project-content">
 	    								<h3>
@@ -131,7 +149,7 @@
 	    								</h3>
 	    							</div>
 	    						</a>
-	    						<a href="scrubsandbeyond.html" class="project filterable-project" data-project="Scrubs and Beyond" data-type="development">
+	    						<a href="scrubsandbeyond.html" class="project filterable-project js-ga" data-project="Scrubs and Beyond" data-type="development" data-ga="Projects, Scrubs and Beyond">
 	    							<div class="project-img"><img src="assets/images/projects/site-tease-scrubs-and-beyond-large.png"></div>
 	    							<div class="project-content">
 	    								<h3>
@@ -151,7 +169,7 @@
 	    									<li>SingleCare</li>
 	    									<li>Wilmington Trust</li>
 	    								</ul>
-	    								<a href="mailto: heatherlarsenux@gmail.com">ask about them</a>
+	    								<a href="mailto: heatherlarsenux@gmail.com" class="js-ga" data-ga="Links, Pipeline - ask about them">ask about them</a>
 	    							</div>
 	    						</section>
     						</div>
@@ -161,7 +179,7 @@
 		    		<div class="row pt-70">
 		    			<div class="col-lg-1"></div>
 		    			<div class="col-lg-10">
-		    				<h2>just for fun</h2>
+		    				<h2>for fun</h2>
 		    			</div>
 		    			<div class="col-lg-1"></div>
 		    		</div>
@@ -170,7 +188,7 @@
 		    			<div class="col-lg-10 projects-wrap">
 		    				<section class="project">
 								<div class="project-img">
-									<a href="assets/images/projects/daily-ui/001-dribbble-shot-2x.png" data-fancybox="just-for-fun" data-caption="Daily UI Prompt #001 - Sign Up">
+									<a href="assets/images/projects/daily-ui/001-dribbble-shot-2x.png" class="js-ga" data-fancybox="just-for-fun" data-caption="Daily UI Prompt #001 - Sign Up" data-ga="For Fun, UI 001 - Sign Up">
 		    							<img src="assets/images/projects/daily-ui/001-dribbble-shot-2x.png">
 		    						</a>
 								</div>
@@ -180,7 +198,7 @@
 							</section>
 							<section class="project">
 								<div class="project-img">
-									<a href="assets/images/projects/daily-ui/002-preview-2x.png" data-fancybox="just-for-fun" data-caption="Daily UI Prompt #002 - Credit Card Checkout">
+									<a href="assets/images/projects/daily-ui/002-preview-2x.png" class="js-ga" data-fancybox="just-for-fun" data-caption="Daily UI Prompt #002 - Credit Card Checkout" data-ga="For Fun, UI 002 - Credit Card Checkout">
 		    							<img src="assets/images/projects/daily-ui/002-preview-2x.png">
 		    						</a>
 								</div>
@@ -202,19 +220,19 @@
 	    	<p>Designed & Developed by Heather Larsen. 2018 &copy; <!--<a href="thanks.html">Thanks.</a>--></p>
 	    	<ul class="social-links">
 	    		<li>
-	    			<a href="https://www.behance.net/heatherlar620a" target="_blank">Behance</a>
+	    			<a href="https://www.behance.net/heatherlar620a" target="_blank" class="js-ga" data-ga="Social, Behance">Behance</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://dribbble.com/heatherlarsen" target="_blank">Dribbble</a>
+	    			<a href="https://dribbble.com/heatherlarsen" target="_blank" class="js-ga" data-ga="Social, Dribbble">Dribbble</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://www.linkedin.com/in/heatherlarsen/" target="_blank">LinkedIn</a>
+	    			<a href="https://www.linkedin.com/in/heatherlarsen/" target="_blank" class="js-ga" data-ga="Social, LinkedIn">LinkedIn</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://github.com/heatherlarsen" target="_blank">Github</a>
+	    			<a href="https://github.com/heatherlarsen" target="_blank" class="js-ga" data-ga="Social, Github">Github</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://www.pinterest.com/heatherlarsenux/" target="_blank">Pinterest</a>
+	    			<a href="https://www.pinterest.com/heatherlarsenux/" target="_blank" class="js-ga" data-ga="Social, Pinterest">Pinterest</a>
 	    		</li>
 	    	</ul>
 	    </footer>
