@@ -10,7 +10,31 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-	    <!-- Site Validations  -->
+	    <!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125861897-1"></script>
+		<script>
+			var gaID;
+			if (window.location.host.indexOf('heatherlarsenux.com') > -1) {
+				// Production ID
+				gaID = "UA-125861897-1";
+			} else {
+				// Staging ID
+				gaID = "UA-125861897-2";
+			}
+
+
+		  	window.dataLayer = window.dataLayer || [];
+		  	function gtag(){dataLayer.push(arguments);}
+		  	gtag('js', new Date());
+
+		  	gtag('config', gaID);
+
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', gaID, 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+		<!-- End Google Analytics -->
 
 	    <!-- CSS -->
 	    <link href="https://fonts.googleapis.com/css?family=Karla|Work+Sans:300,700" rel="stylesheet">
@@ -28,7 +52,7 @@
 					<div class="col-lg-5 col-5">
 						<header class="header-wrap">
 							<div class="header">
-								<a href="index.html" class="logo">Heather Larsen</a>
+								<a href="index.html" class="logo js-ga" data-ga="Navigation, Homepage">Heather Larsen</a>
 							</div>
 						</header>
 					</div>
@@ -36,10 +60,10 @@
 						<nav class="nav-buttons">
 							<ul class="nav-wrap">
 								<li class="nav-item">
-									<a class="underline" href="projects.html">Projects</a>
+									<a class="underline js-ga" href="projects.html" data-ga="Navigation, Projects">Projects</a>
 								</li>
 								<li class="nav-item">
-									<a class="underline" href="sayhi.html">Say Hi</a>
+									<a class="underline js-ga" href="sayhi.html" data-ga="Navigation, Contact">Say Hi</a>
 								</li>
 							</ul>
 						</nav>
@@ -59,10 +83,10 @@
 	    				<div class="col-10">
 	    					<ul class="breadcrumbs">
 	    						<li class="breadcrumb">
-	    							<a href="index.html">Home</a><span>\\</span>
+	    							<a href="index.html" class="js-ga" data-ga="Breadcrumb, Homepage">Home</a><span>\\</span>
 	    						</li>
 	    						<li class="breadcrumb">
-	    							<a href="projects.html">All Projects</a><span>\\</span>
+	    							<a href="projects.html" class="js-ga" data-ga="Breadcrumb, All Projects">All Projects</a><span>\\</span>
 	    						</li>
 	    						<li class="breadcrumb active">
 	    							<span>Fremont Brewing</span>
@@ -174,7 +198,7 @@
 			    						</section>
 	    							</div>
 	    							<div class="col-lg-6 sitemap-wrap">
-	    								<a href="assets/images/projects/fremont/fremont-sitemap.png" data-fancybox="fremont" data-caption="Fremont Brewing Sitemap">
+	    								<a href="assets/images/projects/fremont/fremont-sitemap.png" class="js-ga" data-fancybox="fremont" data-caption="Fremont Brewing Sitemap" data-ga="Fremont Brewing, Sitemap">
 	    									<img src="assets/images/projects/fremont/fremont-sitemap.png" class="sitemap">
 	    								</a>
 	    							</div>
@@ -222,13 +246,13 @@
 
 	    						<div class="row mb-30">
 	    							<div class="col-lg-6">
-	    								<a href="assets/images/projects/fremont/fremont-mood-board.jpg" data-fancybox="fremont" data-caption="Moodboard - Initial Attempt">
+	    								<a href="assets/images/projects/fremont/fremont-mood-board.jpg" class="js-ga" data-fancybox="fremont" data-caption="Moodboard - Initial Attempt" data-ga="Fremont Brewing, Mood Board 001">
 											<img src="assets/images/projects/fremont/fremont-mood-board.jpg" class="image-border">
 										</a>
 										<p class="image-caption">Moodboard - Initial Attempt</p>
 	    							</div>
 	    							<div class="col-lg-6">
-	    								<a href="assets/images/projects/fremont/fremont-mood-board-v2.png" data-fancybox="fremont" data-caption="Moodboard - Final Attempt">
+	    								<a href="assets/images/projects/fremont/fremont-mood-board-v2.png" class="js-ga" data-fancybox="fremont" data-caption="Moodboard - Final Attempt" data-ga="Fremont Brewing, Mood Board 002">
 											<img src="assets/images/projects/fremont/fremont-mood-board-v2.png" class="image-border">
 										</a>
 										<p class="image-caption">Moodboard - Final Attempt</p>
@@ -248,13 +272,13 @@
 
 	    						<div class="row mb-30">
 	    							<div class="col-lg-6">
-	    								<a href="assets/images/projects/fremont/concept1-v1.png" data-fancybox="fremont" data-caption="Concept #1">
+	    								<a href="assets/images/projects/fremont/concept1-v1.png" class="js-ga" data-fancybox="fremont" data-caption="Concept #1" data-ga="Fremont Brewing, Concept #1 Wireframe">
 	    									<img src="assets/images/projects/fremont/concept1-v1.png" class="image-border">
 	    								</a>
 	    								<p class="image-caption">Concept #1</p>
 	    							</div>
 	    							<div class="col-lg-6">
-	    								<a href="assets/images/projects/fremont/concept2-v1.png" data-fancybox="fremont" data-caption="Concept #2">
+	    								<a href="assets/images/projects/fremont/concept2-v1.png" class="js-ga" data-fancybox="fremont" data-caption="Concept #2" data-ga="Fremont Brewing, Concept #2 Wireframe">
 	    									<img src="assets/images/projects/fremont/concept2-v1.png" class="image-border">
 	    								</a>
 	    								<p class="image-caption">Concept #2</p>
@@ -292,13 +316,13 @@
 
 	    						<div class="row mb-30">
 	    							<div class="col-lg-6">
-	    								<a href="assets/images/projects/fremont/concept2-v2-homepage.png" data-fancybox="fremont" data-caption="Homepage">
+	    								<a href="assets/images/projects/fremont/concept2-v2-homepage.png" class="js-ga" data-fancybox="fremont" data-caption="Homepage" data-ga="Fremont Brewing, Concept #2 Wireframe - Revision">
 	    									<img src="assets/images/projects/fremont/concept2-v2-homepage.png" class="image-border">
 	    								</a>
 	    								<p class="image-caption">Homepage</p>
 	    							</div>
 	    							<div class="col-lg-6">
-	    								<a href="assets/images/projects/fremont/concept2-v2-beerdetails.png" data-fancybox="fremont" data-caption="Beer Details">
+	    								<a href="assets/images/projects/fremont/concept2-v2-beerdetails.png" class="js-ga" data-fancybox="fremont" data-caption="Beer Details" data-ga="Fremont Brewing, Concept #2 - Beer Details">
 	    									<img src="assets/images/projects/fremont/concept2-v2-beerdetails.png" class="image-border">
 	    								</a>
 	    								<p class="image-caption">Beer Details</p>
@@ -330,7 +354,7 @@
 	    						<div class="row mb-30">
 	    							<div class="col-lg-1"></div>
 	    							<div class="col-lg-10">
-	    								<a href="assets/images/projects/fremont/visual-full.png" data-fancybox="fremont" data-caption="Visual Designs">
+	    								<a href="assets/images/projects/fremont/visual-full.png" class="js-ga" data-fancybox="fremont" data-caption="Visual Designs" data-ga="Fremont Brewing, Visual Designs">
 	    									<img src="assets/images/projects/fremont/visual-full.png" class="image-border">
 	    								</a>
 	    								<p class="image-caption">Visual Designs</p>
@@ -386,7 +410,7 @@
 										</svg>
 									</div>
 								</div>
-								<div class="project-control next">
+								<div class="project-control next js-ga" data-ga="Project Controls, Take the Stage">
 									<!-- image thumbnail -->
 									<a href="takethestage.html" class="thumb-wrap">
 										<p class="thumb-text">Take the Stage</p>
@@ -414,19 +438,19 @@
 	    	<p>Designed & Developed by Heather Larsen. 2018 &copy; <!--<a href="thanks.html">Thanks.</a>--></p>
 	    	<ul class="social-links">
 	    		<li>
-	    			<a href="https://www.behance.net/heatherlar620a" target="_blank">Behance</a>
+	    			<a href="https://www.behance.net/heatherlar620a" target="_blank" class="js-ga" data-ga="Social, Behance">Behance</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://dribbble.com/heatherlarsen" target="_blank">Dribbble</a>
+	    			<a href="https://dribbble.com/heatherlarsen" target="_blank" class="js-ga" data-ga="Social, Dribbble">Dribbble</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://www.linkedin.com/in/heatherlarsen/" target="_blank">LinkedIn</a>
+	    			<a href="https://www.linkedin.com/in/heatherlarsen/" target="_blank" class="js-ga" data-ga="Social, LinkedIn">LinkedIn</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://github.com/heatherlarsen" target="_blank">Github</a>
+	    			<a href="https://github.com/heatherlarsen" target="_blank" class="js-ga" data-ga="Social, Github">Github</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://www.pinterest.com/heatherlarsenux/" target="_blank">Pinterest</a>
+	    			<a href="https://www.pinterest.com/heatherlarsenux/" target="_blank" class="js-ga" data-ga="Social, Pinterest">Pinterest</a>
 	    		</li>
 	    	</ul>
 	    </footer>
