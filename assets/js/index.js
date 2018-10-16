@@ -20,6 +20,8 @@ $(function() {
 
 	initAnalytics();
 
+	initHamburgerMenu();
+
 	/*
 	if (pageType === "project") {
 		initProjectNav();
@@ -152,5 +154,15 @@ function initFilters() {
 			});
 		}
 
+	});
+}
+
+function initHamburgerMenu() {
+	if (debug) console.log('initHamburgerMenu()');
+
+	$('.hamburger-menu').on('click', function() {
+		$(this).find('.bars').toggleClass('is-hidden');
+		$(this).find('.close').toggleClass('is-hidden');
+		$('.nav-buttons').toggleClass('is-desktop');
 	});
 }

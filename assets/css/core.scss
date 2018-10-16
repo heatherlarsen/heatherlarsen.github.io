@@ -363,6 +363,13 @@ ol {
 	}
 }
 
+.hamburger-menu {
+	//float: right;
+    line-height: 80px;
+    position: absolute;
+    right: 10px;
+}
+
 // navigation
 nav {
 	height: 80px;
@@ -1326,6 +1333,10 @@ footer {
         display: none;
     }
 
+    .is-tablet {
+    	display: block;
+    }
+
     .services-outer-wrap {
 		.services-outer-item {
 			margin-bottom: 50px;
@@ -1359,6 +1370,22 @@ footer {
     			margin: 0 13px;
     		}
     	}
+    }
+
+    .nav-buttons {
+    	background: $color-yellow;
+        width: 100vw;
+	    position: absolute;
+	    left: 0;
+	    z-index: 100;
+	    top: 0;
+	    -webkit-box-shadow: 0 10px 25px 0 rgba(0,0,0,.05);
+	    -moz-box-shadow: 0 10px 25px 0 rgba(0,0,0,.05);
+	    box-shadow: 0 10px 25px 0 rgba(0,0,0,.05);
+
+	    .nav-wrap {
+	    	justify-content: space-around;
+	    }
     }
 
     .tagline-content {
