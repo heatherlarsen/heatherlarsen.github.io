@@ -41,7 +41,7 @@
 	    <link href="assets/min/styles.min.css" rel="stylesheet">
 	</head>
 
-	<body data-page="projects">
+	<body class="projects" data-page="projects">
 	    <!-- analytics code -->
 
 		<!-- small header -->
@@ -60,10 +60,13 @@
 						<nav class="nav-buttons">
 							<ul class="nav-wrap">
 								<li class="nav-item">
-									<a class="underline active js-ga" href="projects.html" data-ga="Navigation, Projects">Projects</a>
+									<a class="underline js-ga" data-ga="Navigation, Projects" href="projects.html">Projects</a>
 								</li>
 								<li class="nav-item">
-									<a class="underline js-ga" href="sayhi.html" data-ga="Navigation, Contact">Say Hi</a>
+									<a class="underline js-ga" data-ga="Navigation, Resume" href="assets/images/HeatherLarsen_Resume_Oct2018.pdf" target="_blank">Resume</a>
+								</li>
+								<li class="nav-item">
+									<a class="underline js-ga" data-ga="Navigation, Contact" href="contact.html">Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -99,17 +102,8 @@
 		    	<div class="container">
 		    		<div class="row pt-70">
 		    			<div class="col-lg-1"></div>
-		    			<div class="col-lg-5 col-12">
-		    				<h2>projects</h2>
-		    			</div>
-		    			<div class="col-lg-5 col-12">
-		    				<!-- filters -->
-		    				<ul class="filters-wrap">
-		    					<li class="pill filter js-ga" data-filter="design" data-ga="Filters, Design">Design</li>
-		    					<li class="pill filter js-ga" data-filter="development" data-ga="Filters, Development">Development</li>
-		    					<li class="pill filter selected js-ga" data-filter="all" data-ga="Filters, All">All</li>
-		    				</ul>
-		    				<!-- /filters -->
+		    			<div class="col-lg-10">
+		    				<h2>case studies</h2>
 		    			</div>
 		    			<div class="col-lg-1"></div>
 		    		</div>
@@ -117,7 +111,7 @@
 		    			<section class="content-wrap">
 		    				<div class="col-lg-1"></div>
 		    				<div class="col-lg-10 projects-wrap">
-	    						<a href="fremont.html" class="project filterable-project js-ga" data-project="Fremont Brewing" data-type="design" data-ga="Projects, Fremont">
+	    						<a href="fremont.html" class="project js-ga" data-project="Fremont Brewing" data-type="design" data-ga="Projects, Fremont">
 	    							<div class="project-img"><img src="assets/images/projects/site-tease-fremont-large.png"></div>
 	    							<div class="project-content">
 	    								<h3>
@@ -127,62 +121,72 @@
 	    								</h3>
 	    							</div>
 	    						</a>
-	    						<a href="takethestage.html" class="project filterable-project js-ga" data-project="Take The Stage" data-type="design" data-ga="Projects, Take The Stage">
+	    						<a href="takethestage.html" class="project js-ga" data-project="Take The Stage" data-type="design" data-ga="Projects, Take The Stage">
 	    							<div class="project-img"><img src="assets/images/projects/site-tease-tts-large.png"></div>
 	    							<div class="project-content">
 	    								<h3>
 	    									Take The Stage
-	    									<span>Research & iOS App Design</span>
+	    									<span>iOS App Design</span>
 	    									<span>A Concept Project</span>
 	    								</h3>
 	    							</div>
 	    						</a>
-	    						<a href="normanregional.html" class="project filterable-project js-ga" data-project="Norman Regional" data-type="design" data-ga="Projects, Norman Regional">
-	    							<div class="project-img"><img src="assets/images/projects/site-tease-norman-regional-large.png"></div>
-	    							<div class="project-content">
-	    								<h3>
-	    									Norman Regional
-	    									<span>Responsive Web Design</span>
-	    									<span>A Rio SEO Project</span>
-	    								</h3>
-	    							</div>
-	    						</a>
-	    						<a href="ustrust.html" class="project filterable-project js-ga" data-project="US Trust" data-type="design, development" data-ga="Projects, US Trust">
-	    							<div class="project-img"><img src="assets/images/projects/site-tease-ust-large.png"></div>
-	    							<div class="project-content">
-	    								<h3>
-	    									US Trust
-	    									<span>RWD &amp; Development</span>
-	    									<span>A Rio SEO Project</span>
-	    								</h3>
-	    							</div>
-	    						</a>
-	    						<a href="scrubsandbeyond.html" class="project filterable-project js-ga" data-project="Scrubs and Beyond" data-type="development" data-ga="Projects, Scrubs and Beyond">
-	    							<div class="project-img"><img src="assets/images/projects/site-tease-scrubs-and-beyond-large.png"></div>
-	    							<div class="project-content">
-	    								<h3>
-	    									Scrubs &amp; Beyond
-	    									<span>Development</span>
-	    									<span>A Rio SEO Project</span>
-	    								</h3>
-	    							</div>
-	    						</a>
-
-	    						<section class="extra-wrap">
-	    							<div class="extra-content">
-	    								<h4>Projects in pipeline</h4>
-	    								<ul>
-	    									<li>Bealls</li>
-	    									<li>CVS - MinuteClinic</li>
-	    									<li>SingleCare</li>
-	    									<li>Wilmington Trust</li>
-	    								</ul>
-	    								<a href="mailto: heatherlarsenux@gmail.com" class="js-ga" data-ga="Links, Pipeline - ask about them">ask about them</a>
-	    							</div>
-	    						</section>
     						</div>
     						<div class="col-lg-1"></div>
 		    			</section>
+		    		</div>
+		    		<div class="row pt-70">
+		    			<div class="col-lg-1"></div>
+		    			<div class="col-lg-5 col-12">
+		    				<h2>other projects</h2>
+		    			</div>
+		    			<div class="col-lg-5 col-12">
+		    				<!-- filters -->
+		    				<ul class="filters-wrap">
+		    					<li class="filter-text">filter: </li>
+		    					<li class="pill filter js-ga" data-filter="design" data-ga="Filters, Design">Design</li>
+		    					<li class="pill filter js-ga" data-filter="development" data-ga="Filters, Development">Development</li>
+		    					<li class="pill filter selected js-ga" data-filter="all" data-ga="Filters, All">All</li>
+		    				</ul>
+		    				<!-- /filters -->
+		    			</div>
+		    			<div class="col-lg-1"></div>
+		    		</div>
+		    		<div class="row pt-70 pt-xs-30">
+		    			<div class="col-lg-1"></div>
+		    			<div class="col-lg-10 projects-wrap">
+		    				<a href="normanregional.html" class="project filterable-project js-ga" data-project="Norman Regional" data-type="design" data-ga="Projects, Norman Regional">
+    							<div class="project-img"><img src="assets/images/projects/site-tease-norman-regional-large.png"></div>
+    							<div class="project-content">
+    								<h3>
+    									Norman Regional
+    									<span>Responsive Web Design</span>
+    									<span>A Rio SEO Project</span>
+    								</h3>
+    							</div>
+    						</a>
+    						<a href="ustrust.html" class="project filterable-project js-ga" data-project="US Trust" data-type="design, development" data-ga="Projects, US Trust">
+    							<div class="project-img"><img src="assets/images/projects/site-tease-ust-large.png"></div>
+    							<div class="project-content">
+    								<h3>
+    									US Trust
+    									<span>RWD &amp; Development</span>
+    									<span>A Rio SEO Project</span>
+    								</h3>
+    							</div>
+    						</a>
+    						<a href="scrubsandbeyond.html" class="project filterable-project js-ga" data-project="Scrubs and Beyond" data-type="development" data-ga="Projects, Scrubs and Beyond">
+    							<div class="project-img"><img src="assets/images/projects/site-tease-scrubs-and-beyond-large.png"></div>
+    							<div class="project-content">
+    								<h3>
+    									Scrubs &amp; Beyond
+    									<span>Development</span>
+    									<span>A Rio SEO Project</span>
+    								</h3>
+    							</div>
+    						</a>
+		    			</div>
+		    			<div class="col-lg-1"></div>
 		    		</div>
 		    		<div class="row pt-70">
 		    			<div class="col-lg-1"></div>
@@ -249,10 +253,6 @@
 	    <!-- Schema.org -->
 
 	    <!-- JavaScript -->
-	    <script
-		  src="https://code.jquery.com/jquery-3.3.1.min.js"
-		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		  crossorigin="anonymous"></script>
 		 <script type="text/javascript" src="assets/min/scripts.min.js"></script>
 	</body>
 </html>

@@ -13,6 +13,7 @@ module.exports = function(grunt) {
                 files: {
                     'assets/min/scripts.min.js': [
                         //'node_modules/aos/dist/aos.js',
+                        'node_modules/jquery/dist/jquery.min.js',
                         'node_modules/tiny-slider/dist/tiny-slider.js',
                         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
                         'assets/js/helpers.js',

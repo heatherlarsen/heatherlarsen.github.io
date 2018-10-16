@@ -14,10 +14,15 @@ html, body {
 }
 
 body {
+	background: $body-bg;
+	font-family: $body-font-face;
+	font-size: $body-font-size;
+	letter-spacing: 0.75px;
+	line-height: 21px;
 	overflow-x: hidden;
 }
 
-h1 {
+h1.lg-name {
 	margin: 30px 0;
 	font-size: 60px;
 	text-align: center;
@@ -72,14 +77,6 @@ h3 {
     font-weight: 700;
     letter-spacing: 3.5px;
     margin-bottom: 7px;
-}
-
-body {
-	background: $body-bg;
-	font-family: $body-font-face;
-	font-size: $body-font-size;
-	letter-spacing: 0.75px;
-	line-height: 21px;
 }
 
 a {
@@ -140,12 +137,28 @@ a {
   	}
 }
 
+.outside-link {
+	color: $color-yellow;
+
+	svg {
+		vertical-align: text-bottom;
+
+		path {
+			fill: $color-yellow;
+		}
+	}
+}
+
 .underline-text {
 	text-decoration: underline;
 }
 
 ul {
 	list-style: none;
+}
+
+ol {
+	margin-left: 20px;
 }
 
 .list-spacing {
@@ -191,13 +204,50 @@ ul {
 	font-style: italic;
 }
 
+.emphasize-bg {
+	background: $color-yellow;
+	color: $color-dark;
+	padding: 20px 20px 30px 20px;
+    margin: 30px 0;
+}
+
 .button {
 	background: $color-yellow;
-	color: $color-white;
-    padding: 15px;
+	color: $color-dark;
+    padding: 15px 20px;
     font-weight: normal;
     font-size: 12px;
+    border-radius: 30px;
+    display: inline-block;
+    -webkit-box-shadow: 0 10px 25px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 10px 25px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,0.1);
 }
+
+.project-button {
+	text-align: center;
+}
+
+.container-fluid {
+	padding: 70px;
+	background: $color-light;
+	margin: 30px 0;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+// page specific
+
 
 // logo
 .logo {
@@ -206,10 +256,12 @@ ul {
 	font-family: $header-font-face;
 
 	h1 {
+		font-family: $header-font-face;
 		font-size: $header-font-size;
 	    font-weight: normal;
 	    line-height: 147px;
 	    text-align: left;
+	    text-transform: none;
 	    color: $color-dark;
 	}
 }
@@ -477,6 +529,37 @@ nav {
 	}
 }
 
+.hero-content {
+	background: $color-yellow;
+    background: -moz-linear-gradient(-45deg, $color-yellow 0%, $color-light 100%);
+    background: -webkit-linear-gradient(-45deg, $color-yellow 0%,$color-light 100%);
+    background: linear-gradient(165deg, $color-yellow 0%,$color-light 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '$color-yellow', endColorstr='$color-light',GradientType=1 );
+    padding: 160px 0 80px 0;
+
+    .hero-header {
+    	color: $color-white;
+    	font-size: 44px;
+    	font-family: 'Work Sans',Helvetica,sans-serif;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    letter-spacing: 3.5px;
+	    line-height: 44px;
+
+	    &:after {
+	    	content: '';
+		    display: block;
+		    width: 53px;
+		    border-bottom: 3px solid $color-white;
+		    padding-top: 20px;
+	    }
+    }
+
+    .hero-tagline {
+    	color: $color-white;
+    }
+}
+
 .breadcrumb-content {
 	.content-row {
 		padding-top: 0px;
@@ -673,10 +756,7 @@ nav {
 }
 
 .services-outer-wrap {
-	display: flex;
-	justify-content: space-between;
     margin-top: 45px;
-    flex-wrap: wrap;
 
     .services-outer-item {
     	text-align: left;
@@ -704,14 +784,10 @@ nav {
 }
 
 .clients-wrap {
-	display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
     .client-item {
-    	width: 20%;
 		vertical-align: middle;
-		margin: 45px 10px;
+		margin: 45px 0;
+		text-align: center;
 
     	.client-image {
     		max-width: 150px;
@@ -723,6 +799,46 @@ nav {
 
 .process-content {
 	min-height: calc(100vh - 211px);
+}
+
+.section-title {
+	letter-spacing: 3px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    margin: 10px 0 5px 0;
+}
+
+.section-header {
+	line-height: 1.7;
+	text-transform: none;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 2em;
+    letter-spacing: 0.3px;
+}
+
+.section-desc {
+	font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.section-image {
+	width: 100%;
+}
+
+.ca-icon-wrap {
+	display: block;
+	text-align: center;
+
+	span {
+		display: block;
+	    font-weight: 700;
+	    margin-bottom: 10px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    font-size: 12px;
+	}
 }
 
 // footer
@@ -786,6 +902,26 @@ footer {
 	    & path {
 	    	fill: $color-white;
 	    }
+  	}
+
+  	&.large-icon {
+  		width: 80px;
+  		height: 80px;
+  		padding-top: 20px;
+  	}
+
+  	&.no-bg {
+  		width: 80px;
+  		height: 80px;
+
+  		& path, & polygon, & rect {
+  			fill: $color-yellow;
+  		}
+
+  		& circle {
+  			stroke: $color-yellow;
+  			stroke-width: 1;
+  		}
   	}
 }
 
@@ -1102,7 +1238,11 @@ footer {
 	}
 }
 
-
+.image-path {
+	border: 1px solid $color-light;
+    padding: 10px;
+    margin: 20px 0;
+}
 
 .image-border {
 	border: 1px solid $color-light;
@@ -1114,24 +1254,17 @@ footer {
     text-transform: uppercase;
 }
 
-.image-label {
-	&.height-91 {
-		//line-height: 91px;
-	}
-
-	&.height-151 {
-		//line-height: 151px;
-	}
-
-	&.height-237 {
-		//line-height: 237px;
-	}
-}
-
 // filters
 .filters-wrap {
     display: flex;
     justify-content: flex-end;
+
+    .filter-text {
+    	line-height: 27px;
+	    font-style: italic;
+	    margin-right: 10px;
+	    font-size: 12px;
+    }
 }
 
 .pill {
@@ -1141,6 +1274,7 @@ footer {
     border-radius: 20px;
     text-transform: uppercase;
     font-size: 10px;
+    cursor: pointer;
 
     &.selected {
     	background: set-color($color-yellow);
@@ -1154,12 +1288,26 @@ footer {
 
 // headshot
 .headshot-wrap {
-	max-width: 250px;
 	margin: 0 auto;
 
 	.headshot {
 		width: 100%;
-		border-radius: 50%;
+		
+		&.circle {
+			border-radius: 50%;
+		}
+
+		&.square {
+			border-radius: 10px;
+		}
+	}
+}
+
+.facts-list {
+	line-height: 22px;
+
+	li {
+		margin: 7px 0;
 	}
 }
 
@@ -1178,23 +1326,9 @@ footer {
         display: none;
     }
 
-    /*
-    .tns-outer {
-    	margin-top: 0px;
-    }
-    */
-
     .services-outer-wrap {
-    	.services-outer-item {
-    		width: 50%;
-    		margin-bottom: 50px;
-    	}
-    }
-
-    .clients-wrap {
-    	.client-item {
-		    width: calc(50% - 20px);
-		    text-align: center;
+		.services-outer-item {
+			margin-bottom: 50px;
 		}
 	}
 }
@@ -1255,15 +1389,7 @@ footer {
     
 	.services-outer-wrap {
 		.services-outer-item {
-			width: 100vw;
 			margin-bottom: 50px;
-		}
-	}
-
-	.clients-wrap {
-		.client-item {
-			width: 100%;
-			text-align: center;
 		}
 	}
 
