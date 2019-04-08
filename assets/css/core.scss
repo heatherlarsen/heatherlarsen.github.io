@@ -65,17 +65,16 @@ h2 {
 		content: '';
 		display: block;
 		width: 53px;
-	    border-bottom: 3px solid set-color($color-yellow);
+	    border-bottom: 3px solid set-color($color-primary);
 	    padding-top: 20px;
+	    margin-bottom: 32px;
 	}
 }
 
 h3 {
 	font-family: 'Karla', Helvetica, sans-serif;
-	font-size: 14px;
-	text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 3.5px;
+	font-size: 18px;
+    letter-spacing: 1px;
     margin-bottom: 7px;
 }
 
@@ -109,7 +108,7 @@ a {
   		right: 0;
   		width: 0;
   		bottom: -5px;
-  		background: set-color($color-yellow);
+  		background: set-color($color-primary);
   		height: 3px;
   		transition: width 0.3s ease-out;
   	}
@@ -128,7 +127,7 @@ a {
   			transition: none;
   			width: 100%;
   			height: 3px;
-  			background: set-color($color-yellow);
+  			background: set-color($color-primary);
   		}
 
   		&:hover {
@@ -138,13 +137,13 @@ a {
 }
 
 .outside-link {
-	color: $color-yellow;
+	color: $color-primary;
 
 	svg {
 		vertical-align: text-bottom;
 
 		path {
-			fill: $color-yellow;
+			fill: $color-primary;
 		}
 	}
 }
@@ -205,23 +204,30 @@ ol {
 }
 
 .emphasize-bg {
-	background: $color-yellow;
+	background: $color-primary;
 	color: $color-dark;
 	padding: 20px 20px 30px 20px;
     margin: 30px 0;
 }
 
 .button {
-	background: $color-yellow;
-	color: $color-dark;
-    padding: 15px 20px;
-    font-weight: normal;
-    font-size: 12px;
+	height: 40px;
+	line-height: 40px;
+	background: $color-secondary;
+	color: $color-white;
+	font-family: Karla,Helvetica,sans-serif;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 14px;
     border-radius: 30px;
     display: inline-block;
     -webkit-box-shadow: 0 10px 25px 0 rgba(0,0,0,0.1);
     -moz-box-shadow: 0 10px 25px 0 rgba(0,0,0,0.1);
     box-shadow: 0 10px 25px 0 rgba(0,0,0,0.1);
+
+    &:hover {
+    	color: $color-white;
+    }
 }
 
 .project-button {
@@ -247,23 +253,54 @@ ol {
 }
 
 // page specific
+.section-header {
+	display: flex;
+	justify-content: space-between;
 
+	a {
+		line-height: 20px;
+		color: $color-primary;
+		text-decoration: underline;
+		font-weight: normal;
+	}
+}
+
+.header-wrap {
+	background: $color-white;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.05);
+	box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.05);
+
+    header {
+    	padding: 12px 0 24px 0;
+    }
+}
 
 // logo
-.logo {
-    text-align: center;
-	color: $color-dark;
-	font-family: $header-font-face;
+.logo-wrap {
+	width: 252px;
+    padding-top: 44px;
 
-	h1 {
-		font-family: $header-font-face;
-		font-size: $header-font-size;
-	    font-weight: normal;
-	    line-height: 147px;
-	    text-align: left;
-	    text-transform: none;
+    .logo {
+    	text-align: left;
 	    color: $color-dark;
-	}
+	    font-family: $header-font-face;
+	    font-size: 68px;
+	    font-weight: 100;
+    }
+
+    .header-tag {
+    	margin-top: 6px;
+	    text-align: left;
+	    text-transform: uppercase;
+	    font-size: 12px;
+	    left: -3px;
+	    position: relative;
+	    color: $color-dkgray;
+    }
 }
 
 .headline {
@@ -279,7 +316,7 @@ ol {
 	font-family: $header-font-face;
 	font-size: 20px;
 	vertical-align: sub;
-	color: $color-yellow;
+	color: $color-primary;
 	font-weight: bold;
 }
 
@@ -340,14 +377,14 @@ ol {
 	-moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.05);
 	box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.05);
 
+	/*
 	.homepage & {
 		display: none;
+	
 	}
+	*/
 
 	.header-wrap {
-		height: 80px;
-		line-height: 80px;
-
 	    .header {
 	    	.logo {
 	    		margin: 0;
@@ -372,8 +409,8 @@ ol {
 
 // navigation
 nav {
-	height: 80px;
-    line-height: 80px;
+	height: 100px;
+    line-height: 100px;
 
 	.nav-wrap {
 		display: flex;
@@ -383,12 +420,11 @@ nav {
 		padding: 0;
 
 		.nav-item {
-		    margin: 0 27px;
-		    font-family: 'Karla', Helvetica, Arial, sans-serif;
-		    font-size: 12px;
+		    margin: 0 0 0 48px;
+		    font-family: "Work Sans";
+		    font-size: 14px;
 		    font-weight: normal;
-		    text-transform: uppercase;
-		    letter-spacing: 2.5px;
+		    letter-spacing: 1px;
 
 		    a {
 		    	font-weight: normal;
@@ -494,16 +530,173 @@ nav {
 }
 
 // content 
-.scrollable-content {
+/*.scrollable-content {
 	width: 100vw;
 	position: relative;
     overflow: hidden;
 	z-index: 10;
 	background: $color-white;
-	margin-bottom: 344px;
 	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.05);
 	-moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.05);
 	box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.05);
+}
+*/
+
+.featured-projects {
+	background: $color-light;
+	padding: 60px 0 100px 0;
+}
+
+.new-projects-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.project-card {
+	width: calc(33% - 24px);
+	margin: 0 12px;
+	min-height: 132px;
+	background: $color-white;
+	border-radius: 8px;
+	box-shadow: 0 10px 20px 0 rgba(57, 58, 61, 0.15);
+
+	img {
+		width: 100%;
+		border-radius: 8px 8px 0 0;
+	}
+
+	.project-details {
+		padding: 24px;
+
+		.project-header {
+			display: flex;
+			justify-content: space-between;
+			
+			.type {
+				text-transform: uppercase;
+				color: $color-primary;
+				font-size: 12px;
+				font-weight: 700;
+				font-family: Karla, Helvetica, sans-serif;
+				line-height: 21px;
+				min-width: 100px;
+				text-align: right;
+			}
+		}
+
+		.role {
+			font-weight: normal;
+
+			span {
+				display: block;
+				text-transform: uppercase;
+				font-size: 12px;
+				font-family: Karla, Helvetica, sans-serif;
+				font-weight: 700;
+			}
+		}
+
+		.desc {
+			margin-top: 12px;
+		}
+
+		a {
+			display: block;
+			margin-top: 12px;
+		}
+	}
+
+	
+}
+
+.process-content {
+	margin: 60px 0 100px 0;
+}
+
+.new-process-wrap {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.process-card {
+	width: calc(50% - 24px);
+    border-radius: 8px;
+    min-height: 192px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(57,58,61,.15);
+    margin-bottom: 48px;
+
+    .process-details {
+    	display: flex;
+    	justify-content: space-between;
+    	height: 100%;
+
+    	.process-header {
+    		background: $color-primary;
+    		color: $color-white;
+    		text-align: center;
+    		font-size: 18px;
+    		font-weight: 700;
+    		width: 45%;
+    		height: 100%;
+    		vertical-align: middle;
+    		border-radius: 8px 0 0 8px;
+    		line-height: 192px;
+    		margin-bottom: 0px;
+    	}
+
+    	.services-inner-wrap {
+    		width: calc(55% - 24px);
+    		padding: 24px 0;
+
+    		.services-inner-item {
+    			line-height: 24px;
+
+    			span {
+    				font-style: italic;
+    				margin-top: 7px;
+    			}
+
+    			.services-sub-list {
+    				padding: 0 0 0 12px;
+
+    				.services-sub-item {
+
+    				}
+
+    			}
+    		}
+    	}
+    }
+}
+
+.breadcrumb-content {
+	padding-top: 20px;
+}
+
+.projects-content {
+	margin: 60px 0 100px 0;
+}
+
+.all-projects-container {
+	background: set-color($color-light);
+}
+
+.all-projects-wrap {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	.project-card {
+		margin-bottom: 48px;
+	}
+}
+
+.for-fun-content {
+	padding-bottom: 100px;
 }
 
 .content-row {
@@ -537,11 +730,11 @@ nav {
 }
 
 .hero-content {
-	background: $color-yellow;
-    background: -moz-linear-gradient(-45deg, $color-yellow 0%, $color-light 100%);
-    background: -webkit-linear-gradient(-45deg, $color-yellow 0%,$color-light 100%);
-    background: linear-gradient(165deg, $color-yellow 0%,$color-light 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '$color-yellow', endColorstr='$color-light',GradientType=1 );
+	background: $color-primary;
+    background: -moz-linear-gradient(-45deg, $color-primary 0%, $color-light 100%);
+    background: -webkit-linear-gradient(-45deg, $color-primary 0%,$color-light 100%);
+    background: linear-gradient(165deg, $color-primary 0%,$color-light 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '$color-primary', endColorstr='$color-light',GradientType=1 );
     padding: 160px 0 80px 0;
 
     .hero-header {
@@ -575,8 +768,7 @@ nav {
 
 .breadcrumbs {
 	text-align: left;
-    text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
     display: flex;
 
 	.breadcrumb {
@@ -735,7 +927,7 @@ nav {
 		display: block;
 		width: 200px;
 		margin: 0 auto;
-		color: $color-yellow;
+		color: $color-primary;
 	    text-transform: uppercase;
 	    line-height: 38px;
 	    font-size: 32px;
@@ -746,11 +938,11 @@ nav {
 	}
 
 	.svg-icon path {
-		fill: $color-yellow;
+		fill: $color-primary;
 	}
 
 	&:hover {
-		background: $color-yellow;
+		background: $color-primary;
 
 		span {
 			color: $color-white;
@@ -815,15 +1007,6 @@ nav {
     margin: 10px 0 5px 0;
 }
 
-.section-header {
-	line-height: 1.7;
-	text-transform: none;
-    font-weight: 600;
-    margin-bottom: 15px;
-    font-size: 2em;
-    letter-spacing: 0.3px;
-}
-
 .section-desc {
 	font-size: 16px;
     line-height: 1.7;
@@ -852,8 +1035,8 @@ nav {
 footer {
 	text-align: center;
     padding: 80px 0;
-    background: set-color($color-yellow);
-    position: fixed;
+    background: set-color($color-dark);
+    color: $color-white;
     z-index: 1;
     bottom: 0;
     width: 100vw;
@@ -866,6 +1049,10 @@ footer {
 	    margin-bottom: 50px;
 	    display: block;
 	    line-height: 72px;
+    }
+
+    a {
+    	color: $color-white;
     }
 
 	p, .social-links {
@@ -900,7 +1087,7 @@ footer {
   		width: 60px;
 	    height: 60px;
 	    margin: 0 auto 20px auto;
-	    background: $color-yellow;
+	    background: $color-primary;
 	    color: $color-white;
 	    border-radius: 50%;
 	    padding: 10px;
@@ -922,11 +1109,11 @@ footer {
   		height: 80px;
 
   		& path, & polygon, & rect {
-  			fill: $color-yellow;
+  			fill: $color-primary;
   		}
 
   		& circle {
-  			stroke: $color-yellow;
+  			stroke: $color-primary;
   			stroke-width: 1;
   		}
   	}
@@ -1267,24 +1454,30 @@ footer {
     justify-content: flex-end;
 
     .filter-text {
-    	line-height: 27px;
-	    font-style: italic;
+    	line-height: 30px;
 	    margin-right: 10px;
 	    font-size: 12px;
+	    font-family: Karla;
+	    text-transform: uppercase;
+	    font-weight: 700;
     }
 }
 
 .pill {
-	margin: 0 5px;
-    padding: 3px 15px;
-    background: $color-light;
+    margin: 0 5px;
+    padding: 0 15px;
+    background: set-color($color-white);
     border-radius: 20px;
     text-transform: uppercase;
     font-size: 10px;
     cursor: pointer;
+    max-height: 30px;
+    line-height: 30px;
 
     &.selected {
-    	background: set-color($color-yellow);
+    	background: set-color($color-primary);
+    	color: $color-white;
+    	font-weight: bold;
     }
 }
 
@@ -1373,7 +1566,7 @@ footer {
     }
 
     .nav-buttons {
-    	background: $color-yellow;
+    	background: $color-primary;
         width: 100vw;
 	    position: absolute;
 	    left: 0;
