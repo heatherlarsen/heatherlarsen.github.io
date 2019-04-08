@@ -555,14 +555,18 @@ nav {
 
 .project-card {
 	width: calc(33% - 24px);
-	margin: 0 12px;
-	min-height: 132px;
-	background: $color-white;
-	border-radius: 8px;
-	box-shadow: 0 10px 20px 0 rgba(57, 58, 61, 0.15);
+    margin: 0 12px;
+    min-height: 132px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(57,58,61,.15);
+    transition: all 0.5s;
+    position: relative;
+    top: 0px;
 
 	&.linked:hover {
-		box-shadow: 0 10px 20px 0 rgba(57,58,61,0.2)
+		box-shadow: 0 10px 20px 0 rgba(57,58,61,0.4);
+		top: -12px;
 	}
 
 	img {
@@ -682,6 +686,7 @@ nav {
 	border-radius: 8px;
 	background: $color-white;
 	box-shadow: 0 10px 20px 0 rgba(57,58,61,0.15);
+	margin: 60px 0 100px 0;
 
 	.about-details {
 		display: flex;
@@ -697,9 +702,26 @@ nav {
 			}
 		}
 
-		.about-list {
-			width: calc(55% - 24px);
-			padding: 0 24px;
+		.about-desc {
+			padding: 24px;
+			width: 55%;
+			
+			h3 {
+				margin-top: 24px;
+			}
+
+			.about-list {
+				li {
+					.svg-icon path {
+						fill: $color-primary;
+					}
+
+					span {
+						line-height: 34px;
+    					vertical-align: bottom;
+					}
+				}
+			}
 		}
 	}
 }
