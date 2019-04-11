@@ -5,15 +5,6 @@ $(function() {
 
 	var pageType = $("body").data("page");
 
-	// run init functions by page
-	var windowWidth = $(window).width();
-	if (pageType === "home" && windowWidth > 640) {
-		initScroll();
-		initCarousel();
-	} else if (pageType === "home") {
-		initCarousel();
-	}
-
 	if (pageType === "projects") {
 		initFilters();
 	}
@@ -21,92 +12,7 @@ $(function() {
 	initAnalytics();
 
 	initHamburgerMenu();
-
-	/*
-	if (pageType === "project") {
-		initProjectNav();
-	}
-	*/
-
 });
-
-function initScroll() {
-	if (debug) console.log('initScroll()');
-
-	initScrollClick();
-	initSmallHeader();
-
-	function initScrollClick() {
-		if (debug) console.log('initScrollClick()');
-
-		// clickable scroll icon
-		$('.scroll').on('click', function(e) {
-			e.preventDefault();
-
-			var el = $(this).find('a').attr('href');
-			var offset = $(el).offset();
-
-			$('html, body').animate({scrollTop: offset.top -80}, 800, 'linear');
-		});
-	}
-
-	function initSmallHeader() {
-		if (debug) console.log('initSmallHeader()');
-
-		// show small header on scroll
-		if ($('.homepage').length) {
-			$(window).scroll(function() {
-				if ($(this).scrollTop() > 500) {
-					$('.small-header').fadeIn(300);
-				} else {
-					$('.small-header').fadeOut(300);
-				}
-			});
-		}
-	}
-}
-
-
-function initCarousel() {
-	if (debug) console.log('initCarousel()');
-
-	var carouselCount = countCarouselItems();
-
-	var slider = tns({
-		"container": ".main-carousel",
-	    "items": 4,
-	    "arrowKeys": true,
-	    "controlsContainer": ".carousel-controls",
-	    "loop": false,
-	    "fixedWidth": 350,
-	    "responsive": {
-		    "350": {
-		      "items": 2
-		    },
-		    "500": {
-		      "items": 4
-		    }
-		  },
-	    //"slideBy": "page",
-	    "autoplay": false
-	});
-
-	function countCarouselItems() {
-		return $('.main-carousel').find('a').length;
-	}
-}
-
-function initProjectNav() {
-	if (debug) console.log('initProjectNav()');
-
-	$('.project-nav').on('click', function() {
-		$('.project-nav').each(function() {
-			$(this).removeClass('active');
-		});
-
-		$(this).addClass('active');
-	});
-}
 
 function initFilters() {
 	if (debug) console.log('initFilters()');

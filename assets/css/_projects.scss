@@ -1,490 +1,377 @@
-.fremont {
-	.hero-content {
-		background: #2763a8;
-	    background: -moz-linear-gradient(-45deg, #2763a8 0%, #aebbb0 100%);
-	    background: -webkit-linear-gradient(-45deg, #2763a8 0%,#aebbb0 100%);
-	    background: linear-gradient(165deg, #2763a8 0%,#aebbb0 100%);
-	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#2763a8', endColorstr='#aebbb0',GradientType=1 );
-	}
-
-	h2 {
-		&:after {
-			border-bottom: 3px solid set-color($color-fremont);
-		}
-	}
-
-	.underline {
-		&:after {
-			background: set-color($color-fremont);
+body[data-page="project"] {
+	&.fremont {
+		.ampersand {
+			color: $color-fremont;
 		}
 
-		&.active {
-			background: set-color($color-fremont);
+		.hero-content {
+			background: #2763a8;
+		    background: -moz-linear-gradient(-45deg, #2763a8 0%, #aebbb0 100%);
+		    background: -webkit-linear-gradient(-45deg, #2763a8 0%,#aebbb0 100%);
+		    background: linear-gradient(165deg, #2763a8 0%,#aebbb0 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#2763a8', endColorstr='#aebbb0',GradientType=1 );
 		}
-	}
+		
+		nav {
+			.nav-wrap {
+				.nav-item {
+					a {
+						&.fancy-underline {
+							&:after {
+								background: set-color($color-fremont);
+							}
 
-	.outside-link {
-		color: $color-fremont;
-
-		svg {
-			path {
-				fill: $color-fremont;
-			}
-		}
-	}
-
-	.section-title {
-		color: $color-fremont;
-	}
-
-	.emphasize-bg {
-		background: $color-fremont;
-		color: $color-white;
-	}
-
-	.button {
-		background: $color-fremont;
-		color: $color-white;
-	}
-
-	.project-content {
-		background: rgba(39,99,168,.9);
-
-		h3 {
-			color: set-color($color-fremont);
-		}
-
-		.project-background-color {
-			background: set-color($color-fremont);
-			color: $color-white;
-
-			h3 {
-				color: $color-white;
-			}
-		}
-	}
-
-	.project-nav-wrap {
-		.project-nav {
-			&.active {
-				.project-nav-indicator {
-					background: set-color($color-fremont);
+							&.active {
+								background: set-color($color-fremont);
+							}
+						}
+					}
 				}
 			}
 		}
-	}
-	
-	.svg-icon {
-		&.with-circle-bg {
+
+		h1 {
+			&:after {
+				border-bottom: 3px solid set-color($color-fremont);
+			}
+		}
+
+		h2 {
+			color: $color-fremont;
+		}
+
+		.ca-icon-wrap {
+			span {
+				color: $color-fremont;
+			}
+		}
+
+		.outside-link {
+			color: $color-fremont;
+
+			svg {
+				path {
+					fill: $color-fremont;
+				}
+			}
+		}
+
+		.section-title {
+			color: $color-fremont;
+		}
+
+		.emphasize-bg {
 			background: $color-fremont;
-		}
-	}
-
-	.sitemap-wrap {
-		text-align: right;
-
-		.sitemap {
-			width: 90%;
-		}
-	}
-
-	footer {
-		background: set-color($color-fremont);
-		color: $color-white;
-
-		a {
 			color: $color-white;
 		}
-	}
 
-	.pill {
-		&.selected {
+		.button {
+			background: $color-fremont;
+			color: $color-white;
+		}
+
+		.project-card .project-overview .project-header .type {
+			color: $color-fremont;
+		}
+
+		.project-wide {
 			background: set-color($color-fremont);
-		}
-	}
-}
-
-.takethestage {
-	.hero-content {
-		background: #007170;
-	    background: -moz-linear-gradient(-45deg, #007170 0%, #342790 100%);
-	    background: -webkit-linear-gradient(-45deg, #007170 0%,#342790 100%);
-	    background: linear-gradient(165deg, #007170 0%,#342790 100%);
-	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#007170', endColorstr='#342790',GradientType=1 );
-	}
-
-	h2 {
-		&:after {
-			border-bottom: 3px solid set-color($color-takethestage);
-		}
-	}
-
-	.underline {
-		&:after {
-			background: set-color($color-takethestage);
-		}
-
-		&.active {
-			background: set-color($color-takethestage);
-		}
-	}
-
-	.section-title {
-		color: $color-takethestage;
-	}
-
-	.emphasize-bg {
-		background: $color-takethestage;
-		color: $color-white;
-	}
-
-	.button {
-		background: $color-takethestage;
-		color: $color-white;
-	}
-
-	.project-content {
-		background: rgba(52,39,144,.9);
-
-		h3 {
-			color: set-color($color-takethestage);
-		}
-
-		.project-background-color {
-			background: set-color($color-takethestage);
 			color: $color-white;
+		}
+
+		.project-content {
+			background: rgba(39,99,168,.9);
 
 			h3 {
-				color: $color-white;
+				color: set-color($color-fremont);
 			}
-		}
-	}
 
-	.project-nav-wrap {
-		.project-nav {
-			&.active {
-				.project-nav-indicator {
-					background: set-color($color-takethestage);
+			.project-background-color {
+				background: set-color($color-fremont);
+				color: $color-white;
+
+				h3 {
+					color: $color-white;
 				}
 			}
 		}
+
+		.project-nav-wrap {
+			.project-nav {
+				&.active {
+					.project-nav-indicator {
+						background: set-color($color-fremont);
+					}
+				}
+			}
+		}
+		
+		.svg-icon {
+			&.with-circle-bg {
+				background: $color-fremont;
+			}
+		}
+
+		.sitemap-wrap {
+			text-align: right;
+
+			.sitemap {
+				width: 90%;
+			}
+		}
+
+		.pill {
+			&.selected {
+				background: set-color($color-fremont);
+			}
+		}
 	}
 
-	.svg-icon {
-		&.with-circle-bg {
+	&.takethestage {
+		.ampersand {
+			color: $color-takethestage;
+		}
+		
+		nav {
+			.nav-wrap {
+				.nav-item {
+					a {
+						&.fancy-underline {
+							&:after {
+								background: set-color($color-takethestage);
+							}
+
+							&.active {
+								background: set-color($color-takethestage);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		h1 {
+			&:after {
+				border-bottom: 3px solid set-color($color-takethestage);
+			}
+		}
+
+		h2 {
+			color: $color-takethestage;
+		}
+
+		.ca-icon-wrap {
+			span {
+				color: $color-takethestage;
+			}
+		}
+
+		.outside-link {
+			color: $color-takethestage;
+
+			svg {
+				path {
+					fill: $color-takethestage;
+				}
+			}
+		}
+
+		.section-title {
+			color: $color-takethestage;
+		}
+
+		.emphasize-bg {
 			background: $color-takethestage;
-		}
-	}
-
-	.sitemap-wrap {
-		text-align: right;
-
-		.sitemap {
-			width: 90%;
-		}
-	}
-
-	footer {
-		background: set-color($color-takethestage);
-		color: $color-white;
-
-		a {
 			color: $color-white;
 		}
-	}
 
-	.pill {
-		&.selected {
+		.button {
+			background: $color-takethestage;
+			color: $color-white;
+		}
+
+		.project-card .project-overview .project-header .type {
+			color: $color-takethestage;
+		}
+
+		.project-wide {
 			background: set-color($color-takethestage);
-		}
-	}
-
-}
-
-.ustrust {
-	.hero-content {
-		background: #F5F2EE;
-	    background: -moz-linear-gradient(-45deg, #F5F2EE 0%, #5E5E5D 100%);
-	    background: -webkit-linear-gradient(-45deg, #F5F2EE 0%,#5E5E5D 100%);
-	    background: linear-gradient(165deg, #F5F2EE 0%,#5E5E5D 100%);
-	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#F5F2EE', endColorstr='#5E5E5D',GradientType=1 );
-	}
-
-	h2 {
-		&:after {
-			border-bottom: 3px solid set-color($color-ustrust);
-		}
-	}
-
-	.underline {
-		&:after {
-			background: set-color($color-ustrust);
+			color: $color-white;
 		}
 
-		&.active {
-			background: set-color($color-ustrust);
+		.project-content {
+			background: rgba(39,99,168,.9);
+
+			h3 {
+				color: set-color($color-takethestage);
+			}
+
+			.project-background-color {
+				background: set-color($color-takethestage);
+				color: $color-white;
+
+				h3 {
+					color: $color-white;
+				}
+			}
 		}
-	}
 
-	.section-title {
-		color: $color-ustrust;
-	}
-
-	.emphasize-bg {
-		background: $color-ustrust;
-		color: $color-white;
-	}
-
-	.button {
-		background: $color-ustrust;
-		color: $color-white;
-	}
-
-	.project-content {
-		background: rgba(196,17,44,.9);
-
-		h3 {
-			color: set-color($color-ustrust);
+		.project-nav-wrap {
+			.project-nav {
+				&.active {
+					.project-nav-indicator {
+						background: set-color($color-takethestage);
+					}
+				}
+			}
 		}
 		
-		.project-background-color {
-			background: set-color($color-ustrust);
-			color: $color-white;
+		.svg-icon {
+			&.with-circle-bg {
+				background: $color-takethestage;
+			}
+		}
 
-			h3 {
-				color: $color-white;
+		.sitemap-wrap {
+			text-align: right;
+
+			.sitemap {
+				width: 90%;
+			}
+		}
+
+		.pill {
+			&.selected {
+				background: set-color($color-takethestage);
 			}
 		}
 	}
 
-	.project-nav-wrap {
-		.project-nav {
-			&.active {
-				.project-nav-indicator {
-					background: set-color($color-ustrust);
-				}
-			}
-		}
-	}
-
-	.svg-icon {
-		&.with-circle-bg {
-			background: $color-ustrust;
-		}
-	}
-	
-	.sitemap-wrap {
-		text-align: right;
-
-		.sitemap {
-			width: 90%;
-		}
-	}
-
-	footer {
-		background: set-color($color-ustrust);
-		color: $color-white;
-
-		a {
-			color: $color-white;
-		}
-	}
-
-	.pill {
-		&.selected {
-			background: set-color($color-ustrust);
-		}
-	}
-}
-
-.normanregional {
-	.hero-content {
-		background: #68317E;
-	    background: -moz-linear-gradient(-45deg, #68317E 0%, #403A38 100%);
-	    background: -webkit-linear-gradient(-45deg, #68317E 0%,#403A38 100%);
-	    background: linear-gradient(165deg, #68317E 0%,#403A38 100%);
-	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#68317E', endColorstr='#403A38',GradientType=1 );
-	}
-
-	h2 {
-		&:after {
-			border-bottom: 3px solid set-color($color-normanregional);
-		}
-	}
-
-	.underline {
-		&:after {
-			background: set-color($color-normanregional);
+	&.partycity {
+		.ampersand {
+			color: $color-partycity;
 		}
 
-		&.active {
-			background: set-color($color-normanregional);
-		}
-	}
-
-	.section-title {
-		color: $color-normanregional;
-	}
-
-	.emphasize-bg {
-		background: $color-normanregional;
-		color: $color-white;
-	}
-
-	.button {
-		background: $color-normanregional;
-		color: $color-white;
-	}
-
-	.project-content {
-		background: rgba(112, 42, 130, .9);
-
-		h3 {
-			color: set-color($color-normanregional);
-		}
-
-		.project-background-color {
-			background: set-color($color-normanregional);
-			color: $color-white;
-
-			h3 {
-				color: $color-white;
-			}
-		}
-	}
-
-	.project-nav-wrap {
-		.project-nav {
-			&.active {
-				.project-nav-indicator {
-					background: set-color($color-normanregional);
-				}
-			}
-		}
-	}
-
-	.svg-icon {
-		&.with-circle-bg {
-			background: $color-normanregional;
-		}
-	}
-
-	.sitemap-wrap {
-		text-align: right;
-
-		.sitemap {
-			width: 90%;
-		}
-	}
-
-	footer {
-		background: set-color($color-normanregional);
-		color: $color-white;
-
-		a {
-			color: $color-white;
-		}
-	}
-
-	.pill {
-		&.selected {
-			background: set-color($color-normanregional);
-		}
-	}
-}
-
-.scrubsandbeyond {
-	.hero-content {
-		background: #004C8F;
-	    background: -moz-linear-gradient(-45deg, #004C8F 0%, #12273A 100%);
-	    background: -webkit-linear-gradient(-45deg, #004C8F 0%,#12273A 100%);
-	    background: linear-gradient(165deg, #004C8F 0%,#12273A 100%);
-	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#004C8F', endColorstr='#12273A',GradientType=1 );
-	}
-
-	h2 {
-		&:after {
-			border-bottom: 3px solid set-color($color-scrubsandbeyond);
-		}
-	}
-
-	.underline {
-		&:after {
-			background: set-color($color-scrubsandbeyond);
-		}
-
-		&.active {
-			background: set-color($color-scrubsandbeyond);
-		}
-	}
-
-	.section-title {
-		color: $color-scrubsandbeyond;
-	}
-
-	.emphasize-bg {
-		background: $color-scrubsandbeyond;
-		color: $color-white;
-	}
-
-	.button {
-		background: $color-scrubsandbeyond;
-		color: $color-white;
-	}
-
-	.project-content {
-		background: rgba(0,76,143,.9);
-
-		h3 {
-			color: set-color($color-scrubsandbeyond);
+		.hero-content {
+			background: #2763a8;
+		    background: -moz-linear-gradient(-45deg, #2763a8 0%, #aebbb0 100%);
+		    background: -webkit-linear-gradient(-45deg, #2763a8 0%,#aebbb0 100%);
+		    background: linear-gradient(165deg, #2763a8 0%,#aebbb0 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#2763a8', endColorstr='#aebbb0',GradientType=1 );
 		}
 		
-		.project-background-color {
-			background: set-color($color-scrubsandbeyond);
-			color: $color-white;
+		nav {
+			.nav-wrap {
+				.nav-item {
+					a {
+						&.fancy-underline {
+							&:after {
+								background: set-color($color-partycity);
+							}
 
-			h3 {
-				color: $color-white;
-			}
-		}
-	}
-
-	.project-nav-wrap {
-		.project-nav {
-			&.active {
-				.project-nav-indicator {
-					background: set-color($color-scrubsandbeyond);
+							&.active {
+								background: set-color($color-partycity);
+							}
+						}
+					}
 				}
 			}
 		}
-	}
 
-	.svg-icon {
-		&.with-circle-bg {
-			background: $color-scrubsandbeyond;
+		h1 {
+			&:after {
+				border-bottom: 3px solid set-color($color-partycity);
+			}
 		}
-	}
 
-	.sitemap-wrap {
-		text-align: right;
-
-		.sitemap {
-			width: 90%;
+		h2 {
+			color: $color-partycity;
 		}
-	}
 
-	footer {
-		background: set-color($color-scrubsandbeyond);
-		color: $color-white;
+		.ca-icon-wrap {
+			span {
+				color: $color-partycity;
+			}
+		}
 
-		a {
+		.outside-link {
+			color: $color-partycity;
+
+			svg {
+				path {
+					fill: $color-partycity;
+				}
+			}
+		}
+
+		.section-title {
+			color: $color-partycity;
+		}
+
+		.emphasize-bg {
+			background: $color-partycity;
 			color: $color-white;
 		}
-	}
 
-	.pill {
-		&.selected {
-			background: set-color($color-scrubsandbeyond);
+		.button {
+			background: $color-partycity;
+			color: $color-white;
+		}
+
+		.project-card .project-overview .project-header .type {
+			color: $color-partycity;
+		}
+
+		.project-wide {
+			background: set-color($color-partycity);
+			color: $color-white;
+		}
+
+		.project-content {
+			background: rgba(39,99,168,.9);
+
+			h3 {
+				color: set-color($color-partycity);
+			}
+
+			.project-background-color {
+				background: set-color($color-partycity);
+				color: $color-white;
+
+				h3 {
+					color: $color-white;
+				}
+			}
+		}
+
+		.project-nav-wrap {
+			.project-nav {
+				&.active {
+					.project-nav-indicator {
+						background: set-color($color-partycity);
+					}
+				}
+			}
+		}
+		
+		.svg-icon {
+			&.with-circle-bg {
+				background: $color-partycity;
+			}
+		}
+
+		.sitemap-wrap {
+			text-align: right;
+
+			.sitemap {
+				width: 90%;
+			}
+		}
+
+		.pill {
+			&.selected {
+				background: set-color($color-partycity);
+			}
 		}
 	}
 }

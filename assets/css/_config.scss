@@ -1,13 +1,16 @@
-$color-yellow: #e8db37;
+$color-primary: #9013FE;
+$color-secondary: #FFC13D;
+
 $color-white: #ffffff;
 $color-light: #f3f3f1;
 $color-gray: #d6d4c3;
 $color-dkgray: #696969;
-$color-dark: #131313;
+$color-dark: #333333;
 
 // project colors
 $color-fremont: #2763A8;
 $color-takethestage: #342790;
+$color-partycity: #EB2030;
 $color-ustrust: #C4112F;
 $color-normanregional: #702a82;
 $color-scrubsandbeyond: #004C8F;
@@ -31,13 +34,14 @@ $links-font-face: $body-font-face;
 $links-font-size: $body-font-size;
 $links-color: $body-color;
 $links-hover-color: $color-dkgray;
-$links-weight: bold;
+$links-weight: normal;
+$links-decoration: none;
 
 // margin top values (in pixels)
-$mt-list: 5 10 15 20 30 50 60 70 80 90 100 200;
+$mt-list: 5 10 12 15 20 30 50 60 70 80 90 100 200;
 
 // margin bottom values (in pixels)
-$mb-list: 5 10 15 20 30 50 60 70 80 90 100 200;
+$mb-list: 5 10 12 15 20 30 50 60 70 80 90 100 200;
 
 // padding top values (in pixels)
 $pt-list: 5 10 15 20 30 50 60 70 80 90 100 200;
