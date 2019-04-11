@@ -41,230 +41,235 @@
 	    <link href="assets/min/styles.min.css" rel="stylesheet">
 	</head>
 
-	<body class="takethestage">
+	<body class="takethestage" data-page="project">
 	    <!-- analytics code -->
 
-		<!-- small header -->
-		<div class="small-header">
-			<div class="hamburger-menu is-mobile">
-				<svg class="svg-icon bars" viewBox="0 0 20 20">
-					<path fill="#000" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
-						c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
-						s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
-						c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
-				</svg>
-				<svg class="svg-icon close is-hidden" viewBox="0 0 20 20">
-					<path fill="none" d="M13.864,6.136c-0.22-0.219-0.576-0.219-0.795,0L10,9.206l-3.07-3.07c-0.219-0.219-0.575-0.219-0.795,0
-						c-0.219,0.22-0.219,0.576,0,0.795L9.205,10l-3.07,3.07c-0.219,0.219-0.219,0.574,0,0.794c0.22,0.22,0.576,0.22,0.795,0L10,10.795
-						l3.069,3.069c0.219,0.22,0.575,0.22,0.795,0c0.219-0.22,0.219-0.575,0-0.794L10.794,10l3.07-3.07
-						C14.083,6.711,14.083,6.355,13.864,6.136z M10,0.792c-5.086,0-9.208,4.123-9.208,9.208c0,5.085,4.123,9.208,9.208,9.208
-						s9.208-4.122,9.208-9.208C19.208,4.915,15.086,0.792,10,0.792z M10,18.058c-4.451,0-8.057-3.607-8.057-8.057
-						c0-4.451,3.606-8.057,8.057-8.057c4.449,0,8.058,3.606,8.058,8.057C18.058,14.45,14.449,18.058,10,18.058z"></path>
-				</svg>
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-1"></div>
-					<div class="col-lg-5 col-5">
-						<header class="header-wrap">
-							<div class="header">
-								<a href="index.html" class="logo js-ga" data-ga="Navigation, Homepage">Heather Larsen</a>
-							</div>
-						</header>
-					</div>
-					<div class="col-lg-5 col-md-7 col-sm-12">
-						<nav class="nav-buttons is-desktop">
-							<ul class="nav-wrap">
-								<li class="nav-item">
-									<a class="underline js-ga" data-ga="Navigation, Projects" href="projects.html">Projects</a>
-								</li>
-								<li class="nav-item">
-									<a class="underline js-ga" data-ga="Navigation, Resume" href="assets/images/HeatherLarsen_Resume_Oct2018.pdf" target="_blank">Resume</a>
-								</li>
-								<li class="nav-item">
-									<a class="underline js-ga" data-ga="Navigation, Contact" href="contact.html">Contact</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-lg-1"></div>
+		<!-- header -->
+	    <div class="header-wrap">
+	    	<header>
+	    		<div class="hamburger-menu is-mobile">
+					<svg class="svg-icon bars" viewBox="0 0 20 20">
+						<path fill="#000" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+							c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+							s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+							c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+					</svg>
+					<svg class="svg-icon close is-hidden" viewBox="0 0 20 20">
+						<path fill="none" d="M13.864,6.136c-0.22-0.219-0.576-0.219-0.795,0L10,9.206l-3.07-3.07c-0.219-0.219-0.575-0.219-0.795,0
+							c-0.219,0.22-0.219,0.576,0,0.795L9.205,10l-3.07,3.07c-0.219,0.219-0.219,0.574,0,0.794c0.22,0.22,0.576,0.22,0.795,0L10,10.795
+							l3.069,3.069c0.219,0.22,0.575,0.22,0.795,0c0.219-0.22,0.219-0.575,0-0.794L10.794,10l3.07-3.07
+							C14.083,6.711,14.083,6.355,13.864,6.136z M10,0.792c-5.086,0-9.208,4.123-9.208,9.208c0,5.085,4.123,9.208,9.208,9.208
+							s9.208-4.122,9.208-9.208C19.208,4.915,15.086,0.792,10,0.792z M10,18.058c-4.451,0-8.057-3.607-8.057-8.057
+							c0-4.451,3.606-8.057,8.057-8.057c4.449,0,8.058,3.606,8.058,8.057C18.058,14.45,14.449,18.058,10,18.058z"></path>
+					</svg>
 				</div>
-			</div>
-    	</div>
-		<!-- /small header -->
 
-	    <!-- content -->
-	    <div class="scrollable-content">
-
-	    	<!-- hero -->
-	    	<section class="hero-content">
 	    		<div class="container">
 	    			<div class="row">
-	    				<div class="col-lg-1"></div>
-	    				<div class="col-lg-10">
-	    					<h1 class="hero-header">Take the Stage</h1>
-	    					<span class="hero-tagline">A concept project; iOS app</span>
+	    				<div class="col-lg-6 col-6">
+	    					<div class="logo-wrap">
+	    						<a href="index.html" class="logo js-ga" data-ga="Navigation, Homepage">Heather Larsen</a>
+	    						<p class="header-tag">User Experience Designer</p>
+	    					</div>
 	    				</div>
-	    				<div class="col-lg-1"></div>
+	    				<div class="col-lg-6 col-md-7 col-sm-12">
+	    					<nav class="nav-buttons is-desktop">
+								<ul class="nav-wrap">
+									<li class="nav-item">
+										<a class="fancy-underline js-ga" data-ga="Navigation, Projects" href="projects.html">Projects</a>
+									</li>
+									<li class="nav-item">
+										<a class="fancy-underline js-ga" data-ga="Navigation, Resume" href="assets/images/HeatherLarsen_Resume_April2019.pdf" target="_blank">Resume</a>
+									</li>
+									<li class="nav-item">
+										<a class="fancy-underline js-ga" data-ga="Navigation, About" href="about.html">About</a>
+									</li>
+								</ul>
+							</nav>
+	    				</div>
 	    			</div>
 	    		</div>
-	    	</section>
-	    	<!-- /hero -->
+	    	</header>
+	    </div>
+	    <!-- /header -->
 
-	    	<section class="breadcrumb-content pt-30 pb-30 is-desktop">
+	    <!-- content -->
+	    <div class="all-projects-container">
+	    	<section class="breadcrumb-content is-desktop">
 	    		<div class="container">
 	    			<div class="row">
-	    				<div class="col-1"></div>
-	    				<div class="col-10">
+	    				<div class="col-12">
 	    					<ul class="breadcrumbs">
 	    						<li class="breadcrumb">
-	    							<a href="index.html" class="js-ga" data-ga="Breadcrumb, Homepage">Home</a><span>\\</span>
+	    							<a href="index.html" class="underline js-ga" data-ga="Breadcrumb, Homepage">Home</a><span>//</span>
 	    						</li>
 	    						<li class="breadcrumb">
-	    							<a href="projects.html" class="js-ga" data-ga="Breadcrumb, All Projects">All Projects</a><span>\\</span>
+	    							<a href="projects.html" class="underline js-ga" data-ga="Breadcrumb, Projects">Projects</a><span>//</span>
 	    						</li>
 	    						<li class="breadcrumb active">
-	    							<span>Take the Stage</span>
+	    							Take the Stage
 	    						</li>
 	    					</ul>
 	    				</div>
-	    				<div class="col-1"></div>
 	    			</div>
 	    		</div>
 	    	</section>
 
-		    <section class="process-content pb-70">
-		    	<div class="container">
-		    		<div class="row">
-		    			<div class="col-lg-2"></div>
-		    			<div class="col-lg-8">
-		    				<section class="overview-wrap" id="overview">
-    							<h4 class="section-title">Overview</h4>
-    							<h3 class="section-header">About this project</h3>
-
-    							<p class="section-desc">
-    								<strong>Program:</strong> General Assembly - User Experience Design Circuit
-    							</p>
-
-    							<p class="section-desc">
-    								<strong>Role:</strong> UX Researcher, Strategist, Lead Visual/Interaction Designer
-    							</p>
-
-    							<p class="section-desc">
-    								<strong>Background:</strong>
-    								The following project was completed in 6 weeks as part of the User Experience Design Circuit. We were given 4 project options; a travel app, a personal connections app for family and friends located in different geographical boundaries, a connected home app, or a "create your own topic" project. 
-									<br>
-									I chose to create my own topic because I'd had an app idea in mind that I was interested in pursuing. In short, that idea started as a way for users to find set times for concerts. It evolved into much more than that.
-    							</p>
-    						</section>
-    					</div>
-    				</div>
-    			</div>
-
-    			<div class="container-fluid">
-    				<div class="row">
-    					<div class="col-lg-2"></div>
-    					<div class="col-lg-8">
-    						<section class="challenge-wrap" id="challenge">
-    							<h4 class="section-title">The Initial Challenge</h4>
-
-    							<p class="section-desc">
-    								Provide concert enthusiasts with a quick and easy way to view set times for shows they're attending.
-    							</p>
-    						</section>
-    					</div>
-    					<div class="col-lg-2"></div>
-    				</div>
-    			</div>
-
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-lg-2"></div>
-    					<div class="col-lg-8">
-    						<section class="research-wrap" id="research">
-    							<h4 class="section-title">Research</h4>
-    							<h3 class="section-header">Goals</h3>
-								<ol class="section-desc mb-30">
-									<li>Identify behaviors when preparing for a show</li>
-									<li>Gauge interest in set time information and how that information could affect their planning</li>
-								</ol>
-
-								<h3 class="section-header">Target Audience</h3>
-    							<p class="section-desc">
-    								Individuals between 21 & 35 years of age who regularly attend concerts or have attended a concert within the last 6 months
-    							</p>
-
-    							<h3 class="section-header">Hypothesis</h3>
-    							<p class="section-desc">
-    								Concert enthusiasts don't want to stand around a venue waiting for 'their' performer to take the stage. They want to be able to plan drinks/dinner or other life events around the scheduled concert and want to make sure they're taking proper transportation to get to the venue on time. They also don't want to miss their favorite band due to scheduling conflicts.
-    							</p>
-
-								<h3 class="section-header">User Interview Takeaways</h3>
-								<span class="sm-text">3 people, ages 24-30</span>
-    							<ol class="section-desc list-spacing mt-20">
-    								<li>There is an uncertainty between the door open time and show start time</li>
-    								<li>Prefer to wait at a nearby bar or restaurant instead of standing around before a show</li>
-    								<li>Want to know who is playing and what time they are playing</li>
-    								<li>Want an easy way listen to artists and to purchase tickets</li>
-    								<li><strong>Don’t enjoy cross-referencing apps to get all the details</strong></li>
-    							</ol>
-
-    							<a href="assets/images/projects/takethestage/user-interview-quotes.png" class="js-ga" data-fancybox="takethestage" data-caption="User interview quotes" data-ga="Take the Stage, User Interviews Image">
-									<img src="assets/images/projects/takethestage/user-interview-quotes.png" class="section-image">
-								</a>
-
-								<h3 class="section-header">Competitive Analysis</h3>
-								<div class="row">
-									<div class="col-lg-6">
-										<a href="assets/images/projects/takethestage/feature-inventory.png" class="js-ga" data-fancybox="takethestage" data-caption="Competitive Analysis" data-ga="Take the Stage, Feature Inventory">
-    										<img src="assets/images/projects/takethestage/feature-inventory.png" class="section-image">
-    									</a>
+	    	<section class="project-hero">
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-lg-12">
+	    					<div class="project-card">
+								<img src="assets/images/projects/site-tease-tts-large.png">
+								<div class="project-overview">
+									<div class="project-header">
+										<h1>Take the Stage</h1>
+										<p class="type">Concept Project</p>
 									</div>
-									<div class="col-lg-6">
-										<p class="section-desc">
-											Bandsintown and Songkick are the clear front-runners, although neither provide set times and during the competitive analysis I found that they often contained conflicting information which was a pain point my users encountered as well.
-										</p>
-									</div>
+									<p>
+										<span>Role</span>
+										UX Research, Strategy, Visual & Interaction Design
+									</p>
+									<p>
+										<span>Program</span>
+										General Assembly - User Experience Design Circuit
+									</p>
+									<p>
+										<span>Timeline</span>
+										6 weeks, part-time
+									</p>
+									<p>
+										<span>Prompt</span>
+										Create an app based on one of 4 project types: a travel app, a personal connections app for family and friends located in different geographical boundaries, a connected home app, or "create your own adventure".
+										<br><br>
+										I chose to create my own adventure because I'd had an app idea in mind that I was interested in pursuing. In short, that idea started as a way for users to find set times for concerts.
+									</p>
 								</div>
-    						</section>
-    					</div>
-    					<div class="col-lg-2"></div>
-    				</div>
-    			</div>
+							</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</section>
+	    </div>
 
-    			<div class="container-fluid">
-    				<div class="row">
-    					<div class="col-lg-2"></div>
-    					<div class="col-lg-8">
-    						<section class="">
-    							<h4 class="section-title">The Revised Challenge</h4>
-								<p class="section-desc">
-									Provide concert enthusiasts with all their concert tracking needs in one streamlined app.
-								</p>
-    						</section>
-    					</div>
-    					<div class="col-lg-2"></div>
-    				</div>
-    			</div>
+	    <section class="project-wide">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<h2>The Initial Challenge</h2>
 
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-lg-2"></div>
-    					<div class="col-lg-8">
-    						<h4 class="section-title">Stratagize</h4>
-    						<h3 class="section-header">Pivoting based on research</h3>
+	    				<p>
+	    					Provide concert enthusiasts with a quick and easy way to view set times for shows they're attending.
+	    				</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
 
-    						<p class="section-desc">
-    							Based on the user interviews and competitive analysis, it became clear that the focus of the app needed to pivot slightly. Instead of focusing on set times, I expanded the scope to center it around being a better one-stop-shop for concerts tracking. 
-    						</p>
+	    <section class="project-details">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-3">
+	    				<ul class="project-nav">
+	    					<li>
+	    						<h4>Jump To</h4>
+	    					</li>
+	    					<li>
+	    						<a href="#research" class="project-nav-link js-ga" data-ga="Project Sidebar, Take the Stage - Research">Research</a>
+	    					</li>
+	    					<li>
+	    						<a href="#strategy" class="project-nav-link js-ga" data-ga="Project Sidebar, Take the Stage - Strategy">Strategy</a>
+	    					</li>
+	    					<li>
+	    						<a href="#ideation" class="project-nav-link js-ga" data-ga="Project Sidebar, Take the Stage - Ideation">Ideation & Design Iterations</a>
+	    					</li>
+	    					<li>
+	    						<a href="#reflections" class="project-nav-link js-ga" data-ga="Project Sidebar, Take the Stage - Reflections">Reflections</a>
+	    					</li>
+	    				</ul>
+	    			</div>
+	    			<div class="col-lg-9">
 
-    						<div class="row">
+	    				<div class="project-section">
+	    					<h2 id="research">Research</h2>
+	    					<h3>Goals</h3>
+	    					<ol>
+								<li>Identify behaviors when preparing for a show</li>
+								<li>Gauge interest in set time information and how that information could affect their planning</li>
+							</ol>
+
+	    					<hr>
+
+	    					<h3>Target Audience</h3>
+	    					<p>
+	    						Individuals between 21 & 35 years of age who regularly attend concerts or have attended a concert within the last 6 months
+	    					</p>
+	    					<hr>
+
+	    					<h3>Hypothesis</h3>
+	    					<p>
+	    						Concert enthusiasts don't want to stand around a venue waiting for 'their' performer to take the stage. They want to be able to plan drinks/dinner or other life events around the scheduled concert and want to make sure they're taking proper transportation to get to the venue on time. They also don't want to miss their favorite band due to scheduling conflicts.
+	    					</p>
+	    					<hr>
+
+	    					<h3>User Interview Takeaways</h3>
+	    					<p class="sm-text mb-20">3 people, ages 24-30</p>
+							<ol>
+								<li>There is an uncertainty between the door open time and show start time</li>
+								<li>Prefer to wait at a nearby bar or restaurant instead of standing around before a show</li>
+								<li>Want to know who is playing and what time they are playing</li>
+								<li>Want an easy way listen to artists and to purchase tickets</li>
+								<li><strong>Don’t enjoy cross-referencing apps to get all the details</strong></li>
+							</ol>
+
+							<a href="assets/images/projects/takethestage/user-interview-quotes.png" class="js-ga" data-fancybox="takethestage" data-caption="User interview quotes" data-ga="Take the Stage, User Interviews Image">
+								<img src="assets/images/projects/takethestage/user-interview-quotes.png" class="mt-12">
+							</a>
+	    					<hr>
+
+	    					<h3>Competitive Analysis</h3>
+	    					<div class="row">
+								<div class="col-lg-6">
+									<a href="assets/images/projects/takethestage/feature-inventory.png" class="js-ga" data-fancybox="takethestage" data-caption="Competitive Analysis" data-ga="Take the Stage, Feature Inventory">
+										<img src="assets/images/projects/takethestage/feature-inventory.png">
+									</a>
+								</div>
+								<div class="col-lg-6">
+									<p class="section-desc">
+										Bandsintown and Songkick are the clear front-runners, although neither provide set times and during the competitive analysis I found that they often contained conflicting information which was a pain point my users encountered as well.
+									</p>
+								</div>
+							</div>
+	    				</div>
+
+						<section class="project-wide">
+					    	<div class="container">
+					    		<div class="row">
+					    			<div class="col-lg-12">
+					    				<h2>The Revised Challenge</h2>
+
+					    				<p>
+					    					Provide concert enthusiasts with all their concert tracking needs in one streamlined app.
+					    				</p>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </section>
+
+	    				<div class="project-section">
+	    					<h2 id="strategy">Strategy</h2>
+	    					<h3>Pivoting based on research</h3>
+	    					<p>
+	    						Based on the user interviews and competitive analysis, it became clear that the focus of the app needed to pivot slightly. Instead of focusing on set times, I expanded the scope to center it around being a better one-stop-shop for concerts tracking. 
+	    					</p>
+	    					<hr>
+
+	    					<div class="row">
     							<div class="col-lg-6">
     								<h3 class="section-header">Persona</h3>
 		    						<p class="section-desc">
 		    							<a href="assets/images/projects/takethestage/persona-olivia-barnes.png" class="js-ga" data-fancybox="takethestage" data-caption="Persona - Olivia Barnes" data-ga="Take the Stage, Persona">
-											<img src="assets/images/projects/takethestage/persona-olivia-barnes.png" class="section-image">
+											<img src="assets/images/projects/takethestage/persona-olivia-barnes.png" class="mt-12">
 										</a>
 		    						</p>
     							</div>
@@ -275,7 +280,7 @@
     								</p>
 
     								<ul class="section-desc">
-    									<li class="mb-30">
+    									<li class="mt-30 mb-30">
     										<span class="underline-text mb-10">
     											High Priority Features
     										</span>
@@ -300,83 +305,84 @@
     								</ul>
     							</div>
     						</div>
+    						<hr>
 
-    						<h3 class="section-header">User Flow</h3>
-    						<p class="section-desc">
-    							Initially I created a complex user flow chart that went through all the various paths a user could take. After reviewing it with my mentor, it made more sense to break each path up into it's own user flow. Below you can see 3 of the potential paths a user can take. 
-    						</p>
+	    					<h3>User Flow</h3>
+	    					<p>
+	    						Initially I created a complex user flow chart that went through all the various paths a user could take. After reviewing it with my mentor, it made more sense to break each path up into it's own user flow. Below you can see 3 of the potential paths a user can take. 
+	    					</p>
 
-    						<a href="assets/images/projects/takethestage/user-flow/register-flow.png" class="js-ga" data-fancybox="takethestage" data-caption="" data-ga="Take the Stage, Register Flow">
-								<img src="assets/images/projects/takethestage/user-flow/register-flow.png" class="section-image image-path">
-							</a>
+	    					<h4>Registration Path</h4>
+	    					<div class="flow-flex">
+		    					<a href="assets/images/projects/takethestage/user-flow/register-flow.png" class="js-ga" data-fancybox="takethestage" data-caption="" data-ga="Take the Stage, Register Flow">
+									<img src="assets/images/projects/takethestage/user-flow/register-flow.png" class="image-path">
+								</a>
 
-							<p class="section-desc">
-								<strong>1. Registration Path</strong><br>
-								This is the path a new user would take when deciding to register for the app. Once they provide valid registration details, they are asked if they want to sync with a music service of their choice (ie: Spotify). If they decide to sync, they will be directed to their feed populated with the artists they follow on said music service. If they opt out of sync, they will be directed to the geolocation based search page, which would be populated with concerts near them.
-							</p>
+								<p>
+									This is the path a new user would take when deciding to register for the app. Once they provide valid registration details, they are asked if they want to sync with a music service of their choice (ie: Spotify). If they decide to sync, they will be directed to their feed populated with the artists they follow on said music service. If they opt out of sync, they will be directed to the geolocation based search page, which would be populated with concerts near them.
+								</p>
+							</div>
+							<hr>
 
-    						<a href="assets/images/projects/takethestage/user-flow/guest-buy.png" class="js-ga" data-fancybox="takethestage" data-caption="" data-ga="Take the Stage, Guest Buy Flow">
-								<img src="assets/images/projects/takethestage/user-flow/guest-buy.png" class="section-image image-path">
-							</a>
+							<h4>Guest - Ticket Purchase Path</h4>
+							<div class="flow-flex">
+								<a href="assets/images/projects/takethestage/user-flow/guest-buy.png" class="js-ga" data-fancybox="takethestage" data-caption="" data-ga="Take the Stage, Guest Buy Flow">
+									<img src="assets/images/projects/takethestage/user-flow/guest-buy.png" class="image-path">
+								</a>
 
-							<p class="section-desc">
-								<strong>2. Guest - Ticket Purchase Path</strong><br>
-								This is the path a user would take if they've opted not to register for the app, but still want to purchase tickets for a concert. They would search for an artist or location and see a list of results. Once they select a concert, they'll be provided with more details and be able to purchase tickets. Once they click the purchase tickets button they will be directed to the 3rd party ticket vendor for said concert.
-							</p>
+								<p>
+									This is the path a user would take if they've opted not to register for the app, but still want to purchase tickets for a concert. They would search for an artist or location and see a list of results. Once they select a concert, they'll be provided with more details and be able to purchase tickets. Once they click the purchase tickets button they will be directed to the 3rd party ticket vendor for said concert.
+								</p>
+							</div>
+							<hr>
 
-							
-							<a href="assets/images/projects/takethestage/user-flow/user-interested.png" class="js-ga" data-fancybox="takethestage" data-caption="" data-ga="Take the Stage, User Interested Flow">
-								<img src="assets/images/projects/takethestage/user-flow/user-interested.png" class="section-image image-path">
-							</a>
+							<h4>Logged In - User Interested in Concert</h4>
+							<div class="flow-flex">
+								<a href="assets/images/projects/takethestage/user-flow/user-interested.png" class="js-ga" data-fancybox="takethestage" data-caption="" data-ga="Take the Stage, User Interested Flow">
+									<img src="assets/images/projects/takethestage/user-flow/user-interested.png" class="image-path">
+								</a>
 
-							<p class="section-desc">
-								<strong>3. Logged In - User Interested in Concert</strong><br>
-								This is the path a registered user would take if they want to mark themselves as "interested" in attending a concert. First they would need to be signed in. Once signed in, they would be directed to their feed populated with the artists they are currently following. If they see a concert they want to attend, they can click on that concert to be provided with details. Once on the details page, they can check "Interested" or "Going" and the view would update. This would also update their profile and calendar so they can easily navigate back to that concert at a later date.
-							</p>
-    					</div>
-    					<div class="col-lg-2"></div>
-    				</div>
-    			</div>
+								<p>
+									This is the path a registered user would take if they want to mark themselves as "interested" in attending a concert. First they would need to be signed in. Once signed in, they would be directed to their feed populated with the artists they are currently following. If they see a concert they want to attend, they can click on that concert to be provided with details. Once on the details page, they can check "Interested" or "Going" and the view would update. This would also update their profile and calendar so they can easily navigate back to that concert at a later date.
+								</p>
+							</div>
+	    				</div>
 
-    			<div class="container-fluid">
-    				<div class="row">
-    					<div class="col-lg-2"></div>
-    					<div class="col-lg-8">
-    						<h4 class="section-title">Design Iterations</h4>
-    						<h3 class="section-header">Sketches & Paper Prototypes</h3>
-
-    						<p class="section-desc">
-    							I created some initial lo-fi wireframes for paper prototype testing and then tested them with 3 users.
-    						</p>
-
-    						<div class="row">
+	    				<div class="project-section">
+	    					<h2 id="ideation">Ideation & Design Iterations</h2>
+	    					<h3>Sketches & Paper Prototypes</h3>
+	    					<p>
+	    						I created some initial lo-fi wireframes for paper prototype testing and then tested them with 3 users.
+	    					</p>
+	    					<div class="row">
 	    						<div class="col-lg-3">
 	    							<a href="assets/images/projects/takethestage/sketches.png" class="js-ga" data-fancybox="takethestage" data-caption="Lo-fi Wireframes" data-ga="Take the Stage, Sketches">
-	    								<img src="assets/images/projects/takethestage/sketches.png" class="section-image">
+	    								<img src="assets/images/projects/takethestage/sketches.png" class="mt-12">
 	    							</a>
 	    						</div>
 	    						<div class="col-lg-3">
 	    							<a href="assets/images/projects/takethestage/marcus-paper-prototype.png" class="js-ga" data-fancybox="takethestage" data-caption="Paper Prototype #1" data-ga="Take the Stage, Paper Prototype 001">
-	    								<img src="assets/images/projects/takethestage/marcus-paper-prototype.png" class="section-image">
+	    								<img src="assets/images/projects/takethestage/marcus-paper-prototype.png" class="mt-12">
 	    							</a>
 	    							<p class="image-caption">"Is this all one button?"</p>
 	    						</div>
 	    						<div class="col-lg-3">
 	    							<a href="assets/images/projects/takethestage/rachel-paper-prototype.png" class="js-ga" data-fancybox="takethestage" data-caption="Paper Prototype #2" data-ga="Take the Stage, Paper Prototype 002">
-	    								<img src="assets/images/projects/takethestage/rachel-paper-prototype.png" class="section-image">
+	    								<img src="assets/images/projects/takethestage/rachel-paper-prototype.png" class="mt-12">
 	    							</a>
 	    							<p class="image-caption">"So I would touch the name, maybe?"</p>
 	    						</div>
 	    						<div class="col-lg-3">
 	    							<a href="assets/images/projects/takethestage/emily-paper-prototype.png" class="js-ga" data-fancybox="takethestage" data-caption="Paper Prototype #3" data-ga="Take the Stage, Paper Prototype 003">
-	    								<img src="assets/images/projects/takethestage/emily-paper-prototype.png" class="section-image">
+	    								<img src="assets/images/projects/takethestage/emily-paper-prototype.png" class="mt-12">
 	    							</a>
 	    							<p class="image-caption">"Oh, it might be a swipe too."</p>
 	    						</div>
 	    					</div>
+	    					<hr>
 
-	    					<h3 class="section-header mt-20">Wireframes</h3>
-	    					<p class="section-desc">
+	    					<h3>Wireframes</h3>
+	    					<p>
 	    						Adjustments made based on prototype feedback:
 	    					</p>
 	    					<ol class="section-desc">
@@ -384,16 +390,15 @@
 	    						<li>All users were able to decern that they needed to click on 'Sign In' to register as a new user, but they each commented that it was just an assumption and made them think twice, so I added a 'Register' link to the Splash page</li>
 	    						<li>Some users commented that the 'Listen to Artist' button was not obvious</li>
 	    					</ol>
-
 	    					<a href="assets/images/projects/takethestage/med-fi.png" data-fancybox="takethestage" data-caption="Med-fi Wireframes">
-	    						<img src="assets/images/projects/takethestage/med-fi.png" class="section-image mb-20">
+	    						<img src="assets/images/projects/takethestage/med-fi.png" class="mt-12 mb-20">
 	    					</a>
+	    					<hr>
 
-	    					<h3 class="section-header">Usability Tests</h3>
-	    					<p class="section-desc">
-	    						Next I created a prototype using InVision and performed Usability Tests with 3 users. It led to the following insights:
-	    					</p>
-
+	    					<div class="flex-50">
+	    						<h3>Usability Tests</h3>
+		    					<a href="https://projects.invisionapp.com/share/QPFWRAKBFV5#/screens/277246323_Splash_Page" class="prototype-link outside-link underline js-ga" data-ga="Take the Stage, InVision Link" target="_blank">View Prototype</a>
+	    					</div>
 	    					<div class="row">
 	    						<div class="col-lg-6">
     								<strong>Positives</strong>
@@ -466,121 +471,89 @@
     								</ul>
 			    				</div>
 			    			</div>
+	    					<hr>
 
-			    			<a href="assets/images/projects/takethestage/usability-quotes.png" class="js-ga" data-fancybox="takethestage" data-caption="Usability Quotes" data-ga="Take the Stage, Usability Quotes">
-	    						<img src="assets/images/projects/takethestage/usability-quotes.png" class="section-image mt-30">
+	    					<a href="assets/images/projects/takethestage/usability-quotes.png" class="js-ga" data-fancybox="takethestage" data-caption="Usability Quotes" data-ga="Take the Stage, Usability Quotes">
+	    						<img src="assets/images/projects/takethestage/usability-quotes.png" class="mt-30">
 	    					</a>
 
-			    			<h3 class="section-header mt-30">Final Revisions & Visual Design</h3>
-			    			<a href="assets/images/projects/takethestage/hi-fi.png" class="js-ga" data-fancybox="takethestage" data-caption="Hi-fi Wireframes" data-ga="Take the Stage, Hi Fi Wireframes">
-	    						<img src="assets/images/projects/takethestage/hi-fi.png" class="section-image">
+	    					<h3>Final Revisions & Visual Designs</h3>
+	    					<a href="assets/images/projects/takethestage/hi-fi.png" class="js-ga" data-fancybox="takethestage" data-caption="Hi-fi Wireframes" data-ga="Take the Stage, Hi Fi Wireframes">
+	    						<img src="assets/images/projects/takethestage/hi-fi.png" class="mt-12">
 	    					</a>
 
-	    					<h3 class="section-header mt-30">Key Changes</h3>
+	    					<h4>Key Changes</h4>
 	    					<a href="assets/images/projects/takethestage/medfi-highfi-changes.png" class="js-ga" data-fancybox="takethestage" data-caption="Key Changes" data-ga="Take the Stage, Wireframe Changes">
-	    						<img src="assets/images/projects/takethestage/medfi-highfi-changes.png" class="section-image">
+	    						<img src="assets/images/projects/takethestage/medfi-highfi-changes.png" class="mt-12">
 	    					</a>
-    					</div>
-    					<div class="col-lg-2"></div>
-    				</div>
-    			</div>
+	    				</div>
 
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-lg-2"></div>
-    					<div class="col-lg-8">
-    						<section class="conclusion-wrap" id="conclusion">
-    							<h4 class="section-title">Reflections</h4>
-    							<h3 class="section-header">What I learned</h3>
+	    				<div class="project-section">
+	    					<h2 id="reflections">Reflections</h2>
+	    					<h3>What I learned</h3>
+	    					<h4>About the App</h4>
+	    					<p>
+	    						After completing the design process, comparing the competitor apps, and revisiting the research, I’ve come to the conclusion that the real issue lies in the data. If I move forward with this project, I would pivot and start researching a solution for data management. I would keep working on the user facing system, as there still seem to be needs there, but I would consider creating a user interface where venues can input and store their data that can then be used as a source of truth for other apps and services.
+	    					</p>
 
-    							<p class="section-desc">
-    								<strong>About the App</strong><br>
-    								After completing the design process, comparing the competitor apps, and revisiting the research, I’ve come to the conclusion that the real issue lies in the data. If I move forward with this project, I would pivot and start researching a solution for data management. I would keep working on the user facing system, as there still seem to be needs there, but I would consider creating a user interface where venues can input and store their data that can then be used as a source of truth for other apps and services.
-    							</p>	
+	    					<h4>About the Process</h4>
+	    					<p>
+	    						The biggest lesson is that the idea you have in your head at the start of the process is not always the product you’ll come out with in the end. At the beginning my idea was a simple app to display concert set times, as this is the one aspect I feel is really lacking in concert tracking apps today. But after going through the research process, I realized the problem was much larger than that. Users wanted a better concert tracking app, in general. More reliable information, less back and forth between apps, and simpler interfaces.
+	    						<br><br>
+	    						I also learned to take better notes when rewatching or re-listening to the recorded interviews. I must have gone through each of them at least 3 or 4 times to try to squeeze new information out of them during the process.
+	    					</p>
+	    				</div>
 
-								<p class="section-desc">
-									<strong>About the Process</strong><br>
-									The biggest lesson is that the idea you have in your head at the start of the process is not always the product you’ll come out with in the end. At the beginning my idea was a simple app to display concert set times, as this is the one aspect I feel is really lacking in concert tracking apps today. But after going through the research process, I realized the problem was much larger than that. Users wanted a better concert tracking app, in general. More reliable information, less back and forth between apps, and simpler interfaces.
-		    					</p>
-		    					<p class="section-desc">
-									I also learned to take better notes when rewatching or re-listening to the recorded interviews. I must have gone through each of them at least 3 or 4 times to try to squeeze new information out of them during the process.
-								</p>
-    						</section>
-    					</div>
-    					<div class="col-lg-2"></div>
-    				</div>
-    			</div>
-
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-lg-4"></div>
-    					<div class="project-button col-lg-4">
-    						<a href="https://drive.google.com/file/d/1e1Kq8ynh-UHtnJw2nxbdc_Ny8u_yXyeL/view?usp=sharing" class="button mt-30" target="_blank">Download Project Presentation</a>
-    					</div>
-    					<div class="col-lg-4"></div>
-    				</div>
-    			</div>
-    		</section>
-
-		    <section class="other-projects-content pb-70">
-		    	<div class="container">
-		    		<div class="row">
-		    			<div class="col-lg-2"></div>
-		    			<div class="col-lg-8">
-		    				<div class="projects-controls">
-			    				<div class="project-control previous">
-			    					<a href="fremont.html" class="thumb-wrap js-ga" data-ga="Project Controls, Fremont Brewing">
-										<svg class="svg-icon" viewBox="0 0 20 20">
-											<path fill="none" d="M18.271,9.212H3.615l4.184-4.184c0.306-0.306,0.306-0.801,0-1.107c-0.306-0.306-0.801-0.306-1.107,0
-											L1.21,9.403C1.194,9.417,1.174,9.421,1.158,9.437c-0.181,0.181-0.242,0.425-0.209,0.66c0.005,0.038,0.012,0.071,0.022,0.109
-											c0.028,0.098,0.075,0.188,0.142,0.271c0.021,0.026,0.021,0.061,0.045,0.085c0.015,0.016,0.034,0.02,0.05,0.033l5.484,5.483
-											c0.306,0.307,0.801,0.307,1.107,0c0.306-0.305,0.306-0.801,0-1.105l-4.184-4.185h14.656c0.436,0,0.788-0.353,0.788-0.788
-											S18.707,9.212,18.271,9.212z"></path>
-										</svg>
-										<p class="thumb-text"><strong>previous:</strong> Fremont Brewing</p>
-									</a>
-								</div>
-								<div class="project-control next">
-									<!-- image thumbnail -->
-									<a href="normanregional.html" class="thumb-wrap js-ga" data-ga="Project Controls, Norman Regional">
-										<p class="thumb-text"><strong>next:</strong> Norman Regional</p>
-										<svg class="svg-icon" viewBox="0 0 20 20">
-											<path fill="none" d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
-											l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
-											c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
-											c-0.306,0.307-0.802,0.307-1.106,0c-0.307-0.305-0.307-0.801,0-1.105l4.184-4.185H1.729c-0.436,0-0.788-0.353-0.788-0.788
-											S1.293,9.212,1.729,9.212z"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
+	    				<a href="https://drive.google.com/file/d/1e1Kq8ynh-UHtnJw2nxbdc_Ny8u_yXyeL/view?usp=sharing" class="button" target="_blank">Download Project Presentation</a>
+	    			
+	    				<div class="project-section">
+		    				<section class="other-projects-content">
+		    					<div class="projects-controls">
+		    						<div class="project-control previous">
+		    							<a href="fremont.html" class="thumb-wrap js-ga" data-ga="Project Controls, Fremont Brewing">
+											<svg class="svg-icon" viewBox="0 0 20 20">
+												<path fill="none" d="M18.271,9.212H3.615l4.184-4.184c0.306-0.306,0.306-0.801,0-1.107c-0.306-0.306-0.801-0.306-1.107,0
+												L1.21,9.403C1.194,9.417,1.174,9.421,1.158,9.437c-0.181,0.181-0.242,0.425-0.209,0.66c0.005,0.038,0.012,0.071,0.022,0.109
+												c0.028,0.098,0.075,0.188,0.142,0.271c0.021,0.026,0.021,0.061,0.045,0.085c0.015,0.016,0.034,0.02,0.05,0.033l5.484,5.483
+												c0.306,0.307,0.801,0.307,1.107,0c0.306-0.305,0.306-0.801,0-1.105l-4.184-4.185h14.656c0.436,0,0.788-0.353,0.788-0.788
+												S18.707,9.212,18.271,9.212z"></path>
+											</svg>
+											<p class="thumb-text"><strong>previous project:</strong> Fremont Brewing</p>
+										</a>
+		    						</div>
+		    						<div class="project-control next">
+		    							<a href="partycity.html" class="thumb-wrap js-ga" data-ga="Project Controls, Party City">
+											<p class="thumb-text"><strong>next project:</strong> Party City</p>
+											<svg class="svg-icon" viewBox="0 0 20 20">
+												<path fill="none" d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
+												l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
+												c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
+												c-0.306,0.307-0.802,0.307-1.106,0c-0.307-0.305-0.307-0.801,0-1.105l4.184-4.185H1.729c-0.436,0-0.788-0.353-0.788-0.788
+												S1.293,9.212,1.729,9.212z"></path>
+											</svg>
+										</a>
+		    						</div>
+		    					</div>
+		    				</section>
 		    			</div>
-		    			<div class="col-lg-2"></div>
-		    		</div>
-		    	</div>
-		    </section>
-		</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
 	    <!-- /content-->
 
 	    <!-- footer -->
 	    <footer>
-	    	<span>Thanks for reading!</span>
-	    	<p>Designed & Developed by Heather Larsen. 2018 &copy; <!--<a href="thanks.html">Thanks.</a>--></p>
+	    	<p>Designed & Developed by Heather Larsen. 2019 &copy; <!--<a href="thanks.html">Thanks.</a>--></p>
 	    	<ul class="social-links">
 	    		<li>
-	    			<a href="https://www.behance.net/heatherlar620a" target="_blank" class="js-ga" data-ga="Social, Behance">Behance</a>
+	    			<a href="https://www.linkedin.com/in/heatherlarsen/" target="_blank" class="underline js-ga" data-ga="Social, LinkedIn">LinkedIn</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://dribbble.com/heatherlarsen" target="_blank" class="js-ga" data-ga="Social, Dribbble">Dribbble</a>
+	    			<a href="https://github.com/heatherlarsen" target="_blank" class="underline js-ga" data-ga="Social, Github">Github</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://www.linkedin.com/in/heatherlarsen/" target="_blank" class="js-ga" data-ga="Social, LinkedIn">LinkedIn</a>
-	    		</li>
-	    		<li>
-	    			<a href="https://github.com/heatherlarsen" target="_blank" class="js-ga" data-ga="Social, Github">Github</a>
-	    		</li>
-	    		<li>
-	    			<a href="https://www.pinterest.com/heatherlarsenux/" target="_blank" class="js-ga" data-ga="Social, Pinterest">Pinterest</a>
+	    			<a href="https://www.pinterest.com/heatherlarsenux/" target="_blank" class="underline js-ga" data-ga="Social, Pinterest">Pinterest</a>
 	    		</li>
 	    	</ul>
 	    </footer>

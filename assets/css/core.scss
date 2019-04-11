@@ -184,10 +184,13 @@ ol {
 	text-align: right;
 }
 
-// page specific
+.no-margin {
+	@extend %no-margin;
+}
+
 .header-wrap {
 	background: $color-white;
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 100;
     -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.05);
@@ -202,19 +205,19 @@ ol {
 // logo
 .logo-wrap {
 	width: 252px;
-    padding-top: 44px;
+    padding-top: 24px;
 
     .logo {
     	text-align: left;
 	    color: $color-dark;
 	    font-family: $header-font-face;
-	    font-size: 68px;
+	    font-size: 52px;
 	    font-weight: 100;
 	    text-decoration: none;
     }
 
     .header-tag {
-    	margin-top: 6px;
+    	margin-top: 16px;
 	    text-align: left;
 	    text-transform: uppercase;
 	    font-size: 12px;
@@ -246,8 +249,8 @@ ol {
 
 // navigation
 nav {
-	height: 100px;
-    line-height: 100px;
+	height: 52px;
+    line-height: 52px;
 
 	.nav-wrap {
 		display: flex;
@@ -317,9 +320,15 @@ nav {
     right: 10px;
 }
 
+// homepage
+body[data-page="home"] {
+	
+
+}
+
 .featured-projects {
 	background: $color-light;
-	padding: 60px 0 100px 0;
+	padding: 200px 0 100px 0;
 }
 
 .new-projects-wrap {
@@ -509,8 +518,14 @@ nav {
 	margin: 60px 0 100px 0;
 }
 
+.about-container {
+	background: $color-light;
+	padding: 120px 0 0 0;
+}
+
 .all-projects-container {
-	background: set-color($color-light);
+	background: $color-light;
+	padding: 120px 0 100px 0;
 }
 
 .all-projects-wrap {
@@ -587,14 +602,61 @@ body[data-page="project"] {
 
 	.project-nav {
 		position: sticky;
-		top: 12px;
-		margin-top: 32px;
+		top: 140px;
+		padding-top: 12px;
+
+		.project-nav-link {
+			text-decoration: underline;
+			line-height: 32px;
+
+			&.active {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.button {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 270px;
+		display: block;
+	}
+
+	.flow-flex {
+		display: flex;
+
+		a {
+			width: 45%;
+		}
+
+		p {
+			width: 55%;
+			margin-left: 24px;
+		}
+
+	}
+
+	.prototype-link {
+		margin: 32px 0 24px 0;
 	}
 
 }
 
+.flex-50 {
+	display: flex;
+	justify-content: space-between;
+
+	div { 
+		width: 50%; 
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
 .project-hero {
-	padding: 60px 0 100px 0;
+	padding: 60px 0 0 0;
 
 	.project-card {
 		width: 100%;
@@ -666,6 +728,10 @@ body[data-page="project"] {
 
 .project-section {
 	margin: 32px 0 48px 0;
+
+	img {
+		width: 100%;
+	}
 }
 
 .content-row {
@@ -976,12 +1042,6 @@ body[data-page="project"] {
     margin: 10px 0 5px 0;
 }
 
-.section-desc {
-	font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
 .section-image {
 	width: 100%;
 }
@@ -1234,6 +1294,15 @@ footer {
 	display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 24px;
+
+    &.only-previous {
+    	justify-content: flex-start;
+    }
+
+    &.only-next {
+    	justify-content: flex-end;
+    }
 
 	.project-control {
 		cursor: pointer;
@@ -1278,7 +1347,6 @@ footer {
 .image-path {
 	border: 1px solid $color-light;
     padding: 10px;
-    margin: 20px 0;
 }
 
 .image-border {

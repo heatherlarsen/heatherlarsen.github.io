@@ -4,8 +4,6 @@ body[data-page="project"] {
 			color: $color-fremont;
 		}
 
-		
-
 		.hero-content {
 			background: #2763a8;
 		    background: -moz-linear-gradient(-45deg, #2763a8 0%, #aebbb0 100%);
@@ -122,15 +120,6 @@ body[data-page="project"] {
 			}
 		}
 
-		footer {
-			background: set-color($color-fremont);
-			color: $color-white;
-
-			a {
-				color: $color-white;
-			}
-		}
-
 		.pill {
 			&.selected {
 				background: set-color($color-fremont);
@@ -139,14 +128,10 @@ body[data-page="project"] {
 	}
 
 	&.takethestage {
-		.hero-content {
-			background: #007170;
-		    background: -moz-linear-gradient(-45deg, #007170 0%, #342790 100%);
-		    background: -webkit-linear-gradient(-45deg, #007170 0%,#342790 100%);
-		    background: linear-gradient(165deg, #007170 0%,#342790 100%);
-		    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#007170', endColorstr='#342790',GradientType=1 );
+		.ampersand {
+			color: $color-takethestage;
 		}
-
+		
 		nav {
 			.nav-wrap {
 				.nav-item {
@@ -171,6 +156,26 @@ body[data-page="project"] {
 			}
 		}
 
+		h2 {
+			color: $color-takethestage;
+		}
+
+		.ca-icon-wrap {
+			span {
+				color: $color-takethestage;
+			}
+		}
+
+		.outside-link {
+			color: $color-takethestage;
+
+			svg {
+				path {
+					fill: $color-takethestage;
+				}
+			}
+		}
+
 		.section-title {
 			color: $color-takethestage;
 		}
@@ -185,8 +190,17 @@ body[data-page="project"] {
 			color: $color-white;
 		}
 
+		.project-card .project-overview .project-header .type {
+			color: $color-takethestage;
+		}
+
+		.project-wide {
+			background: set-color($color-takethestage);
+			color: $color-white;
+		}
+
 		.project-content {
-			background: rgba(52,39,144,.9);
+			background: rgba(39,99,168,.9);
 
 			h3 {
 				color: set-color($color-takethestage);
@@ -211,7 +225,7 @@ body[data-page="project"] {
 				}
 			}
 		}
-
+		
 		.svg-icon {
 			&.with-circle-bg {
 				background: $color-takethestage;
@@ -226,20 +240,138 @@ body[data-page="project"] {
 			}
 		}
 
-		footer {
-			background: set-color($color-takethestage);
-			color: $color-white;
-
-			a {
-				color: $color-white;
-			}
-		}
-
 		.pill {
 			&.selected {
 				background: set-color($color-takethestage);
 			}
 		}
+	}
 
+	&.partycity {
+		.ampersand {
+			color: $color-partycity;
+		}
+
+		.hero-content {
+			background: #2763a8;
+		    background: -moz-linear-gradient(-45deg, #2763a8 0%, #aebbb0 100%);
+		    background: -webkit-linear-gradient(-45deg, #2763a8 0%,#aebbb0 100%);
+		    background: linear-gradient(165deg, #2763a8 0%,#aebbb0 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#2763a8', endColorstr='#aebbb0',GradientType=1 );
+		}
+		
+		nav {
+			.nav-wrap {
+				.nav-item {
+					a {
+						&.fancy-underline {
+							&:after {
+								background: set-color($color-partycity);
+							}
+
+							&.active {
+								background: set-color($color-partycity);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		h1 {
+			&:after {
+				border-bottom: 3px solid set-color($color-partycity);
+			}
+		}
+
+		h2 {
+			color: $color-partycity;
+		}
+
+		.ca-icon-wrap {
+			span {
+				color: $color-partycity;
+			}
+		}
+
+		.outside-link {
+			color: $color-partycity;
+
+			svg {
+				path {
+					fill: $color-partycity;
+				}
+			}
+		}
+
+		.section-title {
+			color: $color-partycity;
+		}
+
+		.emphasize-bg {
+			background: $color-partycity;
+			color: $color-white;
+		}
+
+		.button {
+			background: $color-partycity;
+			color: $color-white;
+		}
+
+		.project-card .project-overview .project-header .type {
+			color: $color-partycity;
+		}
+
+		.project-wide {
+			background: set-color($color-partycity);
+			color: $color-white;
+		}
+
+		.project-content {
+			background: rgba(39,99,168,.9);
+
+			h3 {
+				color: set-color($color-partycity);
+			}
+
+			.project-background-color {
+				background: set-color($color-partycity);
+				color: $color-white;
+
+				h3 {
+					color: $color-white;
+				}
+			}
+		}
+
+		.project-nav-wrap {
+			.project-nav {
+				&.active {
+					.project-nav-indicator {
+						background: set-color($color-partycity);
+					}
+				}
+			}
+		}
+		
+		.svg-icon {
+			&.with-circle-bg {
+				background: $color-partycity;
+			}
+		}
+
+		.sitemap-wrap {
+			text-align: right;
+
+			.sitemap {
+				width: 90%;
+			}
+		}
+
+		.pill {
+			&.selected {
+				background: set-color($color-partycity);
+			}
+		}
 	}
 }
