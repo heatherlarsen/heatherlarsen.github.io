@@ -550,6 +550,13 @@ body[data-page="home"] {
 
 // project only styles
 body[data-page="project"] {
+	.header-wrap {
+		position: relative;
+	}
+
+	.all-projects-container {
+		padding: 0 0 100px 0;
+	}
 
 	h1 {
 		font-family: 'Work Sans', Helvetica, sans-serif;
@@ -608,7 +615,7 @@ body[data-page="project"] {
 
 	.project-nav {
 		position: sticky;
-		top: 140px;
+		top: 0px;
 		padding-top: 12px;
 
 		.project-nav-link {

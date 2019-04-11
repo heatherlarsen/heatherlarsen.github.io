@@ -1191,7 +1191,15 @@ nav .nav-wrap .nav-item a.fancy-underline.active:hover {
   padding-bottom: 100px;
 }
 
-/* line 554, core.scss */
+/* line 553, core.scss */
+body[data-page="project"] .header-wrap {
+  position: relative;
+}
+/* line 557, core.scss */
+body[data-page="project"] .all-projects-container {
+  padding: 0 0 100px 0;
+}
+/* line 561, core.scss */
 body[data-page="project"] h1 {
   font-family: 'Work Sans', Helvetica, sans-serif;
   font-size: 32px;
@@ -1202,7 +1210,7 @@ body[data-page="project"] h1 {
   color: #333333;
   margin: 0;
 }
-/* line 564, core.scss */
+/* line 571, core.scss */
 body[data-page="project"] h1:after {
   content: '';
   display: block;
@@ -1211,13 +1219,13 @@ body[data-page="project"] h1:after {
   padding-top: 20px;
   margin-bottom: 32px;
 }
-/* line 574, core.scss */
+/* line 581, core.scss */
 body[data-page="project"] h2 {
   font-family: Karla, Helvetica, sans-serif;
   font-size: 22px;
   margin-bottom: 24px;
 }
-/* line 579, core.scss */
+/* line 586, core.scss */
 body[data-page="project"] h2:after {
   content: '';
   display: none;
@@ -1226,11 +1234,11 @@ body[data-page="project"] h2:after {
   padding-top: 0px;
   margin-bottom: 0px;
 }
-/* line 589, core.scss */
+/* line 596, core.scss */
 body[data-page="project"] h3 {
   margin: 32px 0 24px 0;
 }
-/* line 593, core.scss */
+/* line 600, core.scss */
 body[data-page="project"] h4 {
   display: block;
   text-transform: uppercase;
@@ -1239,70 +1247,70 @@ body[data-page="project"] h4 {
   font-weight: 700;
   margin: 24px 0 12px 0;
 }
-/* line 603, core.scss */
+/* line 610, core.scss */
 body[data-page="project"] .project-wide h2 {
   color: #ffffff;
   text-align: center;
 }
-/* line 609, core.scss */
+/* line 616, core.scss */
 body[data-page="project"] .project-nav {
   position: sticky;
-  top: 140px;
+  top: 0px;
   padding-top: 12px;
 }
-/* line 614, core.scss */
+/* line 621, core.scss */
 body[data-page="project"] .project-nav .project-nav-link {
   text-decoration: underline;
   line-height: 32px;
 }
-/* line 618, core.scss */
+/* line 625, core.scss */
 body[data-page="project"] .project-nav .project-nav-link.active {
   font-weight: bold;
 }
-/* line 624, core.scss */
+/* line 631, core.scss */
 body[data-page="project"] .button {
   text-align: center;
   margin: 0 auto;
   max-width: 270px;
   display: block;
 }
-/* line 631, core.scss */
+/* line 638, core.scss */
 body[data-page="project"] .flow-flex {
   display: flex;
 }
-/* line 634, core.scss */
+/* line 641, core.scss */
 body[data-page="project"] .flow-flex a {
   width: 45%;
 }
-/* line 638, core.scss */
+/* line 645, core.scss */
 body[data-page="project"] .flow-flex p {
   width: 55%;
   margin-left: 24px;
 }
-/* line 645, core.scss */
+/* line 652, core.scss */
 body[data-page="project"] .prototype-link {
   margin: 32px 0 24px 0;
 }
 
-/* line 651, core.scss */
+/* line 658, core.scss */
 .flex-50 {
   display: flex;
   justify-content: space-between;
 }
-/* line 655, core.scss */
+/* line 662, core.scss */
 .flex-50 div {
   width: 50%;
 }
-/* line 658, core.scss */
+/* line 665, core.scss */
 .flex-50 div img {
   width: 100%;
 }
 
-/* line 664, core.scss */
+/* line 671, core.scss */
 .project-hero {
   padding: 60px 0 0 0;
 }
-/* line 667, core.scss */
+/* line 674, core.scss */
 .project-hero .project-card {
   width: 100%;
   margin: 0;
@@ -1310,23 +1318,23 @@ body[data-page="project"] .prototype-link {
   justify-content: space-between;
   transition: none;
 }
-/* line 674, core.scss */
+/* line 681, core.scss */
 .project-hero .project-card img {
   width: 45%;
   height: 100%;
   border-radius: 8px 0 0 8px;
 }
-/* line 680, core.scss */
+/* line 687, core.scss */
 .project-hero .project-card .project-overview {
   width: 55%;
   padding: 24px;
 }
-/* line 684, core.scss */
+/* line 691, core.scss */
 .project-hero .project-card .project-overview .project-header {
   display: flex;
   justify-content: space-between;
 }
-/* line 688, core.scss */
+/* line 695, core.scss */
 .project-hero .project-card .project-overview .project-header .type {
   text-transform: uppercase;
   color: #9013FE;
@@ -1337,11 +1345,11 @@ body[data-page="project"] .prototype-link {
   min-width: 100px;
   text-align: right;
 }
-/* line 700, core.scss */
+/* line 707, core.scss */
 .project-hero .project-card .project-overview p {
   font-weight: normal;
 }
-/* line 703, core.scss */
+/* line 710, core.scss */
 .project-hero .project-card .project-overview p span {
   display: block;
   text-transform: uppercase;
@@ -1351,19 +1359,19 @@ body[data-page="project"] .prototype-link {
   margin: 24px 0 12px 0;
 }
 
-/* line 716, core.scss */
+/* line 723, core.scss */
 .project-wide {
   background: #9013FE;
   padding: 70px 0;
   text-align: center;
 }
-/* line 721, core.scss */
+/* line 728, core.scss */
 .project-wide h3 {
   font-size: 22px;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-/* line 727, core.scss */
+/* line 734, core.scss */
 .project-wide p {
   max-width: 700px;
   margin: 0 auto;
@@ -1371,26 +1379,26 @@ body[data-page="project"] .prototype-link {
   line-height: 24px;
 }
 
-/* line 735, core.scss */
+/* line 742, core.scss */
 .project-section {
   margin: 32px 0 48px 0;
 }
-/* line 738, core.scss */
+/* line 745, core.scss */
 .project-section img {
   width: 100%;
 }
 
-/* line 743, core.scss */
+/* line 750, core.scss */
 .content-row {
   padding-top: 200px;
 }
 
-/* line 752, core.scss */
+/* line 759, core.scss */
 .content-wrap p {
   margin: 0 0 40px 0;
 }
 
-/* line 757, core.scss */
+/* line 764, core.scss */
 .tagline-content {
   width: 100%;
   padding: 100px 0;
@@ -1401,13 +1409,13 @@ body[data-page="project"] .prototype-link {
   line-height: 36px;
   margin: 0 auto;
 }
-/* line 767, core.scss */
+/* line 774, core.scss */
 .tagline-content .tagline-text {
   width: 40%;
   margin: 0 auto;
 }
 
-/* line 773, core.scss */
+/* line 780, core.scss */
 .hero-content {
   background: #9013FE;
   background: -moz-linear-gradient(-45deg, #9013FE 0%, #f3f3f1 100%);
@@ -1416,7 +1424,7 @@ body[data-page="project"] .prototype-link {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '$color-primary', endColorstr='$color-light',GradientType=1 );
   padding: 160px 0 80px 0;
 }
-/* line 781, core.scss */
+/* line 788, core.scss */
 .hero-content .hero-header {
   color: #ffffff;
   font-size: 44px;
@@ -1426,7 +1434,7 @@ body[data-page="project"] .prototype-link {
   letter-spacing: 3.5px;
   line-height: 44px;
 }
-/* line 790, core.scss */
+/* line 797, core.scss */
 .hero-content .hero-header:after {
   content: '';
   display: block;
@@ -1434,81 +1442,81 @@ body[data-page="project"] .prototype-link {
   border-bottom: 3px solid #ffffff;
   padding-top: 20px;
 }
-/* line 799, core.scss */
+/* line 806, core.scss */
 .hero-content .hero-tagline {
   color: #ffffff;
 }
 
-/* line 805, core.scss */
+/* line 812, core.scss */
 .breadcrumb-content .content-row {
   padding-top: 0px;
 }
 
-/* line 810, core.scss */
+/* line 817, core.scss */
 .breadcrumbs {
   text-align: left;
   font-size: 12px;
   display: flex;
 }
-/* line 816, core.scss */
+/* line 823, core.scss */
 .breadcrumbs .breadcrumb span {
   display: inline-block;
   margin: 0 5px;
 }
 
-/* line 823, core.scss */
+/* line 830, core.scss */
 .carousel-controls {
   position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-/* line 829, core.scss */
+/* line 836, core.scss */
 .carousel-controls .carousel-control {
   margin: 0 7px;
   font-size: 12px;
   cursor: pointer;
 }
-/* line 834, core.scss */
+/* line 841, core.scss */
 .carousel-controls .carousel-control[aria-disabled="true"] {
   cursor: auto;
 }
-/* line 835, core.scss */
+/* line 842, core.scss */
 .carousel-controls .carousel-control[aria-disabled="true"] .svg-icon path,
 .carousel-controls .carousel-control[aria-disabled="true"] .svg-icon polygon,
 .carousel-controls .carousel-control[aria-disabled="true"] .svg-icon rect {
   fill: #d6d4c3;
 }
-/* line 841, core.scss */
+/* line 848, core.scss */
 .carousel-controls .carousel-control[aria-disabled="true"] .svg-icon circle {
   stroke: #d6d4c3;
   stroke-width: 1;
 }
 
-/* line 851, core.scss */
+/* line 858, core.scss */
 .main-carousel {
   display: flex;
   position: relative;
   margin: 45px 0 0 0;
 }
-/* line 856, core.scss */
+/* line 863, core.scss */
 .main-carousel .project {
   width: 350px;
   height: 350px;
   position: relative;
 }
-/* line 861, core.scss */
+/* line 868, core.scss */
 .main-carousel .project .project-img {
   width: 350px;
   height: 350px;
 }
-/* line 865, core.scss */
+/* line 872, core.scss */
 .main-carousel .project .project-img img {
   width: 100%;
   height: 350px;
 }
 
-/* line 874, core.scss */
+/* line 881, core.scss */
 .project .project-content {
   position: absolute;
   top: 0;
@@ -1521,7 +1529,7 @@ body[data-page="project"] .prototype-link {
   opacity: 0;
   transition: opacity .5s, visibility .5s;
 }
-/* line 886, core.scss */
+/* line 893, core.scss */
 .project .project-content h3 {
   display: block;
   max-width: 300px;
@@ -1536,7 +1544,7 @@ body[data-page="project"] .prototype-link {
   position: relative;
   font-family: "Work Sans",Helvetica,Arial,sans-serif;
 }
-/* line 900, core.scss */
+/* line 907, core.scss */
 .project .project-content h3 span {
   display: block;
   font-size: 12px;
@@ -1544,39 +1552,39 @@ body[data-page="project"] .prototype-link {
   font-weight: normal;
   letter-spacing: 1.5px;
 }
-/* line 913, core.scss */
+/* line 920, core.scss */
 .project[data-project="Fremont Brewing"] .project-content {
   background: rgba(39, 99, 168, 0.9);
 }
-/* line 920, core.scss */
+/* line 927, core.scss */
 .project[data-project="Take The Stage"] .project-content {
   background: rgba(52, 39, 144, 0.9);
 }
-/* line 927, core.scss */
+/* line 934, core.scss */
 .project[data-project="Norman Regional"] .project-content {
   background: rgba(112, 42, 130, 0.9);
 }
-/* line 934, core.scss */
+/* line 941, core.scss */
 .project[data-project="US Trust"] .project-content {
   background: rgba(196, 17, 44, 0.9);
 }
-/* line 942, core.scss */
+/* line 949, core.scss */
 .project[data-project="Scrubs and Beyond"] .project-content {
   background: rgba(0, 76, 143, 0.9);
 }
-/* line 948, core.scss */
+/* line 955, core.scss */
 .project:hover .project-content {
   visibility: visible;
   opacity: 1;
 }
-/* line 953, core.scss */
+/* line 960, core.scss */
 .project .project-caption {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
 }
 
-/* line 960, core.scss */
+/* line 967, core.scss */
 .all-projects-btn {
   width: 350px;
   height: 350px;
@@ -1584,7 +1592,7 @@ body[data-page="project"] .prototype-link {
   text-align: center;
   transition: all .5s;
 }
-/* line 967, core.scss */
+/* line 974, core.scss */
 .all-projects-btn span {
   display: block;
   width: 200px;
@@ -1598,71 +1606,71 @@ body[data-page="project"] .prototype-link {
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 981, core.scss */
+/* line 988, core.scss */
 .all-projects-btn .svg-icon path {
   fill: #9013FE;
 }
-/* line 985, core.scss */
+/* line 992, core.scss */
 .all-projects-btn:hover {
   background: #9013FE;
 }
-/* line 988, core.scss */
+/* line 995, core.scss */
 .all-projects-btn:hover span {
   color: #ffffff;
 }
-/* line 992, core.scss */
+/* line 999, core.scss */
 .all-projects-btn:hover .svg-icon path {
   fill: #ffffff;
 }
 
-/* line 998, core.scss */
+/* line 1005, core.scss */
 .services-outer-wrap {
   margin-top: 45px;
 }
-/* line 1001, core.scss */
+/* line 1008, core.scss */
 .services-outer-wrap .services-outer-item {
   text-align: left;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-size: 12px;
 }
-/* line 1007, core.scss */
+/* line 1014, core.scss */
 .services-outer-wrap .services-outer-item .services-inner-header {
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
 }
-/* line 1014, core.scss */
+/* line 1021, core.scss */
 .services-outer-wrap .services-outer-item .services-inner-wrap {
   text-align: center;
 }
-/* line 1017, core.scss */
+/* line 1024, core.scss */
 .services-outer-wrap .services-outer-item .services-inner-wrap .services-inner-item {
   width: 100%;
   text-transform: none;
   line-height: 32px;
 }
 
-/* line 1027, core.scss */
+/* line 1034, core.scss */
 .clients-wrap .client-item {
   vertical-align: middle;
   margin: 45px 0;
   text-align: center;
 }
-/* line 1032, core.scss */
+/* line 1039, core.scss */
 .clients-wrap .client-item .client-image {
   max-width: 150px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 1040, core.scss */
+/* line 1047, core.scss */
 .process-content {
   min-height: calc(100vh - 211px);
 }
 
-/* line 1044, core.scss */
+/* line 1051, core.scss */
 .section-title {
   letter-spacing: 3px;
   padding-top: 20px;
@@ -1670,23 +1678,23 @@ body[data-page="project"] .prototype-link {
   margin: 10px 0 5px 0;
 }
 
-/* line 1051, core.scss */
+/* line 1058, core.scss */
 .section-image {
   width: 100%;
 }
 
-/* line 1055, core.scss */
+/* line 1062, core.scss */
 .icon-set {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 1060, core.scss */
+/* line 1067, core.scss */
 .ca-icon-wrap {
   display: block;
   text-align: center;
 }
-/* line 1064, core.scss */
+/* line 1071, core.scss */
 .ca-icon-wrap span {
   display: block;
   font-weight: 700;
@@ -1696,7 +1704,7 @@ body[data-page="project"] .prototype-link {
   font-size: 12px;
 }
 
-/* line 1075, core.scss */
+/* line 1082, core.scss */
 footer {
   text-align: center;
   padding: 80px 0;
@@ -1707,7 +1715,7 @@ footer {
   width: 100vw;
   overflow: hidden;
 }
-/* line 1085, core.scss */
+/* line 1092, core.scss */
 footer span {
   font-family: "Beautiful Bloom",cursive;
   font-size: 60px;
@@ -1716,16 +1724,16 @@ footer span {
   display: block;
   line-height: 72px;
 }
-/* line 1094, core.scss */
+/* line 1101, core.scss */
 footer a {
   color: #ffffff;
 }
-/* line 1098, core.scss */
+/* line 1105, core.scss */
 footer p, footer .social-links {
   font-size: 0.75em;
 }
 
-/* line 1103, core.scss */
+/* line 1110, core.scss */
 .social-links {
   display: flex;
   width: 30%;
@@ -1734,21 +1742,21 @@ footer p, footer .social-links {
   margin-top: 20px;
 }
 
-/* line 1112, core.scss */
+/* line 1119, core.scss */
 .svg-icon {
   width: 20px;
   height: 20px;
 }
-/* line 1116, core.scss */
+/* line 1123, core.scss */
 .svg-icon path, .svg-icon polygon, .svg-icon rect {
   fill: #333333;
 }
-/* line 1120, core.scss */
+/* line 1127, core.scss */
 .svg-icon circle {
   stroke: #333333;
   stroke-width: 1;
 }
-/* line 1125, core.scss */
+/* line 1132, core.scss */
 .svg-icon.with-circle-bg {
   display: block;
   width: 60px;
@@ -1760,57 +1768,57 @@ footer p, footer .social-links {
   padding: 10px;
   text-align: center;
 }
-/* line 1136, core.scss */
+/* line 1143, core.scss */
 .svg-icon.with-circle-bg path {
   fill: #ffffff;
 }
-/* line 1141, core.scss */
+/* line 1148, core.scss */
 .svg-icon.large-icon {
   width: 80px;
   height: 80px;
   padding-top: 20px;
 }
-/* line 1147, core.scss */
+/* line 1154, core.scss */
 .svg-icon.no-bg {
   width: 80px;
   height: 80px;
 }
-/* line 1151, core.scss */
+/* line 1158, core.scss */
 .svg-icon.no-bg path, .svg-icon.no-bg polygon, .svg-icon.no-bg rect {
   fill: #9013FE;
 }
-/* line 1155, core.scss */
+/* line 1162, core.scss */
 .svg-icon.no-bg circle {
   stroke: #9013FE;
   stroke-width: 1;
 }
 
-/* line 1163, core.scss */
+/* line 1170, core.scss */
 .projects-wrap {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 1167, core.scss */
+/* line 1174, core.scss */
 .projects-wrap .project {
   width: calc(33% - 10px);
   margin: 5px;
   position: relative;
 }
-/* line 1172, core.scss */
+/* line 1179, core.scss */
 .projects-wrap .project img {
   width: 100%;
 }
-/* line 1176, core.scss */
+/* line 1183, core.scss */
 .projects-wrap .project .project-content {
   height: calc(100% - 5px);
 }
 
-/* line 1182, core.scss */
+/* line 1189, core.scss */
 .extra-wrap {
   width: calc(33% - 10px);
   margin: 5px;
 }
-/* line 1186, core.scss */
+/* line 1193, core.scss */
 .extra-wrap .extra-content {
   display: block;
   margin: 0 auto;
@@ -1820,53 +1828,53 @@ footer p, footer .social-links {
   transform: translateY(-50%);
   position: relative;
 }
-/* line 1195, core.scss */
+/* line 1202, core.scss */
 .extra-wrap .extra-content h4 {
   text-transform: uppercase;
 }
-/* line 1199, core.scss */
+/* line 1206, core.scss */
 .extra-wrap .extra-content a {
   font-size: 12px;
 }
 
-/* line 1207, core.scss */
+/* line 1214, core.scss */
 .project-content h3 {
   text-align: center;
 }
-/* line 1211, core.scss */
+/* line 1218, core.scss */
 .project-content h4 {
   text-transform: uppercase;
   font-size: 11px;
 }
-/* line 1216, core.scss */
+/* line 1223, core.scss */
 .project-content img {
   width: 100%;
 }
-/* line 1220, core.scss */
+/* line 1227, core.scss */
 .project-content .project-background {
   padding: 70px;
   background: #f3f3f1;
   margin: 30px 0;
   text-align: center;
 }
-/* line 1226, core.scss */
+/* line 1233, core.scss */
 .project-content .project-background h3 {
   margin-bottom: 30px;
 }
 
-/* line 1234, core.scss */
+/* line 1241, core.scss */
 .content-item {
   margin: 0 0 20px 0;
 }
 
-/* line 1238, core.scss */
+/* line 1245, core.scss */
 .other-projects-header {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 1244, core.scss */
+/* line 1251, core.scss */
 .project-nav-wrap {
   top: 50vh;
   left: 0;
@@ -1874,12 +1882,12 @@ footer p, footer .social-links {
   z-index: 100;
   position: fixed;
 }
-/* line 1252, core.scss */
+/* line 1259, core.scss */
 .project-nav-wrap .project-nav {
   height: 32px;
   display: block;
 }
-/* line 1257, core.scss */
+/* line 1264, core.scss */
 .project-nav-wrap .project-nav .project-nav-indicator {
   content: '';
   width: 32px;
@@ -1889,13 +1897,13 @@ footer p, footer .social-links {
   vertical-align: middle;
   line-height: 32px;
 }
-/* line 1267, core.scss */
+/* line 1274, core.scss */
 .project-nav-wrap .project-nav .project-nav-text {
   display: inline-block;
   visibility: hidden;
   margin-left: 10px;
 }
-/* line 1272, core.scss */
+/* line 1279, core.scss */
 .project-nav-wrap .project-nav .project-nav-text span {
   font-weight: normal;
   text-transform: uppercase;
@@ -1903,94 +1911,94 @@ footer p, footer .social-links {
   line-height: 16px;
   vertical-align: middle;
 }
-/* line 1282, core.scss */
+/* line 1289, core.scss */
 .project-nav-wrap .project-nav:hover .project-nav-text {
   visibility: visible;
 }
-/* line 1286, core.scss */
+/* line 1293, core.scss */
 .project-nav-wrap .project-nav:hover .project-nav-indicator {
   width: 64px;
 }
-/* line 1292, core.scss */
+/* line 1299, core.scss */
 .project-nav-wrap .project-nav.active .project-nav-indicator {
   width: 64px;
 }
 
-/* line 1299, core.scss */
+/* line 1306, core.scss */
 .projects-controls {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 24px;
 }
-/* line 1305, core.scss */
+/* line 1312, core.scss */
 .projects-controls.only-previous {
   justify-content: flex-start;
 }
-/* line 1309, core.scss */
+/* line 1316, core.scss */
 .projects-controls.only-next {
   justify-content: flex-end;
 }
-/* line 1313, core.scss */
+/* line 1320, core.scss */
 .projects-controls .project-control {
   cursor: pointer;
   width: 50%;
 }
-/* line 1317, core.scss */
+/* line 1324, core.scss */
 .projects-controls .project-control .thumb-wrap {
   display: flex;
   font-weight: normal;
 }
-/* line 1321, core.scss */
+/* line 1328, core.scss */
 .projects-controls .project-control .thumb-wrap svg {
   margin: 0 20px;
 }
-/* line 1325, core.scss */
+/* line 1332, core.scss */
 .projects-controls .project-control .thumb-wrap .thumb-text {
   text-transform: lowercase;
   font-size: 12px;
 }
-/* line 1331, core.scss */
+/* line 1338, core.scss */
 .projects-controls .project-control.disabled {
   cursor: default;
 }
-/* line 1334, core.scss */
+/* line 1341, core.scss */
 .projects-controls .project-control.disabled svg path {
   fill: #d6d4c3;
 }
-/* line 1341, core.scss */
+/* line 1348, core.scss */
 .projects-controls .previous .thumb-wrap {
   justify-content: flex-start;
 }
-/* line 1347, core.scss */
+/* line 1354, core.scss */
 .projects-controls .next .thumb-wrap {
   justify-content: flex-end;
 }
 
-/* line 1353, core.scss */
+/* line 1360, core.scss */
 .image-path {
   border: 1px solid #f3f3f1;
   padding: 10px;
 }
 
-/* line 1358, core.scss */
+/* line 1365, core.scss */
 .image-border {
   border: 1px solid #f3f3f1;
 }
 
-/* line 1362, core.scss */
+/* line 1369, core.scss */
 .image-caption {
   font-size: 10px;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 1369, core.scss */
+/* line 1376, core.scss */
 .filters-wrap {
   display: flex;
   justify-content: flex-end;
 }
-/* line 1373, core.scss */
+/* line 1380, core.scss */
 .filters-wrap .filter-text {
   line-height: 30px;
   margin-right: 10px;
@@ -2000,7 +2008,7 @@ footer p, footer .social-links {
   font-weight: 700;
 }
 
-/* line 1383, core.scss */
+/* line 1390, core.scss */
 .pill {
   margin: 0 5px;
   padding: 0 15px;
@@ -2012,50 +2020,50 @@ footer p, footer .social-links {
   max-height: 30px;
   line-height: 30px;
 }
-/* line 1394, core.scss */
+/* line 1401, core.scss */
 .pill.selected {
   background: #9013FE;
   color: #ffffff;
   font-weight: bold;
 }
 
-/* line 1402, core.scss */
+/* line 1409, core.scss */
 .contact-content {
   min-height: calc(100vh - 121px);
 }
 
-/* line 1407, core.scss */
+/* line 1414, core.scss */
 .headshot-wrap {
   margin: 0 auto;
 }
-/* line 1410, core.scss */
+/* line 1417, core.scss */
 .headshot-wrap .headshot {
   width: 100%;
 }
-/* line 1413, core.scss */
+/* line 1420, core.scss */
 .headshot-wrap .headshot.circle {
   border-radius: 50%;
 }
-/* line 1417, core.scss */
+/* line 1424, core.scss */
 .headshot-wrap .headshot.square {
   border-radius: 10px;
 }
 
-/* line 1423, core.scss */
+/* line 1430, core.scss */
 .facts-list {
   line-height: 22px;
 }
-/* line 1426, core.scss */
+/* line 1433, core.scss */
 .facts-list li {
   margin: 7px 0;
 }
 
-/* line 1432, core.scss */
+/* line 1439, core.scss */
 .tns-nav {
   display: none;
 }
 
-/* line 1436, core.scss */
+/* line 1443, core.scss */
 .tns-outer {
   margin-top: 120px;
 }
@@ -2070,157 +2078,157 @@ footer p, footer .social-links {
       	display: block;
       }
       */
-  /* line 1453, core.scss */
+  /* line 1460, core.scss */
   .services-outer-wrap .services-outer-item {
     margin-bottom: 50px;
   }
 
-  /* line 1458, core.scss */
+  /* line 1465, core.scss */
   .project-card {
     width: calc(50% - 24px);
     margin-bottom: 24px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 1471, core.scss */
+  /* line 1478, core.scss */
   .header-wrap {
     position: relative;
   }
 
-  /* line 1475, core.scss */
+  /* line 1482, core.scss */
   .logo-wrap {
     text-align: left;
   }
-  /* line 1478, core.scss */
+  /* line 1485, core.scss */
   .logo-wrap .logo {
     text-align: left;
   }
 
-  /* line 1483, core.scss */
+  /* line 1490, core.scss */
   .hamburger-menu {
     display: block;
   }
 
-  /* line 1487, core.scss */
+  /* line 1494, core.scss */
   .nav-buttons {
     display: none;
   }
 
-  /* line 1491, core.scss */
+  /* line 1498, core.scss */
   .section-header {
     flex-wrap: wrap;
   }
-  /* line 1494, core.scss */
+  /* line 1501, core.scss */
   .section-header h2 {
     width: 100%;
   }
-  /* line 1498, core.scss */
+  /* line 1505, core.scss */
   .section-header .link-wrapper {
     width: 100%;
     text-align: center;
     margin-bottom: 12px;
   }
 
-  /* line 1505, core.scss */
+  /* line 1512, core.scss */
   .breadcrumb-content {
     display: none;
   }
 
-  /* line 1509, core.scss */
+  /* line 1516, core.scss */
   .project-card {
     width: 100%;
     margin-bottom: 24px;
   }
 
-  /* line 1514, core.scss */
+  /* line 1521, core.scss */
   .featured-projects, .all-projects-container {
     padding: 20px 0 40px 0;
   }
 
-  /* line 1518, core.scss */
+  /* line 1525, core.scss */
   .projects-content {
     padding: 0;
     margin: 0;
   }
 
-  /* line 1523, core.scss */
+  /* line 1530, core.scss */
   .filters-wrap {
     justify-content: center;
     margin: 12px 0;
     width: 100%;
   }
 
-  /* line 1529, core.scss */
+  /* line 1536, core.scss */
   .project-hero {
     padding: 0px;
   }
-  /* line 1532, core.scss */
+  /* line 1539, core.scss */
   .project-hero .project-card {
     flex-wrap: wrap;
   }
-  /* line 1535, core.scss */
+  /* line 1542, core.scss */
   .project-hero .project-card img {
     width: 100%;
     border-radius: 8px 8px 0 0;
   }
-  /* line 1540, core.scss */
+  /* line 1547, core.scss */
   .project-hero .project-card .project-overview {
     width: 100%;
   }
-  /* line 1543, core.scss */
+  /* line 1550, core.scss */
   .project-hero .project-card .project-overview .type {
     width: 100%;
   }
 
-  /* line 1550, core.scss */
+  /* line 1557, core.scss */
   .flex-50 {
     flex-wrap: wrap;
   }
-  /* line 1553, core.scss */
+  /* line 1560, core.scss */
   .flex-50 div {
     width: 100%;
   }
 
-  /* line 1560, core.scss */
+  /* line 1567, core.scss */
   .projects-controls.only-previous .project-control, .projects-controls.only-next .project-control {
     width: 100%;
   }
 
-  /* line 1567, core.scss */
+  /* line 1574, core.scss */
   body[data-page=project] h1.long-name {
     font-size: 24px;
   }
-  /* line 1571, core.scss */
+  /* line 1578, core.scss */
   body[data-page=project] .flow-flex {
     flex-wrap: wrap;
   }
-  /* line 1574, core.scss */
+  /* line 1581, core.scss */
   body[data-page=project] .flow-flex a {
     width: 100%;
   }
-  /* line 1578, core.scss */
+  /* line 1585, core.scss */
   body[data-page=project] .flow-flex p {
     width: 100%;
     margin: 0;
   }
 
-  /* line 1585, core.scss */
+  /* line 1592, core.scss */
   .about-container {
     padding: 0;
   }
-  /* line 1589, core.scss */
+  /* line 1596, core.scss */
   .about-container .about-card .about-details {
     flex-wrap: wrap;
   }
-  /* line 1592, core.scss */
+  /* line 1599, core.scss */
   .about-container .about-card .about-details .about-image {
     width: 100%;
   }
-  /* line 1595, core.scss */
+  /* line 1602, core.scss */
   .about-container .about-card .about-details .about-image img {
     border-radius: 8px 8px 0 0;
   }
-  /* line 1600, core.scss */
+  /* line 1607, core.scss */
   .about-container .about-card .about-details .about-desc {
     width: 100%;
   }
@@ -2231,165 +2239,165 @@ footer p, footer .social-links {
           display: none;
       }
       */
-  /* line 1617, core.scss */
+  /* line 1624, core.scss */
   .header-wrap {
     position: relative;
   }
 
-  /* line 1621, core.scss */
+  /* line 1628, core.scss */
   .logo-wrap {
     text-align: left;
   }
-  /* line 1624, core.scss */
+  /* line 1631, core.scss */
   .logo-wrap .logo {
     text-align: left;
   }
 
-  /* line 1629, core.scss */
+  /* line 1636, core.scss */
   .hamburger-menu {
     display: block;
   }
 
-  /* line 1633, core.scss */
+  /* line 1640, core.scss */
   .nav-buttons {
     display: none;
   }
 
-  /* line 1637, core.scss */
+  /* line 1644, core.scss */
   .section-header {
     flex-wrap: wrap;
   }
-  /* line 1640, core.scss */
+  /* line 1647, core.scss */
   .section-header h2 {
     width: 100%;
   }
-  /* line 1644, core.scss */
+  /* line 1651, core.scss */
   .section-header .link-wrapper {
     width: 100%;
     text-align: center;
     margin-bottom: 12px;
   }
 
-  /* line 1651, core.scss */
+  /* line 1658, core.scss */
   .breadcrumb-content {
     display: none;
   }
 
-  /* line 1655, core.scss */
+  /* line 1662, core.scss */
   .project-card {
     width: 100%;
     margin-bottom: 24px;
   }
 
-  /* line 1660, core.scss */
+  /* line 1667, core.scss */
   .featured-projects, .all-projects-container {
     padding: 20px 0 40px 0;
   }
 
-  /* line 1664, core.scss */
+  /* line 1671, core.scss */
   .projects-content {
     padding: 0;
     margin: 0;
   }
 
-  /* line 1669, core.scss */
+  /* line 1676, core.scss */
   .filters-wrap {
     justify-content: center;
     margin: 12px 0;
     width: 100%;
   }
 
-  /* line 1675, core.scss */
+  /* line 1682, core.scss */
   .project-hero {
     padding: 0px;
   }
-  /* line 1678, core.scss */
+  /* line 1685, core.scss */
   .project-hero .project-card {
     flex-wrap: wrap;
   }
-  /* line 1681, core.scss */
+  /* line 1688, core.scss */
   .project-hero .project-card img {
     width: 100%;
     border-radius: 8px 8px 0 0;
   }
-  /* line 1686, core.scss */
+  /* line 1693, core.scss */
   .project-hero .project-card .project-overview {
     width: 100%;
   }
-  /* line 1689, core.scss */
+  /* line 1696, core.scss */
   .project-hero .project-card .project-overview .type {
     width: 100%;
   }
 
-  /* line 1696, core.scss */
+  /* line 1703, core.scss */
   .flex-50 {
     flex-wrap: wrap;
   }
-  /* line 1699, core.scss */
+  /* line 1706, core.scss */
   .flex-50 div {
     width: 100%;
   }
 
-  /* line 1706, core.scss */
+  /* line 1713, core.scss */
   .projects-controls.only-previous .project-control, .projects-controls.only-next .project-control {
     width: 100%;
   }
 
-  /* line 1713, core.scss */
+  /* line 1720, core.scss */
   body[data-page=project] h1.long-name {
     font-size: 24px;
   }
-  /* line 1717, core.scss */
+  /* line 1724, core.scss */
   body[data-page=project] .flow-flex {
     flex-wrap: wrap;
   }
-  /* line 1720, core.scss */
+  /* line 1727, core.scss */
   body[data-page=project] .flow-flex a {
     width: 100%;
   }
-  /* line 1724, core.scss */
+  /* line 1731, core.scss */
   body[data-page=project] .flow-flex p {
     width: 100%;
     margin: 0;
   }
 
-  /* line 1731, core.scss */
+  /* line 1738, core.scss */
   .about-container {
     padding: 0;
   }
-  /* line 1735, core.scss */
+  /* line 1742, core.scss */
   .about-container .about-card .about-details {
     flex-wrap: wrap;
   }
-  /* line 1738, core.scss */
+  /* line 1745, core.scss */
   .about-container .about-card .about-details .about-image {
     width: 100%;
   }
-  /* line 1741, core.scss */
+  /* line 1748, core.scss */
   .about-container .about-card .about-details .about-image img {
     border-radius: 8px 8px 0 0;
   }
-  /* line 1746, core.scss */
+  /* line 1753, core.scss */
   .about-container .about-card .about-details .about-desc {
     width: 100%;
   }
 
-  /* line 1753, core.scss */
+  /* line 1760, core.scss */
   .pt-xs-20 {
     padding-top: 20px !important;
   }
 
-  /* line 1757, core.scss */
+  /* line 1764, core.scss */
   .pt-xs-30 {
     padding-top: 30px !important;
   }
 
-  /* line 1763, core.scss */
+  /* line 1770, core.scss */
   nav .nav-wrap .nav-item {
     margin: 0 13px;
   }
 
-  /* line 1769, core.scss */
+  /* line 1776, core.scss */
   .nav-buttons {
     background: #9013FE;
     width: 100vw;
@@ -2401,80 +2409,80 @@ footer p, footer .social-links {
     -moz-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.05);
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.05);
   }
-  /* line 1780, core.scss */
+  /* line 1787, core.scss */
   .nav-buttons .nav-wrap {
     justify-content: space-around;
   }
 
-  /* line 1785, core.scss */
+  /* line 1792, core.scss */
   .tagline-content {
     padding: 130px 0 60px 0;
   }
-  /* line 1788, core.scss */
+  /* line 1795, core.scss */
   .tagline-content .tagline-text {
     width: 80%;
   }
 
-  /* line 1793, core.scss */
+  /* line 1800, core.scss */
   .content-row {
     padding-top: 60px;
   }
 
-  /* line 1797, core.scss */
+  /* line 1804, core.scss */
   .content-wrap {
     display: block;
     width: 100vw;
     overflow: hidden;
   }
 
-  /* line 1803, core.scss */
+  /* line 1810, core.scss */
   .tns-outer {
     margin-top: 40px;
   }
 
-  /* line 1807, core.scss */
+  /* line 1814, core.scss */
   .main-carousel {
     margin: 0px;
   }
 
-  /* line 1812, core.scss */
+  /* line 1819, core.scss */
   .services-outer-wrap .services-outer-item {
     margin-bottom: 50px;
   }
 
-  /* line 1818, core.scss */
+  /* line 1825, core.scss */
   .projects-wrap .project {
     width: 100vw;
   }
 
-  /* line 1823, core.scss */
+  /* line 1830, core.scss */
   .extra-wrap {
     width: 100vw;
   }
 
-  /* line 1827, core.scss */
+  /* line 1834, core.scss */
   .process-content {
     padding-top: 70px;
     min-height: calc(100vh - 93px);
   }
 
-  /* line 1832, core.scss */
+  /* line 1839, core.scss */
   .contact-content {
     height: 100%;
     padding-top: 70px;
   }
 
-  /* line 1837, core.scss */
+  /* line 1844, core.scss */
   .headshot-wrap {
     margin-top: 30px;
   }
 
-  /* line 1842, core.scss */
+  /* line 1849, core.scss */
   .fremont .sitemap-wrap {
     text-align: center;
   }
 
-  /* line 1847, core.scss */
+  /* line 1854, core.scss */
   .social-links {
     width: 100%;
   }
