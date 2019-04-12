@@ -59,6 +59,7 @@ a {
 	text-decoration: $links-decoration;
 	color: $links-color;
 	font-weight: $links-weight;
+	transition: 0.3s;
 
 	&:hover {
 		color: $links-hover-color;
@@ -117,6 +118,23 @@ ol {
 		width: calc(100% - 20px);
 		padding-left: 10px;
 	}
+}
+
+.overlay {
+	&.active {
+		background: rgba(51,51,51,0.8);
+	    width: 100vw;
+	    height: 100vh;
+	    z-index: 100;
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+}
+
+.mobile-only {
+	display: none;
 }
 
 .is-hidden {
@@ -524,7 +542,7 @@ body[data-page="home"] {
 	margin: 60px 0 100px 0;
 }
 
-.about-container {
+.about-container, .thanks-container {
 	background: $color-light;
 	padding: 120px 0 0 0;
 }
@@ -546,6 +564,10 @@ body[data-page="home"] {
 
 .for-fun-content {
 	padding-bottom: 100px;
+}
+
+.thanks-content {
+	padding: 60px 0 100px 0;
 }
 
 // project only styles
@@ -1446,16 +1468,6 @@ footer {
 
 // Tablet - Portrait
 @media (min-width: 768px) and (max-width: 1024px) {
-	/*
-	.is-mobile {
-        display: none;
-    }
-
-    .is-tablet {
-    	display: block;
-    }
-    */
-
     .services-outer-wrap {
 		.services-outer-item {
 			margin-bottom: 50px;
@@ -1466,15 +1478,35 @@ footer {
 		width: calc(50% - 24px);
 		margin-bottom: 24px;
 	}
+
+	.social-links {
+		width: 100%;
+		flex-wrap: wrap;
+	}
 }
 
 // Tablet - Landscape
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
+	.social-links {
+		width: 100%;
+		flex-wrap: wrap;
+	}
 }
 
 // Mobile - Landscape
 @media (min-width: 481px) and (max-width: 767px) {
+	body.nav-open {
+		position: fixed;
+	}
+
+	.desktop-only {
+		display: none;
+	}
+
+	.mobile-only {
+		display: block;
+	}
+
 	.header-wrap {
 		position: relative;
 	}
@@ -1491,8 +1523,55 @@ footer {
 		display: block;
 	}
 
-	.nav-buttons {
-		display: none;
+	.nav-buttons { 
+		&.mobile-only {
+			height: 100vh;
+			width: 0;
+			position: fixed;
+			z-index: 1000;
+			top: 0;
+			right: 0;
+			background-color: #ffffff;
+			overflow-x: hidden;
+			padding-top: 60px;
+			transition: 0.5s;
+		
+			&.active {
+				display: block;
+			}
+
+			.nav-wrap {
+				display: block;
+				text-align: center;
+
+				.nav-item {
+					margin: 0;
+
+					&:first-child {
+						margin-top: 24px;
+					}
+
+					a {
+						font-weight: bold;
+						font-size: 24px;
+					}
+				}
+			}
+
+			.nav-close {
+			    width: 50px;
+			    height: 50px;
+			    line-height: 70px;
+			    margin: 0 auto;
+			    text-align: center;
+			    vertical-align: middle;
+
+			    .close {
+			    	width: 30px;
+			    	height: 30px;
+			    }
+			}
+		}
 	}
 
 	.section-header {
@@ -1518,7 +1597,7 @@ footer {
 		margin-bottom: 24px;
 	}
 
-	.featured-projects, .all-projects-container {
+	.featured-projects {
 		padding: 20px 0 40px 0;
 	}
 
@@ -1570,7 +1649,17 @@ footer {
     	}
     }
 
+    body[data-page=projects] {
+    	.all-projects-container {
+    		padding: 20px 0 40px 0;
+    	}
+    }
+
     body[data-page=project] {
+    	.all-projects-container {
+			padding: 20px 0 40px 0;
+		}
+
     	h1.long-name {
     		font-size: 24px;
     	}
@@ -1593,6 +1682,8 @@ footer {
     	padding: 0;
 
     	.about-card {
+    		margin: 20px 0 40px 0;
+
     		.about-details {
     			flex-wrap: wrap;
 
@@ -1610,16 +1701,35 @@ footer {
     		}
     	}
     }
+
+    .thanks-container {
+    	padding: 0;
+
+    	.thanks-content {
+    		padding: 20px 0 40px 0;
+    	}
+    }
+
+    .social-links {
+		width: 100%;
+		flex-wrap: wrap;
+	}
 }
 
 
 // Mobile - Portrait
 @media (max-width: 480px) {
-	/*
-	.is-desktop {
-        display: none;
-    }
-    */
+	body.nav-open {
+		position: fixed;
+	}
+
+	.desktop-only {
+		display: none;
+	}
+
+	.mobile-only {
+		display: block;
+	}
 
     .header-wrap {
 		position: relative;
@@ -1637,8 +1747,55 @@ footer {
 		display: block;
 	}
 
-	.nav-buttons {
-		display: none;
+	.nav-buttons { 
+		&.mobile-only {
+			height: 100vh;
+			width: 0;
+			position: fixed;
+			z-index: 1000;
+			top: 0;
+			right: 0;
+			background-color: #ffffff;
+			overflow-x: hidden;
+			padding-top: 60px;
+			transition: 0.5s;
+		
+			&.active {
+				display: block;
+			}
+
+			.nav-wrap {
+				display: block;
+				text-align: center;
+
+				.nav-item {
+					margin: 0;
+
+					&:first-child {
+						margin-top: 24px;
+					}
+
+					a {
+						font-weight: bold;
+						font-size: 24px;
+					}
+				}
+			}
+
+			.nav-close {
+			    width: 50px;
+			    height: 50px;
+			    line-height: 70px;
+			    margin: 0 auto;
+			    text-align: center;
+			    vertical-align: middle;
+
+			    .close {
+			    	width: 30px;
+			    	height: 30px;
+			    }
+			}
+		}
 	}
 
 	.section-header {
@@ -1664,7 +1821,7 @@ footer {
 		margin-bottom: 24px;
 	}
 
-	.featured-projects, .all-projects-container {
+	.featured-projects {
 		padding: 20px 0 40px 0;
 	}
 
@@ -1716,7 +1873,17 @@ footer {
     	}
     }
 
+    body[data-page=projects] {
+    	.all-projects-container {
+    		padding: 20px 0 40px 0;
+    	}
+    }
+
     body[data-page=project] {
+    	.all-projects-container {
+			padding: 20px 0 40px 0;
+		}
+
     	h1.long-name {
     		font-size: 24px;
     	}
@@ -1739,6 +1906,8 @@ footer {
     	padding: 0;
 
     	.about-card {
+    		margin: 20px 0 40px 0;
+
     		.about-details {
     			flex-wrap: wrap;
 
@@ -1757,36 +1926,20 @@ footer {
     	}
     }
 
+    .thanks-container {
+    	padding: 0;
+
+    	.thanks-content {
+    		padding: 20px 0 40px 0;
+    	}
+    }
+
     .pt-xs-20 {
     	padding-top: 20px !important;
     }
 
     .pt-xs-30 {
     	padding-top: 30px !important;
-    }
-
-    nav {
-    	.nav-wrap {
-    		.nav-item {
-    			margin: 0 13px;
-    		}
-    	}
-    }
-
-    .nav-buttons {
-    	background: $color-primary;
-        width: 100vw;
-	    position: absolute;
-	    left: 0;
-	    z-index: 100;
-	    top: -1px;
-	    -webkit-box-shadow: 0 10px 25px 0 rgba(0,0,0,.05);
-	    -moz-box-shadow: 0 10px 25px 0 rgba(0,0,0,.05);
-	    box-shadow: 0 10px 25px 0 rgba(0,0,0,.05);
-
-	    .nav-wrap {
-	    	justify-content: space-around;
-	    }
     }
 
     .tagline-content {
@@ -1836,11 +1989,6 @@ footer {
 		min-height: calc(100vh - 93px);
 	}
 
-    .contact-content {
-    	height: 100%;
-    	padding-top: 70px;
-    }
-
     .headshot-wrap {
     	margin-top: 30px;
     }
@@ -1853,5 +2001,6 @@ footer {
 
     .social-links {
     	width: 100%;
+    	flex-wrap: wrap;
     }
 }
