@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	    <title>heather larsen | designer & developer | thanks</title>
+	    <title>heather larsen | designer & developer | about</title>
 
 	    <!-- Meta Tags -->
 	    <meta name="keywords" content="ux designer, ux designer seattle, ui designer, ui designer seattle">
@@ -10,26 +10,82 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-	    <!-- Site Validations  -->
+	    <!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125861897-1"></script>
+		<script>
+			var gaID;
+			if (window.location.host.indexOf('heatherlarsenux.com') > -1) {
+				// Production ID
+				gaID = "UA-125861897-1";
+			} else {
+				// Staging ID
+				gaID = "UA-125861897-2";
+			}
+
+
+		  	window.dataLayer = window.dataLayer || [];
+		  	function gtag(){dataLayer.push(arguments);}
+		  	gtag('js', new Date());
+
+		  	gtag('config', gaID);
+
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', gaID, 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+		<!-- End Google Analytics -->
 
 	    <!-- CSS -->
 	    <link href="https://fonts.googleapis.com/css?family=Karla|Work+Sans:300,700" rel="stylesheet">
 	    <link href="assets/min/styles.min.css" rel="stylesheet">
 	</head>
 
-	<body>
+	<body class="thanks" data-page="thanks">
 	    <!-- analytics code -->
 
-		<!-- small header -->
-		<div class="small-header">
-			<div class="hamburger-menu is-mobile">
-				<svg class="svg-icon bars" viewBox="0 0 20 20">
-					<path fill="#000" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
-						c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
-						s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
-						c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
-				</svg>
-				<svg class="svg-icon close is-hidden" viewBox="0 0 20 20">
+		<!-- header -->
+	    <div class="header-wrap">
+	    	<header>
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-lg-6 col-md-5 col-10">
+	    					<div class="logo-wrap">
+	    						<a href="index.html" class="logo js-ga" data-ga="Navigation, Homepage">Heather Larsen</a>
+	    						<p class="header-tag">User Experience Designer</p>
+	    					</div>
+	    				</div>
+	    				<div class="col-lg-6 col-md-7 col-2">
+	    					<div class="hamburger-menu">
+								<svg class="svg-icon bars" viewBox="0 0 20 20">
+									<path fill="#000" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+										c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+										s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+										c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+								</svg>
+							</div>
+
+	    					<nav class="nav-buttons desktop-only">
+								<ul class="nav-wrap">
+									<li class="nav-item">
+										<a class="fancy-underline js-ga" data-ga="Navigation, Projects" href="projects.html">Projects</a>
+									</li>
+									<li class="nav-item">
+										<a class="fancy-underline js-ga" data-ga="Navigation, Resume" href="assets/images/HeatherLarsen_Resume_April2019.pdf" target="_blank">Resume</a>
+									</li>
+									<li class="nav-item">
+										<a class="fancy-underline js-ga" data-ga="Navigation, About" href="about.html">About</a>
+									</li>
+								</ul>
+							</nav>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</header>
+	    </div>
+	    <nav class="nav-buttons mobile-only">
+			<div class="nav-close">
+				<svg class="svg-icon close" viewBox="0 0 20 20">
 					<path fill="none" d="M13.864,6.136c-0.22-0.219-0.576-0.219-0.795,0L10,9.206l-3.07-3.07c-0.219-0.219-0.575-0.219-0.795,0
 						c-0.219,0.22-0.219,0.576,0,0.795L9.205,10l-3.07,3.07c-0.219,0.219-0.219,0.574,0,0.794c0.22,0.22,0.576,0.22,0.795,0L10,10.795
 						l3.069,3.069c0.219,0.22,0.575,0.22,0.795,0c0.219-0.22,0.219-0.575,0-0.794L10.794,10l3.07-3.07
@@ -38,72 +94,78 @@
 						c0-4.451,3.606-8.057,8.057-8.057c4.449,0,8.058,3.606,8.058,8.057C18.058,14.45,14.449,18.058,10,18.058z"></path>
 				</svg>
 			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-1"></div>
-					<div class="col-lg-5 col-5">
-						<header class="header-wrap">
-							<div class="header">
-								<a href="index.html" class="logo js-ga" data-ga="Navigation, Homepage">Heather Larsen</a>
-							</div>
-						</header>
-					</div>
-					<div class="col-lg-5 col-md-7 col-sm-12">
-						<nav class="nav-buttons is-desktop">
-							<ul class="nav-wrap">
-								<li class="nav-item">
-									<a class="underline js-ga" data-ga="Navigation, Projects" href="projects.html">Projects</a>
-								</li>
-								<li class="nav-item">
-									<a class="underline js-ga" data-ga="Navigation, Resume" href="assets/images/HeatherLarsen_Resume_Oct2018.pdf" target="_blank">Resume</a>
-								</li>
-								<li class="nav-item">
-									<a class="underline js-ga" data-ga="Navigation, Contact" href="contact.html">Contact</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-lg-1"></div>
-				</div>
-			</div>
-    	</div>
-		<!-- /small header -->
+			<ul class="nav-wrap">
+				<li class="nav-item">
+					<a class="fancy-underline js-ga" data-ga="Navigation, Projects" href="projects.html">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="fancy-underline js-ga" data-ga="Navigation, Resume" href="assets/images/HeatherLarsen_Resume_April2019.pdf" target="_blank">Resume</a>
+				</li>
+				<li class="nav-item">
+					<a class="fancy-underline js-ga" data-ga="Navigation, About" href="about.html">About</a>
+				</li>
+			</ul>
+		</nav>
+	    <!-- /header -->
 
 	    <!-- content -->
-	    <div class="scrollable-content">
-	    	<section class="breadcrumb-content pt-100">
+	    <div class="thanks-container">
+	    	<section class="breadcrumb-content is-desktop">
 	    		<div class="container">
 	    			<div class="row">
-	    				<div class="col-1"></div>
-	    				<div class="col-10">
+	    				<div class="col-12">
 	    					<ul class="breadcrumbs">
 	    						<li class="breadcrumb">
-	    							<a href="index.html">Home</a><span>\\</span>
+	    							<a href="index.html" class="underline js-ga" data-ga="Breadcrumb, Homepage">Home</a><span>\\</span>
 	    						</li>
 	    						<li class="breadcrumb active">
-	    							<span>Thanks</span>
+	    							Special Thanks
 	    						</li>
 	    					</ul>
 	    				</div>
-	    				<div class="col-1"></div>
 	    			</div>
 	    		</div>
 	    	</section>
 
-		    <section id="projects-content" class="projects-content pb-70">
+		    <section class="thanks-content">
 		    	<div class="container">
-		    		<div class="row pt-70">
-		    			<div class="col-1"></div>
-		    			<div class="col-10">
-		    				<h2>Thanks</h2>
+		    		<div class="row">
+		    			<div class="col-12">
+		    				<h2>Special Thanks</h2>
+
+		    				<h3>Fonts</h3>
+		    				<ul>
+		    					<li>
+		    						<a href="https://www.behance.net/gallery/40105313/Beautiful-Bloom-Free-Brush-Font" class="underline js-ga" data-ga="Thanks, Beautiful Bloom" target="_blank">Beautiful Bloom</a>
+		    					</li>
+		    					<li>
+		    						<a href="https://fonts.google.com/specimen/Work+Sans?selection.family=Work+Sans" class="underline js-ga" data-ga="Thanks, Work Sans" target="_blank">Work Sans</a>
+		    					</li>
+		    					<li>
+		    						<a href="https://fonts.google.com/specimen/Karla?selection.family=Karla" class="underline js-ga" data-ga="Thanks, Karla" target="_blank">Karla</a>
+		    					</li>
+		    				</ul>
+		    				<hr>
+
+		    				<h3>Icons</h3>
+		    				<ul>
+		    					<li>
+		    						<a href="https://dribbble.com/shots/1934932-77-Essential-Icons-Free-Download" class="underline js-ga" data-ga="Thanks, Bryn Taylor" target="_blank">Bryn Taylor - 77 Essential Icons</a>
+		    					</li>
+		    					<li>
+		    						<a href="https://dribbble.com/shots/1934932-77-Essential-Icons-Free-Download" class="underline js-ga" data-ga="Thanks, Laymik" target="_blank">Laymik - Beer Collection</a>
+		    					</li>
+		    					<li>
+		    						<a href="https://thenounproject.com/icon/1549957/" class="underline js-ga" data-ga="Thanks, Alerma" target="_blank">Alerma - Location Icon</a>
+		    					</li>
+		    					<li>
+		    						<a href="https://dribbble.com/shots/1182482-budicon-tester" class="underline js-ga" data-ga="Thanks, Budi Tanrim" target="_blank">Budi Tanrim - Hamburger Menu Icon</a>
+		    					</li>
+		    					<li>
+		    						<a href="https://dribbble.com/shots/1684758-Free-Basic-Navigation-Icons-vector-file" class="underline js-ga" data-ga="Thanks, Free goodies for designers" target="_blank">Free goodies for designers - Basic Navigation Icons</a>
+		    					</li>
+		    				</ul>
 		    			</div>
-		    			<div class="col-1"></div>
-		    		</div>
-		    		<div class="content-row row">
-		    			<section class="content-wrap projects-wrap">
-    						
-		    			</section>
 		    		</div>
 		    	</div>
 		    </section>
@@ -112,27 +174,25 @@
 
 	    <!-- footer -->
 	    <footer>
-	    	<span>Have a beautiful day!</span>
-	    	<p>Designed & Developed by Heather Larsen. 2018 &copy; <!--<a href="thanks.html">Thanks.</a>--></p>
+	    	<p>Designed & Developed by Heather Larsen. 2019 &copy; <!--<a href="thanks.html">Thanks.</a>--></p>
 	    	<ul class="social-links">
 	    		<li>
-	    			<a href="https://www.behance.net/heatherlar620a" target="_blank">Behance</a>
+	    			<a href="https://www.linkedin.com/in/heatherlarsen/" target="_blank" class="underline js-ga" data-ga="Social, LinkedIn">LinkedIn</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://dribbble.com/heatherlarsen" target="_blank">Dribbble</a>
+	    			<a href="https://github.com/heatherlarsen" target="_blank" class="underline js-ga" data-ga="Social, Github">Github</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://www.linkedin.com/in/heatherlarsen/" target="_blank">LinkedIn</a>
+	    			<a href="https://www.pinterest.com/heatherlarsenux/" target="_blank" class="underline js-ga" data-ga="Social, Pinterest">Pinterest</a>
 	    		</li>
 	    		<li>
-	    			<a href="https://github.com/heatherlarsen" target="_blank">Github</a>
-	    		</li>
-	    		<li>
-	    			<a href="https://www.pinterest.com/heatherlarsenux/" target="_blank">Pinterest</a>
+	    			<a href="thanks.html" class="underline js-ga" data-ga="Social, Special Thanks">Special Thanks</a>
 	    		</li>
 	    	</ul>
 	    </footer>
 	    <!-- /footer -->
+
+	    <div class="overlay"></div>
 
 	    <!-- Schema.org -->
 

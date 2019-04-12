@@ -4,7 +4,6 @@ var debug = false;
 $(function() {
 
 	var pageType = $("body").data("page");
-
 	if (pageType === "projects") {
 		initFilters();
 	}
@@ -67,8 +66,14 @@ function initHamburgerMenu() {
 	if (debug) console.log('initHamburgerMenu()');
 
 	$('.hamburger-menu').on('click', function() {
-		$(this).find('.bars').toggleClass('is-hidden');
-		$(this).find('.close').toggleClass('is-hidden');
-		$('.nav-buttons').toggleClass('is-desktop');
+		$('.nav-buttons.mobile-only').css('width', '80vw');
+		$('.overlay').addClass('active');
+		$('body').addClass('nav-open');
+	});
+
+	$('.nav-close').on('click', function() {
+		$('.nav-buttons.mobile-only').css('width', '0');
+		$('.overlay').removeClass('active');
+		$('body').removeClass('nav-open');
 	});
 }
