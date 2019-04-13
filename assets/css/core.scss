@@ -671,8 +671,33 @@ body[data-page="project"] {
 
 	}
 
+	.flex-overview {
+		display: flex;
+		justify-content: flex-start;
+
+		p {
+			width: calc(50% - 24px);
+		}
+	}
+
 	.prototype-link {
 		margin: 32px 0 24px 0;
+	}
+
+	.user-story {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 48px;
+
+		h3 {
+			margin: 0 0 24px 0;
+		}
+
+		.user-image {
+			width: 150px;
+			height: 150px;
+			margin-right: 24px;
+		}
 	}
 
 }
@@ -738,6 +763,21 @@ body[data-page="project"] {
 					margin: 24px 0 12px 0;
 				}
 			}
+		}
+	}
+}
+
+.minuteclinic {
+	.project-hero .project-card .project-overview p span {
+		margin: 20px 0 12px 0;
+	}
+
+	.flex-tools {
+		display: flex;
+
+		img {
+			width: 100px;
+			margin-right: 24px;
 		}
 	}
 }
