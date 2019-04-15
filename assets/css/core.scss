@@ -684,21 +684,39 @@ body[data-page="project"] {
 		margin: 32px 0 24px 0;
 	}
 
-	.user-story {
-		display: flex;
-		justify-content: flex-start;
-		margin-bottom: 48px;
+	.user-stories-container {
+		padding: 40px 0 60px 0;
 
-		h3 {
-			margin: 0 0 24px 0;
+		h2 {
+			text-align: center;
 		}
 
-		.user-image {
-			width: 150px;
-			height: 150px;
-			margin-right: 24px;
+		.user-stories {
+			display: flex;
+			justify-content: space-between;
+
+			.user-story {
+				display: flex;
+				justify-content: flex-start;
+				margin-bottom: 48px;
+				width: calc(50% - 24px);
+
+				h3 {
+					margin: 0 0 24px 0;
+				}
+
+				.user-image {
+					width: 150px;
+					height: 150px;
+					margin-right: 24px;
+				}
+			}
 		}
+
+		
 	}
+
+	
 
 }
 
