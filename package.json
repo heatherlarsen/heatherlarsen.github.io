@@ -24,7 +24,7 @@
     "@fancyapps/fancybox": "^3.3.5",
     "aos": "^3.0.0-beta.4",
     "flickity": "^2.1.2",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "lodash": ">=4.17.13",
     "normalize.css": "^8.0.0",
     "tiny-slider": "^2.8.4"
