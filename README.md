@@ -1,4 +1,4 @@
-# Heather Larsen - UX Designer - Portfolio Site
+# Heather Larsen - Product Designer - Portfolio
 
-- v1.0.0
-- Last Update: October 16, 2018
+- v1.1.0
+- Last Update: June 29, 2020
