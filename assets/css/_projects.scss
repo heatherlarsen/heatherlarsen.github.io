@@ -502,4 +502,132 @@ body[data-page="project"] {
 			}
 		}
 	}
+
+	&.bankofamerica {
+		.ampersand {
+			color: $color-bankofamerica;
+		}
+
+		.hero-content {
+			background: #2763a8;
+		    background: -moz-linear-gradient(-45deg, #2763a8 0%, #aebbb0 100%);
+		    background: -webkit-linear-gradient(-45deg, #2763a8 0%,#aebbb0 100%);
+		    background: linear-gradient(165deg, #2763a8 0%,#aebbb0 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#2763a8', endColorstr='#aebbb0',GradientType=1 );
+		}
+		
+		nav {
+			.nav-wrap {
+				.nav-item {
+					a {
+						&.fancy-underline {
+							&:after {
+								background: set-color($color-bankofamerica);
+							}
+
+							&.active {
+								background: set-color($color-bankofamerica);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		h1 {
+			&:after {
+				border-bottom: 3px solid set-color($color-bankofamerica);
+			}
+		}
+
+		h2 {
+			color: $color-bankofamerica;
+		}
+
+		.ca-icon-wrap {
+			span {
+				color: $color-bankofamerica;
+			}
+		}
+
+		.outside-link {
+			color: $color-bankofamerica;
+
+			svg {
+				path {
+					fill: $color-bankofamerica;
+				}
+			}
+		}
+
+		.section-title {
+			color: $color-bankofamerica;
+		}
+
+		.emphasize-bg {
+			background: $color-bankofamerica;
+			color: $color-white;
+		}
+
+		.button {
+			background: $color-bankofamerica;
+			color: $color-white;
+		}
+
+		.project-card .project-overview .project-header .type {
+			color: $color-bankofamerica;
+		}
+
+		.project-wide {
+			background: set-color($color-bankofamerica);
+			color: $color-white;
+		}
+
+		.project-content {
+			background: rgba(39,99,168,.9);
+
+			h3 {
+				color: set-color($color-bankofamerica);
+			}
+
+			.project-background-color {
+				background: set-color($color-bankofamerica);
+				color: $color-white;
+
+				h3 {
+					color: $color-white;
+				}
+			}
+		}
+
+		.project-nav-wrap {
+			.project-nav {
+				&.active {
+					.project-nav-indicator {
+						background: set-color($color-bankofamerica);
+					}
+				}
+			}
+		}
+		
+		.svg-icon {
+			&.with-circle-bg {
+				background: $color-bankofamerica;
+			}
+		}
+
+		.sitemap-wrap {
+			text-align: right;
+
+			.sitemap {
+				width: 90%;
+			}
+		}
+
+		.pill {
+			&.selected {
+				background: set-color($color-bankofamerica);
+			}
+		}
+	}
 }

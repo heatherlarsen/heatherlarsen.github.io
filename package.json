@@ -9,7 +9,7 @@
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "latest",
+    "grunt-contrib-watch": "^1.1.0",
     "node-normalize-scss": "^8.0.0"
   },
   "homepage": "https://github.com/heatherlarsen/testing-site#readme",
