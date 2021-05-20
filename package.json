@@ -1,29 +1,31 @@
 {
-  "name": "testing-site",
+  "name": "Heather Larsen Portfolio",
   "version": "1.0.0",
-  "description": "test portfolio designs",
+  "description": "UX Designer Portfolio",
   "author": "heather larsen",
   "devDependencies": {
-    "grunt": "latest",
     "grunt-contrib-concat": "latest",
     "grunt-contrib-cssmin": "latest",
-    "grunt-contrib-sass": "latest",
+    "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "^1.1.0",
-    "node-normalize-scss": "^8.0.0"
+    "grunt-sass": "^3.1.0",
+    "node-normalize-scss": "^8.0.0",
+    "node-sass": "^6.0.0"
   },
-  "homepage": "https://github.com/heatherlarsen/testing-site#readme",
+  "homepage": "https://github.com/heatherlarsen/heatherlarsen.github.io",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heatherlarsen/testing-site.git"
+    "url": "git+https://github.com/heatherlarsen/heatherlarsen.github.io"
   },
   "bugs": {
-    "url": "https://github.com/heatherlarsen/testing-site/issues"
+    "url": "https://github.com/heatherlarsen/heatherlarsen.github.io/issues"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
     "aos": "^3.0.0-beta.4",
     "flickity": "^2.1.2",
+    "grunt": "^1.4.0",
     "jquery": "^3.5.0",
     "lodash": ">=4.17.21",
     "normalize.css": "^8.0.0",
