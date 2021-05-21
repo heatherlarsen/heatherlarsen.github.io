@@ -1,11 +1,18 @@
-$color-primary: #9013FE;
-$color-secondary: #FFC13D;
-
 $color-white: #ffffff;
 $color-light: #f3f3f1;
 $color-gray: #d6d4c3;
+$color-gray: #FAF9F9;
 $color-dkgray: #696969;
 $color-dark: #333333;
+
+// new brand colors
+$color-dkblue: #264653;
+$color-orange: #CB997E;
+
+//$color-primary: #9013FE;
+$color-primary: $color-orange;
+$color-secondary: #FFC13D;
+
 
 // project colors
 $color-fremont: #2763A8;
@@ -19,18 +26,20 @@ $color-bankofamerica: #DC1431;
 
 $site-width: 1380px;
 
-$header-font-face: "Beautiful Bloom",cursive;
+$header-font-face: "Playfair Display", serif;
 $header-font-size: 123px;
 $header-color: $color-dark;
 $header-bg: $color-white;
 
-$body-font-face: "Work Sans", Helvetica, Arial, sans-serif;
+$body-font-face: "Open Sans", Helvetica, Arial, sans-serif;
 $body-font-size: 14px;
 $body-color: $color-dark;
 $body-bg: $color-white;
 
 $font-size-sm: 0.75em;
 $font-size-lg: 1.5em;
+
+$alt-font-face: "Work Sans", Helvetica, Arial, sans-serif;
 
 $links-font-face: $body-font-face;
 $links-font-size: $body-font-size;
